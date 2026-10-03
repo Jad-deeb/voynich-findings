@@ -1,0 +1,66 @@
+[
+ {
+  "tables": 6,
+  "stay": 0.0,
+  "types_per_34k": 5258,
+  "hapax_share_of_types": 0.4,
+  "repetition_ratio": 0.37,
+  "topic_excess_bits": 0.0022
+ },
+ {
+  "tables": 6,
+  "stay": 0.5,
+  "types_per_34k": 4534,
+  "hapax_share_of_types": 0.44,
+  "repetition_ratio": 0.9,
+  "topic_excess_bits": 0.0068
+ },
+ {
+  "tables": 6,
+  "stay": 0.8,
+  "types_per_34k": 3366,
+  "hapax_share_of_types": 0.46,
+  "repetition_ratio": 1.08,
+  "topic_excess_bits": 0.0055
+ },
+ {
+  "tables": 6,
+  "stay": 0.95,
+  "types_per_34k": 2180,
+  "hapax_share_of_types": 0.35,
+  "repetition_ratio": 0.8,
+  "topic_excess_bits": 0.0091
+ },
+ {
+  "tables": 12,
+  "stay": 0.0,
+  "types_per_34k": 10025,
+  "hapax_share_of_types": 0.63,
+  "repetition_ratio": 0.28,
+  "topic_excess_bits": 0.0006
+ },
+ {
+  "tables": 12,
+  "stay": 0.5,
+  "types_per_34k": 7972,
+  "hapax_share_of_types": 0.62,
+  "repetition_ratio": 1.4,
+  "topic_excess_bits": 0.0003
+ },
+ {
+  "tables": 12,
+  "stay": 0.8,
+  "types_per_34k": 5309,
+  "hapax_share_of_types": 0.56,
+  "repetition_ratio": 1.71,
+  "topic_excess_bits": 0.0023
+ },
+ {
+  "tables": 12,
+  "stay": 0.95,
+  "types_per_34k": 3531,
+  "hapax_share_of_types": 0.39,
+  "repetition_ratio": 1.21,
+  "topic_excess_bits": 0.0055
+ }
+]

@@ -1,0 +1,178 @@
+[
+ {
+  "text": "Timm-Schinner generator (10832 words)",
+  "tokens": 10832,
+  "pairs": 9632,
+  "rep_per_1000": 10.17,
+  "rep_ratio": 0.8,
+  "types": 2228,
+  "hapax_share": 0.539,
+  "adj_mi": 0.0648,
+  "edge_mi": 0.0123,
+  "wlen_mean": 4.7,
+  "wlen_sd": 1.56,
+  "word_d1": 0.0667,
+  "edge_d1": 0.0122,
+  "word_d2": -0.0186,
+  "edge_d2": -0.0003,
+  "word_d3": -0.0321,
+  "edge_d3": 0.0026,
+  "beyond_junction": 0.0491,
+  "space_accuracy": 0.9275,
+  "space_explained": 0.656,
+  "variants": {
+   "k/t": {
+    "pairs": 7,
+    "ratio": 0.57
+   },
+   "ch/sh": {
+    "pairs": 16,
+    "ratio": 0.79
+   },
+   "ee/e": {
+    "pairs": 15,
+    "ratio": 0.95
+   },
+   "aiin/ain": {
+    "pairs": 13,
+    "ratio": 0.63
+   },
+   "ol/or": {
+    "pairs": 17,
+    "ratio": 1.06
+   }
+  }
+ },
+ {
+  "text": "Voynich, first 10832 words",
+  "tokens": 10837,
+  "pairs": 8739,
+  "rep_per_1000": 11.1,
+  "rep_ratio": 1.13,
+  "types": 3243,
+  "hapax_share": 0.693,
+  "adj_mi": 0.044,
+  "edge_mi": 0.1233,
+  "wlen_mean": 4.84,
+  "wlen_sd": 1.73,
+  "word_d1": 0.0414,
+  "edge_d1": 0.1234,
+  "word_d2": -0.0312,
+  "edge_d2": 0.0033,
+  "word_d3": -0.1149,
+  "edge_d3": 0.005,
+  "beyond_junction": 0.0219,
+  "space_accuracy": 0.9518,
+  "space_explained": 0.703,
+  "variants": {
+   "k/t": {
+    "pairs": 39,
+    "ratio": 0.73
+   },
+   "ch/sh": {
+    "pairs": 16,
+    "ratio": 1.1
+   },
+   "ee/e": {
+    "pairs": 6,
+    "ratio": 0.84
+   },
+   "aiin/ain": {
+    "pairs": 3,
+    "ratio": 1.51
+   },
+   "ol/or": {
+    "pairs": 17,
+    "ratio": 0.95
+   }
+  }
+ },
+ {
+  "text": "Greshko Naibbe cipher of Latin (34764 words)",
+  "tokens": 34764,
+  "pairs": 33701,
+  "rep_per_1000": 1.36,
+  "rep_ratio": 0.31,
+  "types": 5600,
+  "hapax_share": 0.409,
+  "adj_mi": 0.1022,
+  "edge_mi": 0.0022,
+  "wlen_mean": 5.23,
+  "wlen_sd": 1.62,
+  "word_d1": 0.1024,
+  "edge_d1": 0.0023,
+  "word_d2": -0.0053,
+  "edge_d2": -0.0003,
+  "word_d3": -0.0072,
+  "edge_d3": 0.0007,
+  "beyond_junction": 0.0974,
+  "space_accuracy": 0.9748,
+  "space_explained": 0.849,
+  "variants": {
+   "k/t": {
+    "pairs": 37,
+    "ratio": 0.72
+   },
+   "ch/sh": {
+    "pairs": 27,
+    "ratio": 0.84
+   },
+   "ee/e": {
+    "pairs": 35,
+    "ratio": 0.99
+   },
+   "aiin/ain": {
+    "pairs": 16,
+    "ratio": 0.83
+   },
+   "ol/or": {
+    "pairs": 11,
+    "ratio": 1.15
+   }
+  }
+ },
+ {
+  "text": "Voynich, all paragraph text",
+  "tokens": 34411,
+  "pairs": 29477,
+  "rep_per_1000": 9.7,
+  "rep_ratio": 1.19,
+  "types": 7069,
+  "hapax_share": 0.678,
+  "adj_mi": 0.1175,
+  "edge_mi": 0.1763,
+  "wlen_mean": 5.07,
+  "wlen_sd": 1.71,
+  "word_d1": 0.1182,
+  "edge_d1": 0.176,
+  "word_d2": -0.0083,
+  "edge_d2": 0.0051,
+  "word_d3": -0.0586,
+  "edge_d3": -0.0003,
+  "beyond_junction": 0.0485,
+  "space_accuracy": 0.9656,
+  "space_explained": 0.797,
+  "variants": {
+   "k/t": {
+    "pairs": 85,
+    "ratio": 0.76
+   },
+   "ch/sh": {
+    "pairs": 47,
+    "ratio": 0.98
+   },
+   "ee/e": {
+    "pairs": 47,
+    "ratio": 0.87
+   },
+   "aiin/ain": {
+    "pairs": 24,
+    "ratio": 0.87
+   },
+   "ol/or": {
+    "pairs": 36,
+    "ratio": 0.89
+   }
+  }
+ }
+]

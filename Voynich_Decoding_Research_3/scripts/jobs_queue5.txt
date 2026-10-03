@@ -1,0 +1,5 @@
+node splitunit_solve.mjs data=../data/su_ctrl_oc_11k.json lm=../data/lm_oc_noheld.txt sweeps=120 restarts=2 seed=71 out=../results/so_ctrl_oc__oc.json > ../results/so_ctrl_oc__oc.log 2>&1
+node splitunit_solve.mjs data=../data/su_vmsB.json lm=../data/lm_oc.txt sweeps=100 restarts=2 seed=72 out=../results/so_vmsB__oc.json > ../results/so_vmsB__oc.log 2>&1
+node splitunit_solve.mjs data=../data/su_vmsB_shuffled.json lm=../data/lm_oc.txt sweeps=100 restarts=2 seed=72 out=../results/so_vmsB_shuffled__oc.json > ../results/so_vmsB_shuffled__oc.log 2>&1
+node splitunit_solve.mjs data=../data/su_vmsA.json lm=../data/lm_oc.txt sweeps=100 restarts=2 seed=72 out=../results/so_vmsA__oc.json > ../results/so_vmsA__oc.log 2>&1
+node splitunit_solve.mjs data=../data/su_vmsA_shuffled.json lm=../data/lm_oc.txt sweeps=100 restarts=2 seed=72 out=../results/so_vmsA_shuffled__oc.json > ../results/so_vmsA_shuffled__oc.log 2>&1

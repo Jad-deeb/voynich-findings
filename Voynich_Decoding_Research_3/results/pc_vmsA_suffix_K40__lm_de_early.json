@@ -1,0 +1,283 @@
+{
+ "params": {
+  "data": "../data/pc_vmsA_suffix_K40.json",
+  "lm": "../data/lm_de_early.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 17384,
+ "seconds": 126.486,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -183122.98274838593,
+   "train_gain_bits_per_token": -1.1118710224047434,
+   "heldout_gain_bits_per_token": -1.1448544644775214,
+   "heldout_tokens_scored": 4245,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -182883.9785056765,
+   "train_gain_bits_per_token": -1.0920361031854477,
+   "heldout_gain_bits_per_token": -1.0548020553164987,
+   "heldout_tokens_scored": 4245,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -182290.6376337823,
+   "train_gain_bits_per_token": -1.0427948506866889,
+   "heldout_gain_bits_per_token": -1.0431786033921615,
+   "heldout_tokens_scored": 4245,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -182063.21479315512,
+   "train_gain_bits_per_token": -1.0239210699482109,
+   "heldout_gain_bits_per_token": -1.0073251830414336,
+   "heldout_tokens_scored": 4245,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 3,
+  "J": -182063.21479315512,
+  "train_gain_bits_per_token": -1.0239210699482109,
+  "heldout_gain_bits_per_token": -1.0073251830414336,
+  "heldout_tokens_scored": 4245,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c5",
+    2205,
+    "e"
+   ],
+   [
+    "U:c20",
+    2135,
+    "e"
+   ],
+   [
+    "U:c26",
+    1444,
+    "e"
+   ],
+   [
+    "U:c19",
+    1151,
+    "e"
+   ],
+   [
+    "U:c38",
+    1150,
+    "r"
+   ],
+   [
+    "U:c2",
+    1031,
+    "d"
+   ],
+   [
+    "U:c17",
+    961,
+    "w"
+   ],
+   [
+    "U:c18",
+    686,
+    "g"
+   ],
+   [
+    "U:c29",
+    680,
+    "t"
+   ],
+   [
+    "U:c1",
+    656,
+    "b"
+   ],
+   [
+    "U:c10",
+    495,
+    "r"
+   ],
+   [
+    "U:c22",
+    463,
+    "n"
+   ],
+   [
+    "U:c12",
+    405,
+    "a"
+   ],
+   [
+    "U:c14",
+    388,
+    "i"
+   ],
+   [
+    "U:c24",
+    325,
+    "r"
+   ],
+   [
+    "U:c30",
+    296,
+    "g"
+   ],
+   [
+    "U:c3",
+    265,
+    "r"
+   ],
+   [
+    "U:c15",
+    258,
+    "l"
+   ],
+   [
+    "U:c7",
+    252,
+    "n"
+   ],
+   [
+    "U:c0",
+    245,
+    "n"
+   ],
+   [
+    "U:c39",
+    221,
+    "m"
+   ],
+   [
+    "U:c28",
+    176,
+    "h"
+   ],
+   [
+    "U:c8",
+    169,
+    "i"
+   ],
+   [
+    "U:c23",
+    162,
+    "s"
+   ],
+   [
+    "U:c32",
+    152,
+    "y"
+   ],
+   [
+    "U:c16",
+    122,
+    "u"
+   ],
+   [
+    "U:c27",
+    102,
+    "z"
+   ],
+   [
+    "U:c6",
+    98,
+    "g"
+   ],
+   [
+    "U:c37",
+    97,
+    "l"
+   ],
+   [
+    "U:c36",
+    95,
+    "s"
+   ],
+   [
+    "U:c25",
+    75,
+    "n"
+   ],
+   [
+    "U:c13",
+    68,
+    "m"
+   ],
+   [
+    "U:c34",
+    66,
+    "l"
+   ],
+   [
+    "U:c21",
+    57,
+    "z"
+   ],
+   [
+    "U:c11",
+    49,
+    "f"
+   ],
+   [
+    "U:c9",
+    43,
+    "k"
+   ],
+   [
+    "U:c33",
+    42,
+    "n"
+   ],
+   [
+    "U:c31",
+    36,
+    "z"
+   ],
+   [
+    "U:c35",
+    32,
+    "n"
+   ],
+   [
+    "U:c4",
+    31,
+    "s"
+   ]
+  ],
+  "decoded_train": [
+   "ntreingebebentumestgereinustgebenrerewentleinreitientzeninrentze·wereinrentuherererele·",
+   "·renubesemeungerebebeiegelerewedeitweitrebeweitre·",
+   "·regeinnrerelentgaseinrerereleweiereierentreurenweindereredtrewereitwereredebemededemedebaderererewerebarebaregehasentrererabeumefegewentgelentdeserentzndedewererewe·rabeledelebezedesa·",
+   "·dewerewehemewebere·meierewenerewegebeyerewegeme·",
+   "·we·bemeregememewege·dengegege·lemeinkedereinkedeingegamezedewarerareberererewewebantwelege·lebentsewedereielegedereberererasederebainndewererewesarewaserebemeledemederededeweberedewemewebegegawebeselewedererere·lerewegereleregenberenrereudedeytdentztwerentgenzeinredewegewegentgegentgegereberegedewe·gebezenbereubentfamebereregadereweleresebeleweremegegebewedenebewewebererededereyeitdegelelegebaredewele·inhamerenwedentzerarebabegastredewegedeledederelewebasadere·rebewelenbewedewewedededemedegewegedewelebentytdnhendededese·ntgedereinbedewegedegebedewereredededededaresendereredererewegeredebefabedederefaba·gegeinntdere·mebentbebemegererereuberegededentrere·kebeindeledegemeredendeleberewenmederehawege·kereregererenegeindezentrerederebederedeninsein·iereienreienseitbegeredeweweredebentdemeurestdererewanhestzegedesereindemerede·reiereieiewederewegererebayerede·rezeredewentdaregegawerebedendele·ieugegezebelenhedegestdelewentrerededentredelerererentureseituntgewererenturewerereze·relelenstbewerewebedegeresawederen·hertsedererewestbereremerendestinrederelelenitdegeingererereustrezewegarehtregeitdewegererewebedere·gegebabeitberegemebestgeregedentrebegegentgadasewebeitrentre·kentntgeyeleredegewebebelegeugegebemegeweleindereregeitredewele·reytreredeytztztdederegaweweweinsasahegeregewebafaytgewewewewewe·sedegeleredebemebeleustbanwageweinrebesereledewerededebegentzewegewanhewemeragemederennentbelehegegaieyewegawe·ubamemerebebewebewedemewerefaweitberewewagengeingelegein·rarebentbaderesesegerededertdemewelerebeleherehegerewedegeredninherededereredednwedeumentherewebemebemegeinkeberederent·medasewehegedeweregeregeleremebererebemedererereindeytzedehedeledesedeheheregeredasewehewe·faderehenberegebererederegereinweindeynreitrereredeitsebegastbeberewerelewedegereinbentgeuwe·ntgege·demegebewehaseberewegezegeredederewererewerederewerererentwereremerererent·merererereningewereyeredewegeitrebedelewereweyninwegastwewederelewentreredederebeleremegerede·beredererewederebegegegerewenwentingederedesedewewedebededemeweregererereheynkaberererenregewegere·rewehamerewerentgewewereleynurerewebarereledewe·reseremerebereremereurewegererewerederewelegewedewentgederewewe·rebebegerewerewernwernwturedegentderenwegegerewe·kerentrebereweubewelelewewegewegegewerere·gtredewewegeinlegererarerentregewewtrebeuberawerent·faberereleregerewerewewegegegeinlengeredewerenstgeiekegelerengewestbedeinregentzerege·gelebewerebentianweredegegemeweingeweuweregentnrentrerereudarebareuindererewe·zeleinwewenreinngenreredereweseremebewehegewennabeitreyelegawele·zerebederengedegegeingegewegeytgedewewewegewererewebewererementderederemeuredererere·ingelewerewemeregegererederegeredewebewewelemeregemewererabererezentgewegegegewerereregeregentlentusegentztgegebeztzewegewewentwelenke·meleyngerewe·inganinremewerewererereingebereitgededegerengegemegeningeynbandenderestgedeininrebewededededemegedeinrereindedewereweredede·reremerewebewewedegereremebeitrezentrehegezeingent·ntzt·derererelerelereleredererelerebastgewnwebe·gegededenzegeumegerebegeweyeredereugelestgewegelededegewegegeregedein·lewegelegewedeuwelegedesabererededereredegestgelerereremelegewereredezege·mezeleztztugewerentgegererewegelertdeindereredege·fagerereustzemeregeielenwewewehebe·uregereredewebege·zedereweztbemezererereinrerereleserererededebederereweredeinreinrengegentdeitninrereinweregebeberereingererererefaitredeieyeieleinderedederegebesandererereberelehareregedererelezegeuwererereheindewedninstwedezerededererededebareiebeseinkerewenwedemehereregeredede·rebereresedeberentrelewewewebebereststzegeresentwedelegentwebegeinrezegeredenstrewegereinberererewe·kere·ntbebemegegenntiniebegegegenninberereleleregeyegegarnwenstgeberegeytinredegestdeninrebeweytrewereweweneusezewtreregegegereleweubentrewe·melereweregerewentbedeurederestwegenyerebemedewereweweleberegererewenubebewegewegamerewedeweindelewedehnbegeweweusemeweredegestgerestztgedewegedege·yerebagegtweberederederedewedewereugerewegewererenkeweinreytztgerereregere·keledegeiegeynreregentgereleredarebabedemezegeinreme·leielentrewenstgeredewedeynwentwegedeweberewehande·ntbegegelentzedegezelegegeyentbegeregeseindegegererewewegedededere·ntiniebereregestztreitrededeynkeredereregebarebelerederebegebaininbewe·melererereredegelerehegentberewerebeindedegedemewe·leredegentzererebaregelererenzemedemeregerererebedeberelegeberebendebebededewege·lezerererebereregedegegegerewerentleragederewewebaregedewewegegebaweranbareweurebarasederewegaseregenhedange·reberebelererewerengeininbenmegewerereweneregegewerenawebe·redeweingederewerereinkegerentreweinkewegeregeregeweregerereme·mebererebedegedegererewewegebedemerewegeweninrezerewereweregentgegerebewebarelegewe·kedentregebezeugewentweraindewegegerewewegeugerereweran·delentrereinlegenzedentgewegedegnbarerestredeweingentseregerewehebewere·rebelerewegewereinbaberewegeweurewererenwedesewegewewereininranytnwederedererentureinntininytstzefase·medereudeweinrederegereurerererereinleredeytnredandererentlerereredegendererebeninmewerererelewewe·redeningewegenthnderegegereytrestinndengebedeztderentntinwenbedewewewedereberereudedewedenyeredebere·le·dedeinbeytweserelebegebedeinsentytyemeredereze·rawegabangededederebawaseytzebabawegeitgegtgein·ntzewerebewentntgeredelelentztbaderegegerentsendewedennkelegerendedegehegerewewerereregentytze·rederemeresentdegederewerewedewegentbarederedenngehtnuderewedeweytytgewewegederere·ke·dedabagebegeremegegegebebegeberehanwegerererebagtlementgadentdndeitngainrefawerelezebainreleztbabagabtgtugtftze·zeitlerewegefastgegeregerewegentsegebererebeleregegerelereregeregaredeierebareiegerelewedarerebarelelentbeweweinwegemewebebaregewerene·indedengerebebewereredewegeingerewe·meuinuredegerereugegeredelegederewegerereheregedeleityt·redeytberewaitzezelebebeweregedelerelegemebedebaleberemewereubedemeytbe·inbelentlenubedabeweherederedentgewededemeberegerenuregebagererekeytubare·ntdebegegebegededebeitwedtbegarewerewebtdarelerebantsewenderewebagedederedagtie·inredanstlewegereweuremegenu·ledemereberehnnnbebedegeramedebeuregerededeingesedefnlerareindegegasenemeredemebadedasasewedewebedele·reinkehasedehasegebedefeledelegegeregelasegededededeinregewegererewezewederererehebeme·raredereweinntzewewerewegeraweitleuregeganinwewerenubewertgereytingederegeleinbabewegewe·ianderegedewehegegewegeregereregereredewenngebarerewenerededeweweregegememewe·reheinhebedestninderendnngewegederesesewentstusedededererestleindegelemerereredeingegeweberegendnwere·redelemeingegereregegelewegegegerereleleberemeledebebarameweieredalegengedaranyngegebemeregewewewenindeitinhehebereweredegeurerewewewegedewestfanzeredewerebegereweindede·gegegeinreberentgebererentgedeweregerewegege·ntrereseredegerewewebederennndegeinrererenweitwerererewegerentgeredeytreweia·lereierelerereweredewerereregelerewererenrereregengererewewere·reynwegewerewewentremegeitdabebegewentrerentderewentrelentrereredtreurereinge·deberereredeweitininreregererebarelererewererewe·lewerewedeweytregegegerebebegeregewegedemerewe·insereberebebewegegerederewegasewerasegedewebemeytgewerewein·rerentzegewedereradewentbeytwewebegebewegerentwelegegeregewe·rerentingewewerewegeleinstgeweweitweinrewelerewenhawawentreynleradewe·ndegererendeninnynbemabainndestdereremeweremewentwenreweregerereinnrewedebeweytdebamemerewewewewewebedewe·inweytntnindegege·bazelegemegemedelegelelemegedewebelentwererelegeume·maderegedebebeytrebebeledegegeraselegewefarereredebeweredadewederewedeitgedebegelerewewegebeubebewewenhebaregemerewewe·degeme·ragabebarestdedewebereurererewewerewebagegerededewnleiegelegeweingerewtbedelengerelegegegegerewenzemenzerege·lerentzebemenntreregemegewentzemereweurebegegedewe·yebaredeleberewebegebenzegegeweustberegede·sererererebeitgegeinkeregegerengegeraregegedewebarege·rareregerebererentzedegewegewebereinregelerewerere·ntbebenerebagentgeiebereregegeregererentreweuregegerewerarerewedese·rererebebegeninbentsentrelesalagerereremerededegererereberedeleraresebein·rererereweremewenweindeweleregemewerebererestntnedewenregasere·wegamedemebegeitrentredeweregedesewegengenindereredemeranreytgereweynntbe·reyngeweregaweremegtinrereytgtwewemfarebereinge·gerebawemerentberederegengebegereregenindegeinst·ndefaregegebeberegeitdeiebederewegelewerebemebasererebestdeitbegegededegentde·zentlewederegenlededewelasenrarewededeweredadtdemelegewededadasededelegewebeweledegestdele·raresemedebedereresentzedeweredegerendedenzenumedereinbanynbebebelege·deberereleleganderegerededemesemegafkaiehage·gadedendalegelebabadendeninweweniedewededentgebehadegerewedaingedastinwedewelaweielendaseregelangededegedewentdedehtzeremehandewe·meregerelentbereregederewererereleztgegegerererereregebaweurerererererereweurerelereregedewereregedanytzenzerererelerewerebenerehareitleberederewelewedere·lefastbegeregentrerebentrementwenrewnkeregerererentngeregerewerewentredegegeberentzewegerewegentgewalerentinrewereyninhewebemendegewe·meleregeremelegedentbemededeweiedegestzerebererererehedelegereredereweumererere·meinreinierereninweredeinweleredentinwebereregederegererereheinregere·ielereweweureiegeitzeregeitdtrerewerentgaurewedeuredeitgtytwereitzerereytitgegegeweregesagastztredentitgeytre·rebererasewererewerebeberegewareredelerewerereweregewewenberelewereytzebedegedewerereugeitrebererebelentzzeberereberelereregainheytzebereremeregent·gerererereleregegerawelegeytrereleinninugewerelelemedendemegeumege·gelereredebaredededegededemedelegebamedegedemeregeregedegegederedtgedarewegawegemeweubaregegewereyegere·lerebedegegendenrebereweredegeudareregefareregegedederegederederengegerewewebageiegegemewe·lenebederengegegaremeugaramereinreraberegeytlemedereregeremererereinsebabewedeharedegegegededewegelededewe·regemegegewentreremeinkereinhehedeininstzenedenitgentnezedegesewehedeingedehelereinsezedtntdedelestzerenederededemeregerentreweinreztzentztdederereweytbegenederentzemeberewereseingeregelereleremedelerentntgerentreytrerestinregedegeresebererenenelememerentremegegegegewele·relegegeregegegegentinhestumegerentinselererebarerereweweininininytuiererererererentzereberegererereytinsebewedewerenrerereuwereresezestreinlererentytsereinrererewenerelererenthesentbemeremerererentgereredeurewentrestzeleherehewentremeremegeredeserelerelemebeitztdesebarederereingeinregenitzentredarewereytreredelesegeinwesewentrerebedeytheredehereweinlerezegeytgentreredewegereneindereredereinlemeinsenerentrerentzere·welerelerererereinweredemerererebereinkserereremereheremedentdeinde·fasebewelerelerewererelerentsehawentrerelereregerentrereingentregelenedereremerererelentbererehehnst·lewengebestztleregelemerebererewewebereredehainitdeytregerewentdehe·mewewebegerelererererenzeusererezeytzeiederebefagereinhentbentntrenytrentzierebazerebededere·lerehemegestgegegegewededeyeredeberendegedereinstredebereleinhebeuberededeinge·ntzererestnstredererededeininreredededereninheinkemederededereredewedededederelezewehedewedehe·rehadelereingegebeberebasegerewebezeyedededalezemegeyemenindemebemewedeleze·zebereitzewebereytreberelewederererewerederededelewerewebeynwerewererelemendegederewedelewe·rentbelegeleweininberenwewederedeytinwemedegerebewerewewentinwedentinre·deurererebebeinwegedefawedasedeinwerereredezeindelebewededemewedewedeytinderedenynlerereremerererewehelehafaragedawelenlegere·gebeniningegegainwereytzeinrewewentrehenkeninrererewereindewehtrezewededeytbesewedededezedentindedebehafasehawege·yebeleieytzewederereberewentderebeytreytingeweberaserewererese·wereustbemeweitdelewerengederentyesentre·megegerelewegerereweberedererewererererewederezebegededegelemegezestgewererefarereleitininkeinwerebedererewelewenheregegeinrereinlewewerere·farelentytreredewewerereregeredeiewedtwentzewerewentreremelegeregereurewererengebereweinbererentrelerederewedewezegestgegenweregereharerelegedegentwerest·derentdereberebegeremntfangerelentrederedegeleitberererebainkenhemegentregerentfadeytreleweytregararererereitmebererarererehtngemewerere·ntgehademeregehagerendendedertzentbadeinregenanininninhasazentingestberemereweinhasawewereinwe·leregesedestureytzentztderendtieningegehebentinhedeberehentregede·rerezedeytntzeberegebebereredendewedeubeninbeberelerereyentbegebewe·merestzebererebedegerentrebegeinindereleinbentredeinnstgereinkeitbelededegendereregememereredegedeustfaseseme·reheytzererererebebererebereyereytremerereindelegeninledewererereberereseredesederegeytinregereinleredebebedewe·reharererawegawelelemelerederentningegedereinwendtbehabait·dereremererededemebegebelebedtdererewehewelelewestbemedeninstregedererereinitdem·hedegereregebestingeinredegererererewereredentrefaserereleredebereremest·legehawebeleytresewedererereresesedeweinininsererebebeininweweindemededein·lerereyeinderewehagedentindeledederentdededentsarehtrerewelemereredegehasefagehahentytuytregegentleleremelewelereregeredeinlerereinyesererenegegewelede·medeinbereberelemedegesanbereleregedelewehnwegegereredemerenininsedegereremebereinindewe·derenberehawebereustzebeininbentrebefareinweinkainhewehererefareweberedegeleureynrereinweredereinindedafagererewededeninregedeztberegehedebabebabeheytzehelerelemeregede·seierewerereregere·geinyeberelegendeweserederegemewendedereweinninreweingerewenwereheweregereweinkereweinstderebereingareweregedelemeleindtbameledeinke·resemereinininstrewe·",
+   "·rentrebererebastreweieinsewereurewerewe·",
+   "·rewegereme·nhentderedewawegeberebedegedere·",
+   "·hedemadewenede·wentredereweredere·"
+  ],
+  "decoded_test": [
+   "lentbeinbereindeyegedebereledensedegededederewebegederewerere·rebezentbahawerebadedememezerereweiemeharebe·dedegeztstreinwegegedereweregtugarewewegeytbasewarestreinbeweregererededegewewedegeredel·weubeseredeuregewelededemererentzeregeitztrerewewedanbelegentdereinstrerereininwerererereweredanderenberemeharewehererederentdebenitbentingeinberedererererebareusn·itzgeberedewewegelegedehebeleregebehegedehebedebesebebeweherehewedededewegelereweweregedemeweinbareweberegesegendedederewebehngederedelereremerere·deinwegelerewebarewegeredeweleindelereinresereledelewewele·derebewereberelegngedewegerebegerewenunugebentredebegerewelegege·rededtzlereremebegentztingewelegeregeieregerereberewegere·",
+   "·berebesengereinkeredeberentntreberabagel·rederebeitzegeleweynleweleitytderelebareweyereniebesebaindewenngemedaredebtrenngeledewededeleinderedeu·rebebelmereingeregerewereregeleyngerewererefa·derererertgebeztweregerentbebereingereregeregegeregererewegewe·rengeitlebemelentrebedagereytztgegarentztrenreurererentiegerega·debefasebeitdewegebewewentgerewtdebemedebebedewedeweredededegemeytreweytraberewentdentdededebent·reinbeinkerewebegeredewegederegedendededeyn·wege·meitderawebafademeitinredederewendeweregehednndewe·rareuhedewerenregeweweraweregenbegererelewerewebamededewererenininbade·zebebelebegebelewegegebererebeftdeinkewenbalegenitbedegerebadededebededebeynitrereytre·de·gebent·mebadeleitbafaseregedebesehelentnbainrereherenbemenledeindehelereubadereberewegeweredererentdeheiningedererere·mewebebelererelerebalelerebawewebagegewewehase·geharaweleitdeureweztbasebeberewegedederewebadegegesedederegegebedeitdaherehandemegegegarndaledtgngedelebe·legewererereredeugereremerewentredereherererereregegegawentzeleragerebererererentreweyngewebegegeweberereberererereregentremeyererezeiere·gerentzeregeweninweredereninstre·lerememeregezewereweredewentztrewerereberederedestrerereininntneitinleytserenininugederereytseinharerererentrebe·sefasenedeyerentze·rerelederereinherelemehabeytytyeregewerezertrehekningelementstinubaztzeininingein·lererewebedeweltgehemehelerewegeseregeieininredehereweininderedegeytdeleinhemelehezeytrebege·seha·kenbeytuweweynhereitderewedeinrewelewegegtgeinstinkanberereberentdewewerederewere·zebelegentrelewedehaseinndededebeinkederereningnindeytbeytrentientinkefebedewe·mentzelememeniebendegezehanrenzerebawenerewedeweinkegtgegerebentreninderewerererererendandentbebeitrenseherereregerarebedemedererererehaingerebegeleregerenbeytztdtgerewerelerelthandanrentreberebenzererentwebewelereregeweierebentlegentgegebementgerehastreberedawenwenarainregareindereitwegest·merewererewereseselebedebemebezebemereregedtinkereregedebederederedederewedewere·remerererenhaderedaningedememerewentinstzeharererehageleininbelerewewererereubestininitin·gentlerentnustreweingegerestztrewebarelerewererengegerelerere·kedewederentbefaseinderebeberededebameremedebererebedebendesebededeweredeledelereyeledeseytderedentindededaleme·medeinitinnneinge·",
+   "·medeinsegehegegeinininningedeninrehehe·",
+   "·zedentsanyenderererewebedawegelentgeze·"
+  ]
+ }
+}

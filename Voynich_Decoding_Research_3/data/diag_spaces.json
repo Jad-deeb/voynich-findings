@@ -1,0 +1,152 @@
+[
+ {
+  "k": 1,
+  "gaps": 84210,
+  "space_rate": 0.176,
+  "entropy_bits_per_gap": 0.1627,
+  "prior_entropy": 0.6706,
+  "explained_share": 0.757,
+  "accuracy": 0.9525,
+  "text": "Voynich IT"
+ },
+ {
+  "k": 2,
+  "gaps": 84210,
+  "space_rate": 0.176,
+  "entropy_bits_per_gap": 0.136,
+  "prior_entropy": 0.6706,
+  "explained_share": 0.797,
+  "accuracy": 0.9656,
+  "text": "Voynich IT"
+ },
+ {
+  "k": 3,
+  "gaps": 84210,
+  "space_rate": 0.176,
+  "entropy_bits_per_gap": 0.2509,
+  "prior_entropy": 0.6706,
+  "explained_share": 0.626,
+  "accuracy": 0.942,
+  "text": "Voynich IT"
+ },
+ {
+  "k": 1,
+  "gaps": 83244,
+  "space_rate": 0.177,
+  "entropy_bits_per_gap": 0.1711,
+  "prior_entropy": 0.6742,
+  "explained_share": 0.746,
+  "accuracy": 0.9507,
+  "text": "Voynich ZL"
+ },
+ {
+  "k": 2,
+  "gaps": 83244,
+  "space_rate": 0.177,
+  "entropy_bits_per_gap": 0.1513,
+  "prior_entropy": 0.6742,
+  "explained_share": 0.776,
+  "accuracy": 0.9623,
+  "text": "Voynich ZL"
+ },
+ {
+  "k": 3,
+  "gaps": 83244,
+  "space_rate": 0.177,
+  "entropy_bits_per_gap": 0.2626,
+  "prior_entropy": 0.6742,
+  "explained_share": 0.61,
+  "accuracy": 0.9383,
+  "text": "Voynich ZL"
+ },
+ {
+  "k": 1,
+  "gaps": 94145,
+  "space_rate": 0.16,
+  "entropy_bits_per_gap": 0.3772,
+  "prior_entropy": 0.6349,
+  "explained_share": 0.406,
+  "accuracy": 0.8974,
+  "text": "Latin Secreta"
+ },
+ {
+  "k": 2,
+  "gaps": 94145,
+  "space_rate": 0.16,
+  "entropy_bits_per_gap": 0.2428,
+  "prior_entropy": 0.6349,
+  "explained_share": 0.618,
+  "accuracy": 0.9404,
+  "text": "Latin Secreta"
+ },
+ {
+  "k": 3,
+  "gaps": 94145,
+  "space_rate": 0.16,
+  "entropy_bits_per_gap": 0.427,
+  "prior_entropy": 0.6349,
+  "explained_share": 0.327,
+  "accuracy": 0.8954,
+  "text": "Latin Secreta"
+ },
+ {
+  "k": 1,
+  "gaps": 81443,
+  "space_rate": 0.177,
+  "entropy_bits_per_gap": 0.3929,
+  "prior_entropy": 0.6738,
+  "explained_share": 0.417,
+  "accuracy": 0.884,
+  "text": "Italian Rettorica"
+ },
+ {
+  "k": 2,
+  "gaps": 81443,
+  "space_rate": 0.177,
+  "entropy_bits_per_gap": 0.2792,
+  "prior_entropy": 0.6738,
+  "explained_share": 0.586,
+  "accuracy": 0.9248,
+  "text": "Italian Rettorica"
+ },
+ {
+  "k": 3,
+  "gaps": 81443,
+  "space_rate": 0.177,
+  "entropy_bits_per_gap": 0.4053,
+  "prior_entropy": 0.6738,
+  "explained_share": 0.399,
+  "accuracy": 0.893,
+  "text": "Italian Rettorica"
+ },
+ {
+  "k": 1,
+  "gaps": 69230,
+  "space_rate": 0.218,
+  "entropy_bits_per_gap": 0.1374,
+  "prior_entropy": 0.7569,
+  "explained_share": 0.818,
+  "accuracy": 0.9575,
+  "text": "Naibbe-like cipher"
+ },
+ {
+  "k": 2,
+  "gaps": 69230,
+  "space_rate": 0.218,
+  "entropy_bits_per_gap": 0.1124,
+  "prior_entropy": 0.7569,
+  "explained_share": 0.852,
+  "accuracy": 0.9743,
+  "text": "Naibbe-like cipher"
+ },
+ {
+  "k": 3,
+  "gaps": 69230,
+  "space_rate": 0.218,
+  "entropy_bits_per_gap": 0.3282,
+  "prior_entropy": 0.7569,
+  "explained_share": 0.566,
+  "accuracy": 0.9242,
+  "text": "Naibbe-like cipher"
+ }
+]

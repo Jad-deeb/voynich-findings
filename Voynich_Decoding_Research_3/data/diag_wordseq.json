@@ -1,0 +1,222 @@
+[
+ {
+  "text": "VMS IT all paragraphs",
+  "medial_only": false,
+  "tokens": 34411,
+  "types": 7069,
+  "pairs": 29477,
+  "observed_bits": 5.6865,
+  "shuffle_mean_bits": 5.8711,
+  "excess_bits": -0.1846,
+  "z": -18.9
+ },
+ {
+  "text": "VMS IT Currier A",
+  "medial_only": false,
+  "tokens": 11081,
+  "types": 3243,
+  "pairs": 8952,
+  "observed_bits": 6.2178,
+  "shuffle_mean_bits": 6.4628,
+  "excess_bits": -0.2449,
+  "z": -14.0
+ },
+ {
+  "text": "VMS IT Currier B",
+  "medial_only": false,
+  "tokens": 22797,
+  "types": 4813,
+  "pairs": 20097,
+  "observed_bits": 5.4278,
+  "shuffle_mean_bits": 5.6108,
+  "excess_bits": -0.183,
+  "z": -22.3
+ },
+ {
+  "text": "VMS ZL all paragraphs",
+  "medial_only": false,
+  "tokens": 34509,
+  "types": 6769,
+  "pairs": 29294,
+  "observed_bits": 5.4797,
+  "shuffle_mean_bits": 5.6639,
+  "excess_bits": -0.1842,
+  "z": -17.0
+ },
+ {
+  "text": "Latin Secreta_Secretorum_LAT",
+  "medial_only": false,
+  "tokens": 33993,
+  "types": 8334,
+  "pairs": 30216,
+  "observed_bits": 6.6678,
+  "shuffle_mean_bits": 6.4676,
+  "excess_bits": 0.2002,
+  "z": 17.5
+ },
+ {
+  "text": "Latin Latin_Aix",
+  "medial_only": false,
+  "tokens": 33993,
+  "types": 9276,
+  "pairs": 30216,
+  "observed_bits": 7.6717,
+  "shuffle_mean_bits": 7.4835,
+  "excess_bits": 0.1882,
+  "z": 19.5
+ },
+ {
+  "text": "Latin Steganographia",
+  "medial_only": false,
+  "tokens": 21528,
+  "types": 7443,
+  "pairs": 19136,
+  "observed_bits": 8.3973,
+  "shuffle_mean_bits": 8.0387,
+  "excess_bits": 0.3587,
+  "z": 33.2
+ },
+ {
+  "text": "Latin Bruno+Adso",
+  "medial_only": false,
+  "tokens": 13725,
+  "types": 4722,
+  "pairs": 12200,
+  "observed_bits": 7.2832,
+  "shuffle_mean_bits": 7.2165,
+  "excess_bits": 0.0668,
+  "z": 4.7
+ },
+ {
+  "text": "Italian Rettorica",
+  "medial_only": false,
+  "tokens": 32229,
+  "types": 6744,
+  "pairs": 28648,
+  "observed_bits": 5.5192,
+  "shuffle_mean_bits": 4.9969,
+  "excess_bits": 0.5223,
+  "z": 48.0
+ },
+ {
+  "text": "Naibbe-like cipher of Latin Secreta",
+  "medial_only": false,
+  "tokens": 33993,
+  "types": 2181,
+  "pairs": 30216,
+  "observed_bits": 4.2328,
+  "shuffle_mean_bits": 4.1194,
+  "excess_bits": 0.1134,
+  "z": 17.1
+ },
+ {
+  "text": "VMS IT all paragraphs",
+  "medial_only": true,
+  "tokens": 34411,
+  "types": 7069,
+  "pairs": 20395,
+  "observed_bits": 5.5302,
+  "shuffle_mean_bits": 6.075,
+  "excess_bits": -0.5447,
+  "z": -32.9
+ },
+ {
+  "text": "VMS IT Currier A",
+  "medial_only": true,
+  "tokens": 11081,
+  "types": 3243,
+  "pairs": 5294,
+  "observed_bits": 6.1779,
+  "shuffle_mean_bits": 6.74,
+  "excess_bits": -0.5621,
+  "z": -12.2
+ },
+ {
+  "text": "VMS IT Currier B",
+  "medial_only": true,
+  "tokens": 22797,
+  "types": 4813,
+  "pairs": 14861,
+  "observed_bits": 5.2811,
+  "shuffle_mean_bits": 5.8451,
+  "excess_bits": -0.564,
+  "z": -23.8
+ },
+ {
+  "text": "VMS ZL all paragraphs",
+  "medial_only": true,
+  "tokens": 34509,
+  "types": 6769,
+  "pairs": 20008,
+  "observed_bits": 5.3035,
+  "shuffle_mean_bits": 5.8826,
+  "excess_bits": -0.5791,
+  "z": -24.9
+ },
+ {
+  "text": "Latin Secreta_Secretorum_LAT",
+  "medial_only": true,
+  "tokens": 33993,
+  "types": 8334,
+  "pairs": 22662,
+  "observed_bits": 6.804,
+  "shuffle_mean_bits": 6.6364,
+  "excess_bits": 0.1677,
+  "z": 7.9
+ },
+ {
+  "text": "Latin Latin_Aix",
+  "medial_only": true,
+  "tokens": 33993,
+  "types": 9276,
+  "pairs": 22662,
+  "observed_bits": 7.817,
+  "shuffle_mean_bits": 7.6552,
+  "excess_bits": 0.1618,
+  "z": 11.6
+ },
+ {
+  "text": "Latin Steganographia",
+  "medial_only": true,
+  "tokens": 21528,
+  "types": 7443,
+  "pairs": 14352,
+  "observed_bits": 8.4673,
+  "shuffle_mean_bits": 8.1668,
+  "excess_bits": 0.3005,
+  "z": 10.6
+ },
+ {
+  "text": "Latin Bruno+Adso",
+  "medial_only": true,
+  "tokens": 13725,
+  "types": 4722,
+  "pairs": 9150,
+  "observed_bits": 7.3927,
+  "shuffle_mean_bits": 7.3316,
+  "excess_bits": 0.0611,
+  "z": 1.7
+ },
+ {
+  "text": "Italian Rettorica",
+  "medial_only": true,
+  "tokens": 32229,
+  "types": 6744,
+  "pairs": 21486,
+  "observed_bits": 5.6174,
+  "shuffle_mean_bits": 5.1645,
+  "excess_bits": 0.4529,
+  "z": 24.1
+ },
+ {
+  "text": "Naibbe-like cipher of Latin Secreta",
+  "medial_only": true,
+  "tokens": 33993,
+  "types": 2165,
+  "pairs": 22662,
+  "observed_bits": 4.5282,
+  "shuffle_mean_bits": 4.4311,
+  "excess_bits": 0.0971,
+  "z": 6.6
+ }
+]

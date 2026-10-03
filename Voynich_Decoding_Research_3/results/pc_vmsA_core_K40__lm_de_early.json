@@ -1,0 +1,283 @@
+{
+ "params": {
+  "data": "../data/pc_vmsA_core_K40.json",
+  "lm": "../data/lm_de_early.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 17095,
+ "seconds": 147.571,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -178287.65279324414,
+   "train_gain_bits_per_token": -0.9849087248244156,
+   "heldout_gain_bits_per_token": -1.1170345314547987,
+   "heldout_tokens_scored": 4174,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -182093.08727868923,
+   "train_gain_bits_per_token": -1.3060600240686033,
+   "heldout_gain_bits_per_token": -1.3420207188636664,
+   "heldout_tokens_scored": 4174,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -180277.3431785446,
+   "train_gain_bits_per_token": -1.152824282108844,
+   "heldout_gain_bits_per_token": -1.1653207703752353,
+   "heldout_tokens_scored": 4174,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -180676.53171852877,
+   "train_gain_bits_per_token": -1.1865129236423329,
+   "heldout_gain_bits_per_token": -1.241999074873025,
+   "heldout_tokens_scored": 4174,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 0,
+  "J": -178287.65279324414,
+  "train_gain_bits_per_token": -0.9849087248244156,
+  "heldout_gain_bits_per_token": -1.1170345314547987,
+  "heldout_tokens_scored": 4174,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c0",
+    2953,
+    "e"
+   ],
+   [
+    "U:c8",
+    2027,
+    "e"
+   ],
+   [
+    "U:c32",
+    1218,
+    "a"
+   ],
+   [
+    "U:c29",
+    1005,
+    "b"
+   ],
+   [
+    "U:c33",
+    863,
+    "r"
+   ],
+   [
+    "U:c26",
+    784,
+    "n"
+   ],
+   [
+    "U:c22",
+    782,
+    "r"
+   ],
+   [
+    "U:c13",
+    771,
+    "o"
+   ],
+   [
+    "U:c35",
+    685,
+    "d"
+   ],
+   [
+    "U:c14",
+    679,
+    "n"
+   ],
+   [
+    "U:c30",
+    601,
+    "i"
+   ],
+   [
+    "U:c3",
+    589,
+    "t"
+   ],
+   [
+    "U:c2",
+    571,
+    "n"
+   ],
+   [
+    "U:c28",
+    447,
+    "m"
+   ],
+   [
+    "U:c37",
+    421,
+    "r"
+   ],
+   [
+    "U:c7",
+    327,
+    "s"
+   ],
+   [
+    "U:c27",
+    326,
+    "n"
+   ],
+   [
+    "U:c23",
+    278,
+    "z"
+   ],
+   [
+    "U:c25",
+    209,
+    "l"
+   ],
+   [
+    "U:c19",
+    196,
+    "u"
+   ],
+   [
+    "U:c11",
+    141,
+    "w"
+   ],
+   [
+    "U:c21",
+    139,
+    "p"
+   ],
+   [
+    "U:c10",
+    132,
+    "u"
+   ],
+   [
+    "U:c31",
+    126,
+    "h"
+   ],
+   [
+    "U:c20",
+    111,
+    "z"
+   ],
+   [
+    "U:c17",
+    104,
+    "k"
+   ],
+   [
+    "U:c16",
+    95,
+    "g"
+   ],
+   [
+    "U:c18",
+    87,
+    "y"
+   ],
+   [
+    "U:c39",
+    61,
+    "d"
+   ],
+   [
+    "U:c36",
+    61,
+    "s"
+   ],
+   [
+    "U:c6",
+    47,
+    "n"
+   ],
+   [
+    "U:c4",
+    44,
+    "s"
+   ],
+   [
+    "U:c5",
+    43,
+    "w"
+   ],
+   [
+    "U:c15",
+    38,
+    "i"
+   ],
+   [
+    "U:c24",
+    31,
+    "n"
+   ],
+   [
+    "U:c38",
+    30,
+    "u"
+   ],
+   [
+    "U:c12",
+    22,
+    "c"
+   ],
+   [
+    "U:c34",
+    18,
+    "i"
+   ],
+   [
+    "U:c9",
+    18,
+    "g"
+   ],
+   [
+    "U:c1",
+    15,
+    "f"
+   ]
+  ],
+  "decoded_train": [
+   "opendabenenifdoneraninddoberenzuininanaberdebehimigaduznenesst·abebdenabderibenibit·",
+   "·zuddenehzuudilerememerereretabenonabeninemabdor·",
+   "·zgenddemebedeweropeberenehimabehimoleterimeszudabzuenzuehegebanitohaberesenemonenenonenerenenororaneleroreroreresorabititerenesoderababigenerebemetowiniterenemabimenab·ereberenopemopetd·",
+   "·enabinanerobanemin·obelenaboninabimeneretaberos·",
+   "·an·emociterononanew·enererereb·operdereninderendeteremelemditiriteteritonananerabanimer·openabelanemomeledereninenenimessnetitddereranimenananendimenenonorenoteninemenabenenenanotaneneneyanemoderanememonel·operabereririnerdenitdebimdenetzgeberendetanesdesdelenaneranababenanerenetitenitabenan·obebkhdenonerenaberonenememdenetababetehenerabimorababebanetanenanzuenineneteninzndenabereranerenemaber·opesorebdabenaberoyorereneysletenaberenitenemeheraberenesel·oretabendemanenabanenenenoreteraberenabereneregeleserenerenal·openeninabesenaneyenenesenabitemenenenenerenendeninereninenanerklenenabesenenetaber·ewerdzuenin·orenaneremererelitendememererenklenen·opendenenenerenerendersrerenabababerereyanan·opelereneretererdesklaberkhenitesenzuendzuesd·olenehetineldzuabenereninananenenenawenewesklegemorendderewzuereseritdesoneten·oyorewzbznzuemerdememeberihimem·enklenetabeweritereydeberendeser·oldananklenenderenerzgenerereszuorenebklitenereritensndererandabetamememabeselanenetab·oreresdenenabinanenenerenzyanenind·erorsneneninderetenitzlitdenzgdeneninoperddetabdetininitdebinildeyineginenoretanenemenabesenin·opereremklenerenosenademorererzwesenerereneyerimabemorzuzbeb·opegererelehinenerabemenererabererenoneraberenenemeremorebenaber·orereselenabknereneszueranananzuerereneromeraberoyaberanardanab·orenererenemetilenoduoperendetabdeletdelerendenenenenenerewanerddendoterereretoboperopeterenaneropelaberab·operororerenenabenabenofdedeyanabenesabderererenelerewen·irimenereremorsmeheminenemoretelanstitemoperoresimitanenetenenzueretenebenebebdabeneterabedenanenobenobenderemenenenab·orerananererenaborereterorehunenenabenonenimorindenenerenedenerendenererenenererababerab·openinemdetzuabenitoneneberopenddebonetehebitenemihanetererenebenanenstabenaniterenererfd·eszuer·osedetenabereneninabenklerinenenendetebdemenebabitebetzwabemorobinenetor·orerenerenosderabzwehopemaberihetenensrabenanabanabeysganabetonenaberetorenetonenewetoberiten·esitenibindetobetetereretabdababderenenenesenabanorenenetobdelanenitinzueniyenetenitdenalaberen·obabesoretabinenabababiterendelitaberemoretend·oreliteretemoregimkldorabereyorabetenitaneserabebabadenetordab·oreneneterabitdenabzuudeneberabemitdabereritd·operewetenenandendererabanerabeterdoror·eretendderereretetiroronabenerdaginetzuesoranimed·eretorororererindoranaberererzuerdetetendegdzueralemerohofderabzuemenaneneranerorer·onitendetenegabdabeneteretorabeberabdabenerendebopeninenderoneritddetororan·operenababdenawererdenzuetorabzueronetabaderanabenenzueneliteyaber·storenesebdamemereronderdereheremandderderendemanetenotzwemosemoroteraletororer·opehenderabonzgeretoretetiterotenabetdabererererotdesorerewetaszgeraberererabineteteriterabereguoreranzuereretabewabeyabanabaneriter·oliteninerd·dzudzuitobaninabenesebanereneterereneneritdereroberdzuohenerdetdetonzuerendzuetenaberenenemonaneninitebanesenabitabinenen·operaberanetabdenzueweuonenzgemkhzuzwererkhonereb·abew·olaberorerenereneritetorererereroperddem·opererendoperdotererenerdehetetoropenenehewanerenenenerananereterenab·opeweresdabendabererenenetebebeneninotemerenererebinitererababetenemenzu·oyaduneneheweramitzuererklimaneritzgendetklenener·oyeressranererereneraherdaneraneres·danerinebenabemer·openorerzuenosilenzuenzuzuenzuewzuororenereneneninoranitindebdebdaneropesddzuenorddenderenorendinesenenabeyebirendeholerdeneseneninererzudeneleroreniteresenererenerinesklanesanerinenesdenaneldegabemklinenenenenesenerzuznesesderesabenanemoseniniteresener·orenibineuenetorabeneranananenebiteraranerinzuenabenewereranenerdzuerererendebinaberitdebininenan·eror·odenerereneteskldzbeterererdddetetetererenererereyzuandegerknorerabdenenerewetddenenanehenabenandohuehanagenenerererenstdetetabenan·oriterdoreretabenetendorenerewabetdehesetouenanetenaberetoreroretabddenetabesabeyotinanenandenitanenabeterdandopeuabinenerewerklerigerenababiner·ohordeneranenetenenenetawabenabendenenanerabinenerenabdebabzgeretenenereb·operenerehenenerimewzuerimewenereleretemoranendonen·opegitewerehdegerenenabetenaberaberenanenebehesder·opemereriterelenamopereretohehenererebelenerererorenabanebenenenor·ofdehetopereterenetaneberenenereneneletereroreneretetonetererdzuenab·oriterererebenabereteseresenitabenetdeseteremond·orenersneyileteberorererimitdorosetoteberotinebenenenorereremeremetenenerenenaber·oseweredzueminzueremerererorabenoweroyerenenabanerelerenababerereranirderitabdeterorerenolabeyinewerdeserdop·onetorenoretenaberdstdzuendonerabebinabimeneberabininaneb·orenabinenemenderzuanimereteretanditabibiterorenabzuenabiten·opetorebenenereneritenabanepemenonebaberabddenebetderabitererewereuenaberitereran·opetoyeteretetderabzuanordenabewerenabanerabenenebabird·opzuewerendererderetereranerenerereberegzuesabererabehzuerananerenanzu·orenewenabepzuenzuerenenabanabzuebabenendanenzuanerananzudderdegdanetoreninenzudebadzuzudenzuzuzuew·orenereserabdebenzgeretdininenenitderinesegdklerdemititzueseninetenendesinkmenddklaberzuiniganan·inendderdaneweresebereronohitzgddemeranknenkheninigzwdandeneranananimeneninetderenabendznonenenen·ys·openklerabanzuoperenabenendereyirehorzuesklel·orolsrereresznerenzwerdenaberererdemorenegerzu·oystabetemabererdenenererebkheretorewerereregdebabebaberererindenebererebibababibebenerabebem·oremororemueneneretordorabenanemoherorenetetoperegddetordenabegensmanaberemimen·en·operereranenereropetereretetetetoresddetororerereueweregeyetopenenohderabeterelewerimeropenewererereyegemewereder·opeheweraberessgererinstirdenerauereninineneropererenerinenereterenetopelerimeherklenaberenenerenerererenananeraberonabenereberaneras·opesenderenerenabetenenaberenererab·odeszueweteteretereserereteneneretotderetorerinenenerklen·oresesenondenitererenenabeberenerebererobenenereretetomabitesknemoneren·openerzuesddeteretaberenenitemiderabenenonemzuerobdesemdererebitersnerereb·opebenereretenenebebihanenemeyorabebdegeriterenerorelaberetimaneredenetzuereszb·eneberdegeraberitanewemererdd·eremehoremorerddemememerorosesemesofdelenemanabelenoderererabenerewemaneserenererenerdabanendknebih·erdesesemeresememenenowerenererenewerenemeresemesemanzuanabenimimaberanenegelerereton·oyoremenandabklabanerabenirabeneduelsneyddababitesdemabinerenabderemetereraneretanenan·ifdeniterendeweserabebimerobinererinenababererorenababebenenabehorererotobab·oberzuerenebfdzuebitdendemaberenibibinanabzuuzuetebetobororeweneberitstenobinenzuererabenebendeuabeb·oneneraldereroretenerenabereretiterererenorereropenerconabzborererendererordeneredenerelebababanddendderopetonabenererorzuenabababerenabewendererenabaletetitananenen·ockleranenebitabzuenebebklerendonerorababab·opetorandetetoranabknenindddetdewebinebdabdaneninendereraderinebdetaben·operelorewebenabenenabebenenenerinanesendeberenerderetotdabin·orinaberabinabanawetorerderenereraneneteberenerababetererenoretemetesinetanew·opebeneretenabehdenineberemeberebstebindinetd·orabinanenabdetererewenenenererenabanemonenab·onedebenenenesanererebetendeysnabererenetabemonaberabitabab·oyitererananeninerenabereterabdenenenabenenerabinerabeterab·oheberawerababenaberereweninababzgabenenabewenabdendabineneneserenab·erenewerendendzudenemoserzudensgesenenosabemonabababdenabenerometzudetabenenameremeronomomabababababknetab·dababandzueneres·erebimeroranobenererasodererebanenereranibenereretob·oyetorereneneneginenenetebereriropereranoyineninenenabeneremabeninanetabenenenesegitabanenenerenenababdereroreregelaban·emeral·oysrenerobenenenabemordoreretanabenabererewetenenderehererandzuerenderemendzuenewerendabinaneretonderalab·ocitogeretennabeteteroretdzbsropenaberenenerereman·ohewenenerenemabeneretderereranerzgeneriten·orerererabendererderetereretderererenererenaneriter·orerinenenenonerersnereranerabenendonererenabitit·itebenedererereretzbeniteberereteribonabebandorererebderorinderzu·opibzuenemsteldenigsnowitercirerorebinonenenenerebitenemoreberirininenab·oritklitabimenabdandebabeleberondebenetetobananerandebeyswab·owemonemopeneraherzuenenabiterenesderderdderenenetotirdenderitabababet·eneneraneteranotenuzuenemoherdderocoretetder·erzuerdorenzbenitenenduereneretoperddeneraner·opesehewanabeneteterabenabeneneranererabenenoneropetitenegenzgetdabemesabkhen·opabitaberetanererenenaberordoyordenemaneneregetomeretabetereropeteteremabetaberebenenensr·orkhenalenesemonenzuederenabeseneremerenetesklddonemorederdeneneneteren·orenorerenererdenereroresopereneperenewzbeser·eyerenderererenerereserendzudabeszbetabenebopereseseneroraberabeserauenabebdendzberdereroranenderemenerenanerenenegererewendenab·opelaseninabemimenebetemabitoriterkherenabenebkleneramesaberolemenemitenebandeniriteneberenabenelererdehunderenenklerenabineboperesemoderenenemerabewaberen·ocimebenerereradeteteneretodewandendopeteroreneterdeweteretanetaneretenererenonebenabeskldewererderinanehoramenabdenanemondenenab·orereberenonewerenitetoninetanznenendewenerenorisiresereramenineserdabelinetor·oreninzuolitenddabirenenabinemenanzuabenklimanenineritenebinabzuerin·oleretanabewetelewzgepeterehegenitememereydeterzuuzwebehereganalenkhoremeneherereranetewersrehimeneniwdzuehet·opemitereraberenaberenenitendzuenenstinanetenabinerababdeninerabirzgeremenerenanolelesetehzuenoyoperewehuopemklimeselerklelerdereserenoretomzuuler·olelerirerewelereriranimanabimensrdddderanonineronendemimanueser·ereweteretereteneteterenenonetesererobemeremonenerewerenederetenegeseretabeydemonabderorereraneneherew·oyorenewerereremdebetorabineneduerorerereroreneweropenitereminemordereremabdereropenerorab·operenenenderereyoronereroyobetdororetenerzgeronemororerinenorobenzuererenabenesorenerererenenabererenenab·oyerererereropesetenderondererenddewzuasetdzuewzuenzuesanzuanerendzuenerabendzuenegabemererenerobenenanerenonenanebewetandeweneraberesirenenddererabewenonesinereneninenzueribereretererewererenerereroyssenesemendzuebesirenenzueritenabaszuzuorogzuenonzuenerabanen·onerebebewenenenebabdesobdenaberebdzustoleberineremenandzudzuebdadenebenenenenobenebenebanenenenebdzuenabenanebzuorenetdabenenimeneseszuerobimanebzuenzuebebenanaskheworeberenzuebemominerenebenenzuoconeydebanebelenzueweremendoperocitkhudenenzueneroneronenzuzuenzgerenenonondenenenzudzuklopenerenanebebenenenewzuofdabzuanewenemererenesobeneritanzuimenklzueberereneneraneresofdedenenenenderendzuzuzuebenenabiten·abewemerenenebendanorenonenenenenebdocoretenemotenerenonemklendem·ocoperaninererenabebebegeneyzuesaninoresitenenerenabenenderebenereranenenetoneneneneranenebenererab·oganerabenzuewerorerorosinemitemababenimereseyabeneresimabirabeyeren·orabelemerolewzuemininderderemitessnerimesetenoyanitaneresemugesimeresimererehimdimeneroperen·openenoperzuananemerabenenihenererendetabeneszuerorenereresdenerdemebenesdew·opereninorderenenenenenendzuzuenerenemimdderdzuonemeneremenorenaneneserereserenanerenaneser·oresessritzuewabeneneresimewenaberklesererererkhomerehondzuemerenabanererab·klenereheraneneneyzuemiteranemerabelanerenklenererabiranenzuabenabineberogdenererenanenigab·orklerimaberanabdenemdabanenereneszudkseranemenabenabanandanerabdab·ocklerzuenesendabererenanerewzsdabemeremenkldenerenabeneronaneranerondenzuemdzuereremenonitenenanenitesoyirabesabitdimaber·oderdzuonerouerendewabebdiranabelenerenitdzuimebenabendenanedenklabenenesknenanemesemklemabderenknesissnesabew·olenorabesogabenesenenabanabemebetabzweszuerenererorenanitenes·abzuerenenonabenerimabenderetimabelshabes·odunihererabenzuimanenenerimitabeneninemabenimklesaneneszuewzuerkhelerabenenocinenendzudewewanonesesimenaberanderenerabdehenzuerabanenzu·ocorerinzwemererandenenzuerenemelanegananerabinabanesemosereteberiterenanelebabanenenandenitihugeritenerenanenankhabzuesandabimerenesimenenanemerababener·operereminenoneseretababerdabenerenonenelewererererenitfderdenderoretasonereweserenehesstaneniteyemenenewerehonerklerenenklenderelerenen·operesenalerabisabimdendenenineseresendenabisddddzuesdeneydzuzweninklebandesdababenenab·egimenabenuerelesocirigenendzgeldzuanaberenoydesetetoresorenaben·orerklerenzuererklaneremenererdenanemdemderereronewenelehoyererenab·orelzuerenerenemeseroperklesddzueniriranemisitenddzuanenderonesewererddenimetenononimetendeneseseranerob·onesiserereseleneserenerenimolireniroremetdenerendderenabelimoneserensninenelerisanzwdinerirderesinerenenab·olesimereraneyanererereroreremerdzuereserendddenereyerer·operemorimerenenesenaneropenenemiminaberabereganzuenorendzuzuemeremimimenzuzuemin·alenenenehedemzuzuenanemenabererirerdebenenereneyinererererenemenemerzu·esereydenorabenehanenesenebireheherdznddzuimenetesdzuanandenzueremen·itewerildenenabenanenabderinenenerewenenemereyeregeserdewewereneneregitocaneseszuihueheranabereresorereranerewenerabesderabendehuzuenerewzuaberen·orerdeminenerewenesabzudeneregedereneraneranererimenenonendddehemeremeronemordzuenab·eresderenesanemenitesoperddesebenenisordandeydenabenerirerirabetopessmerirerabenenababirerendzuereroyemeneranenetdzuerzuemehererehereneremerenereseresereleroneranzs·elzberabebebehoper·erzueresinenerererdzuereneneronaberenenetabdddzuabdzuenabesabenerabereresanderesanzueuerenemklanewerabzuereseronigdenerenoperzuzu·oysnonenddzuerenab·",
+   "·imerinerinzuerenaldzbdzuabenderabitab·",
+   "·eranzuzuon·wenanesenendanodereserenerenin·",
+   "·enenoserabasen·ababereninabinemor·"
+  ],
+  "decoded_test": [
+   "opererdenemaneneheneneninerebdedenerenetebebabeberetetabebit·oremklerereyabeleresemklinklitendehonesorem·openeropenelewabendenebabinereweyenababerabdendenegenenenabineroberenemerabanenerenenab·oldenesenenereweyaberenenonitinewohoperderesebananerdesereyzbetonenegenibzuddabinenibzuabklerdenebdeninoresibanenimebenoriretenesdenendesdeninenitinkliterobdob·ihnanenenenererabewanenesenewebstkmerdenerenebebanenenanerinerabebenenanerebinanabineremobabderoraneminenderorenenenibabenenereninebewzcororenal·erenabererenaberenaberenenabereneneretenenedenerenerababew·operenderenerorerenenanerzueteremabddddenebzwenenereroraniterer·orenenerererototebetzwanzuilabitetetabaleterzgetemenababeb·",
+   "·enenknzuenanereberitenenenenabimkmoreyerew·oropenenenopererdaweranerenesenibereritabesomdalebererdetabdderoreritenemetddeserenabetenetenemenend·orenesitewebderenenetabinetererawenzuabitiszu·operetoreganetkhabeberorerenetetoperitererenereretabzuebanerab·opewenehereysdeszginetereneneberereyinigzuenerzuuenebzuauzszuorzu·opemereretehebdolenabanerenimuenetorenetenetabemanemenenetetonenimanegiretebababetopenenebetor·orklenoperetdeneretetderenoreresdeneneten·aber·orzwenoraberopeterafdebenebinabdetabinanerendenan·orenesesenaberdzuerababirabeberdeneritimerabibaberorenenabeninddderet·oreseboretenewenerabererkmimebetodenzuenabererigstddenenerenerenenenenenenensnanzuorenib·eb·erenop·operenewehereseteneretenzuessrofddzuenorererdemosderendebewerobderemosemeraberabenetoriterenabdderenemenzu·ofdenenerewerewenererederdanaberenenabanesab·olesoyaberahendorabifderenesenabenenemelaberenemerzuememorerereserdereneresdenopereweyereredenzuiteneten·operereresirimemdemimetiretabigeneritenorklimimobeleseyabenederoyerenenzuimiremenonababklankmeneranemerorenenoperenesopzginonedesimoyzbin·ereserigklopelddanenesinddzuen·opererewenzuenanenabenenerenzuenanebesenerereneyodenenenddesenendewebzuendzudderenzuenenzudesitemenenenesen·ohoysmanenelinebzu·erigemeserordenelscodeydeniseseranabogklinebanzudanzuorabzgzuaberknzuddababkl·esirimaneseraneraneronerewenabanabetanzbddenereserandderererabeserabdererirerklegesetan·ores·endesebdananaberigzuersganenerobaneranerereydenzueyderimetereneremanabeserenabel·operererererenabeneseyihdereneresderenerenddzuzueseseneserenznoyzuimorerigab·opeyitennuehdznendenerilesderdeyiferananenanemandeweraneweyemewenendeminanenelehonenderdenerenenzgesdsnenelaleleririnenemorerimereralesdanenemererelerordeminerenenelanededeneroydercimegelemorendererinzuanenaberoriterabzbenemosereroyzueremesoranenessnirenzwerabdabeyiriteleyindeninehaneren·orerabenoranirzuanitenineronerklenonininesenditerinzueneseneseneneneminaberabit·ononinererdiseneresdedzuenonosenabeszuzuzueyeneneneyanenddebenimdabeneneduenzuddzud·anesimiterddzuenabenerererereronabesererenabetendehedenerenzu·openabopenegemzgitanenenenenineneneronigesinesimzuereneraserabesenenabirerererererzberenelenenerenesdenererewen·opendzgereronaner·",
+   "·orendeldanedzudzudddzuendzuenesen·",
+   "·klenerzydehdenelitemaneszsabewerewzukh·"
+  ]
+ }
+}

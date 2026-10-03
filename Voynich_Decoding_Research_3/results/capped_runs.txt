@@ -1,0 +1,11 @@
+pu_vmsB_core lm_latin_all stopped after 4 restarts
+pu_vmsB_core lm_italian stopped after 4 restarts
+pu_vmsB_whole lm_latin_all stopped after 4 restarts
+pu_vmsB_core_shuffled lm_latin_all stopped after 4 restarts
+pu_vmsB_suffix lm_latin_all stopped after 4 restarts
+pu_vmsB_suffix lm_italian stopped after 4 restarts
+pu_vmsB_whole lm_italian stopped after 4 restarts
+pu_vmsB_core_shuffled lm_italian stopped after 4 restarts
+pu_vmsB_suffix_shuffled lm_latin_all stopped after 4 restarts
+pu_vmsB_suffix_shuffled lm_italian stopped after 4 restarts
+WATCH_DONE

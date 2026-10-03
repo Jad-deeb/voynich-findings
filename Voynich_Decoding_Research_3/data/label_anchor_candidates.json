@@ -1,0 +1,115 @@
+{
+ "candidates": [
+  {
+   "label": "otaldy",
+   "label_locus": "f88r.12",
+   "herbal_pages": {
+    "f95v1": 1
+   },
+   "paragraph_total": 4
+  },
+  {
+   "label": "cheocthy",
+   "label_locus": "f88v.2",
+   "herbal_pages": {
+    "f8r": 1,
+    "f57r": 1
+   },
+   "paragraph_total": 4
+  },
+  {
+   "label": "cpheor",
+   "label_locus": "f88v.3",
+   "herbal_pages": {
+    "f17v": 1,
+    "f96r": 1
+   },
+   "paragraph_total": 3
+  },
+  {
+   "label": "chokam",
+   "label_locus": "f89v2.6",
+   "herbal_pages": {
+    "f49v": 1,
+    "f52r": 1
+   },
+   "paragraph_total": 3
+  },
+  {
+   "label": "chtody",
+   "label_locus": "f89v2.25",
+   "herbal_pages": {
+    "f4v": 1
+   },
+   "paragraph_total": 1
+  },
+  {
+   "label": "darar",
+   "label_locus": "f99r.3",
+   "herbal_pages": {
+    "f33v": 1
+   },
+   "paragraph_total": 2
+  },
+  {
+   "label": "okeeos",
+   "label_locus": "f100r.16",
+   "herbal_pages": {
+    "f26v": 1,
+    "f31v": 1
+   },
+   "paragraph_total": 3
+  },
+  {
+   "label": "chols",
+   "label_locus": "f100v.2",
+   "herbal_pages": {
+    "f5v": 1
+   },
+   "paragraph_total": 2
+  },
+  {
+   "label": "okcheor",
+   "label_locus": "f100v.10",
+   "herbal_pages": {
+    "f93r": 1
+   },
+   "paragraph_total": 1
+  },
+  {
+   "label": "otaldy",
+   "label_locus": "f101v.2",
+   "herbal_pages": {
+    "f95v1": 1
+   },
+   "paragraph_total": 4
+  },
+  {
+   "label": "olkor",
+   "label_locus": "f101v.15",
+   "herbal_pages": {
+    "f95r1": 1,
+    "f95r2": 1
+   },
+   "paragraph_total": 3
+  },
+  {
+   "label": "okeos",
+   "label_locus": "f102v2.6",
+   "herbal_pages": {
+    "f31v": 1
+   },
+   "paragraph_total": 3
+  },
+  {
+   "label": "sarol",
+   "label_locus": "f102v2.14",
+   "herbal_pages": {
+    "f39v": 1
+   },
+   "paragraph_total": 3
+  }
+ ],
+ "share_labels": 0.073,
+ "share_paragraph_words": 0.075
+}

@@ -1,0 +1,56 @@
+[
+ {
+  "text": "control_whole_words",
+  "tokens_in_bigrams": 10755,
+  "K": 40,
+  "gain_bits_per_token": 0.1116
+ },
+ {
+  "text": "control_true_pieces",
+  "tokens_in_bigrams": 16269,
+  "K": 40,
+  "gain_bits_per_token": 0.2355
+ },
+ {
+  "text": "control_core_rule_pieces",
+  "tokens_in_bigrams": 20330,
+  "K": 40,
+  "gain_bits_per_token": 0.0547
+ },
+ {
+  "text": "voynich_A_whole_words",
+  "tokens_in_bigrams": 10790,
+  "K": 40,
+  "gain_bits_per_token": 0.0778
+ },
+ {
+  "text": "voynich_A_core_rule_pieces",
+  "tokens_in_bigrams": 20978,
+  "K": 40,
+  "gain_bits_per_token": 0.035
+ },
+ {
+  "text": "voynich_B_whole_words",
+  "tokens_in_bigrams": 10725,
+  "K": 40,
+  "gain_bits_per_token": 0.1316
+ },
+ {
+  "text": "voynich_B_core_rule_pieces",
+  "tokens_in_bigrams": 20811,
+  "K": 40,
+  "gain_bits_per_token": 0.1104
+ },
+ {
+  "text": "latin_words",
+  "tokens_in_bigrams": 10755,
+  "K": 40,
+  "gain_bits_per_token": 0.5042
+ },
+ {
+  "text": "latin_letters",
+  "tokens_in_bigrams": 15644,
+  "K": 40,
+  "gain_bits_per_token": 0.5158
+ }
+]

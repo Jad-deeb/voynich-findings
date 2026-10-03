@@ -1,0 +1,47 @@
+[
+ {
+  "comparison": "medial tokens only: H1A herbal vs H1A pharma",
+  "pages": [
+   94,
+   16
+  ],
+  "tokens": [
+   3715,
+   1346
+  ],
+  "observed_bits": 0.135,
+  "permuted_mean_bits": 0.0371,
+  "excess_bits": 0.0979,
+  "z": 22.3
+ },
+ {
+  "comparison": "medial tokens only: H2B herbal vs H2B bio",
+  "pages": [
+   20,
+   19
+  ],
+  "tokens": [
+   1287,
+   4090
+  ],
+  "observed_bits": 0.1568,
+  "permuted_mean_bits": 0.0355,
+  "excess_bits": 0.1213,
+  "z": 18.9
+ },
+ {
+  "comparison": "medial tokens only: H1A herbal vs H2B herbal",
+  "pages": [
+   94,
+   20
+  ],
+  "tokens": [
+   3715,
+   1287
+  ],
+  "observed_bits": 0.2224,
+  "permuted_mean_bits": 0.0379,
+  "excess_bits": 0.1845,
+  "z": 38.1
+ }
+]

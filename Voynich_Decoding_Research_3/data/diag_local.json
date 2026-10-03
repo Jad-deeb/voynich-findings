@@ -1,0 +1,98 @@
+[
+ {
+  "text": "VMS IT (distant page from same language+section)",
+  "K": 20,
+  "tokens_tested": 30009,
+  "exact_local": 0.1314,
+  "exact_distant": 0.0826,
+  "exact_ratio": 1.59,
+  "near_local": 0.2852,
+  "near_distant": 0.2386,
+  "near_ratio": 1.2,
+  "adjacent_identical_per_1000": 8.81
+ },
+ {
+  "text": "VMS ZL (distant page from same language+section)",
+  "K": 20,
+  "tokens_tested": 30088,
+  "exact_local": 0.134,
+  "exact_distant": 0.0882,
+  "exact_ratio": 1.52,
+  "near_local": 0.295,
+  "near_distant": 0.2487,
+  "near_ratio": 1.19,
+  "adjacent_identical_per_1000": 8.61
+ },
+ {
+  "text": "Latin Secreta_Secretorum_LAT",
+  "K": 20,
+  "tokens_tested": 30000,
+  "exact_local": 0.2035,
+  "exact_distant": 0.1271,
+  "exact_ratio": 1.6,
+  "near_local": 0.0633,
+  "near_distant": 0.0571,
+  "near_ratio": 1.11,
+  "adjacent_identical_per_1000": 0.24
+ },
+ {
+  "text": "Latin Latin_Aix",
+  "K": 20,
+  "tokens_tested": 30000,
+  "exact_local": 0.0922,
+  "exact_distant": 0.0828,
+  "exact_ratio": 1.11,
+  "near_local": 0.0451,
+  "near_distant": 0.0408,
+  "near_ratio": 1.11,
+  "adjacent_identical_per_1000": 0.0
+ },
+ {
+  "text": "Latin Steganographia",
+  "K": 20,
+  "tokens_tested": 18900,
+  "exact_local": 0.0706,
+  "exact_distant": 0.0447,
+  "exact_ratio": 1.58,
+  "near_local": 0.0471,
+  "near_distant": 0.0441,
+  "near_ratio": 1.07,
+  "adjacent_identical_per_1000": 0.28
+ },
+ {
+  "text": "Italian Rettorica",
+  "K": 20,
+  "tokens_tested": 28350,
+  "exact_local": 0.182,
+  "exact_distant": 0.1264,
+  "exact_ratio": 1.44,
+  "near_local": 0.1511,
+  "near_distant": 0.1557,
+  "near_ratio": 0.97,
+  "adjacent_identical_per_1000": 0.19
+ },
+ {
+  "text": "Middle English Cirurgie",
+  "K": 20,
+  "tokens_tested": 30000,
+  "exact_local": 0.2783,
+  "exact_distant": 0.1881,
+  "exact_ratio": 1.48,
+  "near_local": 0.1126,
+  "near_distant": 0.1281,
+  "near_ratio": 0.88,
+  "adjacent_identical_per_1000": 1.01
+ },
+ {
+  "text": "Naibbe-like cipher of Latin Secreta",
+  "K": 20,
+  "tokens_tested": 30000,
+  "exact_local": 0.132,
+  "exact_distant": 0.1284,
+  "exact_ratio": 1.03,
+  "near_local": 0.2434,
+  "near_distant": 0.2479,
+  "near_ratio": 0.98,
+  "adjacent_identical_per_1000": 4.59
+ }
+]

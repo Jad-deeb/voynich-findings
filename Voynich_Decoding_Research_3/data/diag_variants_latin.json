@@ -1,0 +1,72 @@
+[
+ {
+  "text": "Latin (all, 300k words)",
+  "pair": "c/t",
+  "word_pairs": 17,
+  "context_divergence_pairs": 0.3097,
+  "context_divergence_same_word_halves": 0.2129
+ },
+ {
+  "text": "Latin (all, 300k words)",
+  "pair": "e/i",
+  "word_pairs": 73,
+  "context_divergence_pairs": 0.3128,
+  "context_divergence_same_word_halves": 0.252
+ },
+ {
+  "text": "Latin (all, 300k words)",
+  "pair": "o/u",
+  "word_pairs": 14,
+  "context_divergence_pairs": 0.3704,
+  "context_divergence_same_word_halves": 0.3186
+ },
+ {
+  "text": "Latin (all, 300k words)",
+  "pair": "a/e",
+  "word_pairs": 51,
+  "context_divergence_pairs": 0.3356,
+  "context_divergence_same_word_halves": 0.2495
+ },
+ {
+  "text": "Latin (all, 300k words)",
+  "pair": "m/s",
+  "word_pairs": 93,
+  "context_divergence_pairs": 0.2992,
+  "context_divergence_same_word_halves": 0.2659
+ },
+ {
+  "text": "Latin (all, 300k words)",
+  "pair": "n/m",
+  "word_pairs": 3,
+  "context_divergence_pairs": 0.3795,
+  "context_divergence_same_word_halves": 0.2945
+ },
+ {
+  "text": "Italian Rettorica",
+  "pair": "e/i",
+  "word_pairs": 25,
+  "context_divergence_pairs": 0.3128,
+  "context_divergence_same_word_halves": 0.1743
+ },
+ {
+  "text": "Italian Rettorica",
+  "pair": "a/e",
+  "word_pairs": 24,
+  "context_divergence_pairs": 0.2846,
+  "context_divergence_same_word_halves": 0.1021
+ },
+ {
+  "text": "Italian Rettorica",
+  "pair": "m/s",
+  "word_pairs": 4,
+  "context_divergence_pairs": 0.3334,
+  "context_divergence_same_word_halves": 0.0519
+ },
+ {
+  "text": "Italian Rettorica",
+  "pair": "n/m",
+  "word_pairs": 2,
+  "context_divergence_pairs": 0.5325,
+  "context_divergence_same_word_halves": 0.1105
+ }
+]

@@ -1,0 +1,146 @@
+[
+ {
+  "text": "VMS IT all paragraphs",
+  "medial_only": false,
+  "pairs": 29477,
+  "observed_bits": 5.6865,
+  "null_mean_bits": 5.5691,
+  "excess_bits": 0.1174,
+  "z": 26.7
+ },
+ {
+  "text": "VMS IT Currier A",
+  "medial_only": false,
+  "pairs": 8952,
+  "observed_bits": 6.2178,
+  "null_mean_bits": 6.1732,
+  "excess_bits": 0.0447,
+  "z": 6.0
+ },
+ {
+  "text": "VMS IT Currier B",
+  "medial_only": false,
+  "pairs": 20097,
+  "observed_bits": 5.4278,
+  "null_mean_bits": 5.2913,
+  "excess_bits": 0.1365,
+  "z": 33.6
+ },
+ {
+  "text": "VMS ZL all paragraphs",
+  "medial_only": false,
+  "pairs": 29294,
+  "observed_bits": 5.4797,
+  "null_mean_bits": 5.3451,
+  "excess_bits": 0.1346,
+  "z": 26.9
+ },
+ {
+  "text": "Latin Secreta_Secretorum_LAT",
+  "medial_only": false,
+  "pairs": 30216,
+  "observed_bits": 6.6678,
+  "null_mean_bits": 6.4848,
+  "excess_bits": 0.183,
+  "z": 23.2
+ },
+ {
+  "text": "Latin Latin_Aix",
+  "medial_only": false,
+  "pairs": 30216,
+  "observed_bits": 7.6717,
+  "null_mean_bits": 7.4914,
+  "excess_bits": 0.1803,
+  "z": 42.1
+ },
+ {
+  "text": "Italian Rettorica",
+  "medial_only": false,
+  "pairs": 28648,
+  "observed_bits": 5.5192,
+  "null_mean_bits": 4.997,
+  "excess_bits": 0.5222,
+  "z": 75.8
+ },
+ {
+  "text": "Naibbe-like cipher of Latin Secreta",
+  "medial_only": false,
+  "pairs": 30216,
+  "observed_bits": 4.2102,
+  "null_mean_bits": 4.0912,
+  "excess_bits": 0.1189,
+  "z": 30.5
+ },
+ {
+  "text": "VMS IT all paragraphs",
+  "medial_only": true,
+  "pairs": 20395,
+  "observed_bits": 5.5302,
+  "null_mean_bits": 5.4078,
+  "excess_bits": 0.1224,
+  "z": 12.4
+ },
+ {
+  "text": "VMS IT Currier A",
+  "medial_only": true,
+  "pairs": 5294,
+  "observed_bits": 6.1779,
+  "null_mean_bits": 6.1297,
+  "excess_bits": 0.0482,
+  "z": 2.0
+ },
+ {
+  "text": "VMS IT Currier B",
+  "medial_only": true,
+  "pairs": 14861,
+  "observed_bits": 5.2811,
+  "null_mean_bits": 5.1401,
+  "excess_bits": 0.1409,
+  "z": 10.2
+ },
+ {
+  "text": "VMS ZL all paragraphs",
+  "medial_only": true,
+  "pairs": 20008,
+  "observed_bits": 5.3035,
+  "null_mean_bits": 5.1699,
+  "excess_bits": 0.1336,
+  "z": 12.0
+ },
+ {
+  "text": "Latin Secreta_Secretorum_LAT",
+  "medial_only": true,
+  "pairs": 22662,
+  "observed_bits": 6.804,
+  "null_mean_bits": 6.6687,
+  "excess_bits": 0.1353,
+  "z": 12.8
+ },
+ {
+  "text": "Latin Latin_Aix",
+  "medial_only": true,
+  "pairs": 22662,
+  "observed_bits": 7.817,
+  "null_mean_bits": 7.6713,
+  "excess_bits": 0.1456,
+  "z": 10.3
+ },
+ {
+  "text": "Italian Rettorica",
+  "medial_only": true,
+  "pairs": 21486,
+  "observed_bits": 5.6174,
+  "null_mean_bits": 5.1637,
+  "excess_bits": 0.4536,
+  "z": 34.8
+ },
+ {
+  "text": "Naibbe-like cipher of Latin Secreta",
+  "medial_only": true,
+  "pairs": 22662,
+  "observed_bits": 4.5235,
+  "null_mean_bits": 4.4228,
+  "excess_bits": 0.1007,
+  "z": 13.5
+ }
+]

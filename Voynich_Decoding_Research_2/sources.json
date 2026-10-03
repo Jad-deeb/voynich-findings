@@ -1,0 +1,110 @@
+[
+  {
+    "path": "Corpora/Historical_texts/Latin_Adso",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/Latin_Adso",
+    "local": "Latin_Adso",
+    "bytes": 13079,
+    "sha256": "045c5fcd924a246f61de5dce3edb058ff7860e78ec428a8ed74db4a7b63d176b"
+  },
+  {
+    "path": "Corpora/Historical_texts/Latin_Aix",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/Latin_Aix",
+    "local": "Latin_Aix",
+    "bytes": 900782,
+    "sha256": "ddf79d5cb957ade74cac6b13ee6dccc7bf3e34bdf864ab5b3c0fb9f633c0362f"
+  },
+  {
+    "path": "Corpora/Historical_texts/BrunoDeMagia",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/BrunoDeMagia",
+    "local": "BrunoDeMagia",
+    "bytes": 81065,
+    "sha256": "407d8d363fe028276f796bd950ef072bf54c379fb74b04c3d6ec7f5b1d41a057"
+  },
+  {
+    "path": "Corpora/Historical_texts/Secreta_Secretorum_LAT",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/Secreta_Secretorum_LAT",
+    "local": "Secreta_Secretorum_LAT",
+    "bytes": 262207,
+    "sha256": "d7e25e1d4c79e87c6fc45b17524489f0ec4271735132ee95e3f75292f2ea3c72"
+  },
+  {
+    "path": "Corpora/Historical_texts/Steganographia",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/Steganographia",
+    "local": "Steganographia",
+    "bytes": 155801,
+    "sha256": "f510f0919ba0a0bc2a7a030e326a2ed7c3503727b8fe1b256e18ac9862c4c259"
+  },
+  {
+    "path": "Corpora/Historical_texts/Cirurgie",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/Cirurgie",
+    "local": "Cirurgie",
+    "bytes": 505232,
+    "sha256": "7cdeff171d83ef2e63273ac11060bbf01bdfe7e62aef71903e741ed914b31a3c"
+  },
+  {
+    "path": "Corpora/Historical_texts/Secreta_Secretorum_ENG",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/Secreta_Secretorum_ENG",
+    "local": "Secreta_Secretorum_ENG",
+    "bytes": 96374,
+    "sha256": "fcd726a2196e60628a443275eb704cf5e8173330805c564ba93294a3394ba227"
+  },
+  {
+    "path": "Corpora/Historical_texts/AlphabetOfTales",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/AlphabetOfTales",
+    "local": "AlphabetOfTales",
+    "bytes": 942288,
+    "sha256": "e837c4211da10e6beb718eb226a44718459a1ef74c1a65426775cb42cb38a948"
+  },
+  {
+    "path": "Corpora/Historical_texts/Rettorica",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/Rettorica",
+    "local": "Rettorica",
+    "bytes": 200853,
+    "sha256": "db63123534d7bf80bee5894018f023974bd7690097d3687bb0b164fb7d8a6b8f"
+  },
+  {
+    "path": "Corpora/Historical_texts/Picatrix",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/Corpora/Historical_texts/Picatrix",
+    "local": "Picatrix",
+    "bytes": 653555,
+    "sha256": "e170a60a4e2d1403770f64a92f907937a4394581442c1a4c2c6f01c1e2690c5d"
+  },
+  {
+    "path": "R code/0_Process_Interlinear_File.Rmd",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/R%20code/0_Process_Interlinear_File.Rmd",
+    "local": "0_Process_Interlinear_File.Rmd",
+    "bytes": 21433,
+    "sha256": "7fac8c3f2b8f94fdc13337c20411bf5e3796a1c4707af0e9a965bacc40d55508"
+  },
+  {
+    "path": "R code/1_Create_Voynich_Corpus.Rmd",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/R%20code/1_Create_Voynich_Corpus.Rmd",
+    "local": "1_Create_Voynich_Corpus.Rmd",
+    "bytes": 15316,
+    "sha256": "8bdb08016ac604a66d8b42c95960ce5df2324a556e7195e55b8646776bcced6f"
+  },
+  {
+    "path": "R code/3_Create_Historical_Corpus.Rmd",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/R%20code/3_Create_Historical_Corpus.Rmd",
+    "local": "3_Create_Historical_Corpus.Rmd",
+    "bytes": 17498,
+    "sha256": "fcf140978973465bbb2c1e9536b65bf64f72c1f29877305fac80c8c73121b3ec"
+  },
+  {
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/chirila/Voynich-public/decc4caaa6515b86e42a219d1da8d81114736f2e/README.md",
+    "local": "README.md",
+    "bytes": 2111,
+    "sha256": "6a72edd1e06a89e5cc21e75e269d96098eea20cd90cb006708140f7752c10937"
+  },
+  {
+    "local": "IT_ivtff_1a.txt",
+    "sha256": "db624a731114f26854bbfe3a59d40827fa8911be46d086b6c558d99e557241ee",
+    "url": "https://raw.githubusercontent.com/noah-chelednik/voynich-data/472ef7366606a799fc8f1044c037e06b413f6ddd/data_sources/cache/IT_ivtff_1a.txt"
+  },
+  {
+    "local": "ZL3b-n.txt",
+    "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "url": "https://raw.githubusercontent.com/noah-chelednik/voynich-data/472ef7366606a799fc8f1044c037e06b413f6ddd/data_sources/cache/ZL3b-n.txt"
+  }
+]

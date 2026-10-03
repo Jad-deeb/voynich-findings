@@ -1,0 +1,146 @@
+{
+ "Albanian": {
+  "alphabet": "abcdefghijklmnopqrstuvxyz",
+  "letters": 3175598
+ },
+ "Arabic": {
+  "alphabet": "abcdfghilmnoqrstuz",
+  "letters": 1869053
+ },
+ "Basque-NT": {
+  "alphabet": "abcdefghiklmnopqrstuvyz",
+  "letters": 836550
+ },
+ "Cebuano": {
+  "alphabet": "abcdefghijklmnopqrstuvwyz",
+  "letters": 4064702
+ },
+ "Czech": {
+  "alphabet": "abcdefghijklmnoprstuvyz",
+  "letters": 2777684
+ },
+ "English": {
+  "alphabet": "abcdefghijklmnopqrstuvwxyz",
+  "letters": 3222504
+ },
+ "Esperanto": {
+  "alphabet": "abcdefghijklmnoprstuvxz",
+  "letters": 3040504
+ },
+ "Estonian-PART": {
+  "alphabet": "abdefghijklmnoprstuv",
+  "letters": 749465
+ },
+ "Farsi": {
+  "alphabet": "abcdfghilmnopqrstuz",
+  "letters": 2299285
+ },
+ "Finnish": {
+  "alphabet": "abdefghijklmnoprstuvy",
+  "letters": 3346503
+ },
+ "French": {
+  "alphabet": "abcdefghijklmnopqrstuvxyz",
+  "letters": 3201899
+ },
+ "German": {
+  "alphabet": "abcdefghijklmnopqrstuvwyz",
+  "letters": 3205685
+ },
+ "Greek": {
+  "alphabet": "abcdefghiklmnoprstuxz",
+  "letters": 3462215
+ },
+ "Hebrew": {
+  "alphabet": "abcdghilmnopqrstuz",
+  "letters": 1626427
+ },
+ "Hungarian": {
+  "alphabet": "abcdefghijklmnoprstuvyz",
+  "letters": 3083852
+ },
+ "Indonesian": {
+  "alphabet": "abcdefghijklmnopqrstuwyz",
+  "letters": 3702446
+ },
+ "Italian": {
+  "alphabet": "abcdefghiklmnopqrstuvz",
+  "letters": 3046959
+ },
+ "Latin": {
+  "alphabet": "abcdefghilmnopqrstuvxyz",
+  "letters": 2865356
+ },
+ "Lithuanian": {
+  "alphabet": "abcdefghijklmnoprstuvyz",
+  "letters": 2591504
+ },
+ "Malagasy": {
+  "alphabet": "abdefghijklmnoprstvyz",
+  "letters": 3800549
+ },
+ "Maori": {
+  "alphabet": "aeghikmnoprtuw",
+  "letters": 3341548
+ },
+ "Nahuatl-NT": {
+  "alphabet": "abcdefghijlmnopqrstuvxyz",
+  "letters": 1188899
+ },
+ "Polish": {
+  "alphabet": "abcdefghijklmnoprstuwyz",
+  "letters": 2955169
+ },
+ "Portuguese": {
+  "alphabet": "abcdefghijlmnopqrstuvxz",
+  "letters": 2985250
+ },
+ "Q'eqchi'": {
+  "alphabet": "abcdefghijklmnopqrstuvxyz",
+  "letters": 4124539
+ },
+ "Quichua-NT": {
+  "alphabet": "abcdefghijlmnopqrstuvyz",
+  "letters": 837377
+ },
+ "Romani-NT": {
+  "alphabet": "abcdefghijklmnopqrstuvwxyz",
+  "letters": 807318
+ },
+ "Romanian": {
+  "alphabet": "abcdefghijlmnoprstuvz",
+  "letters": 3063500
+ },
+ "Shona": {
+  "alphabet": "abcdefghijkmnoprstuvwyz",
+  "letters": 3254332
+ },
+ "Somali": {
+  "alphabet": "abcdefghijklmnoqrstuwxy",
+  "letters": 3901880
+ },
+ "Spanish": {
+  "alphabet": "abcdefghijlmnopqrstuvxyz",
+  "letters": 3109244
+ },
+ "Swahili-NT": {
+  "alphabet": "abcdefghijklmnopqrstuvwyz",
+  "letters": 785424
+ },
+ "Tagalog": {
+  "alphabet": "abcdefghijklmnoprstuvwyz",
+  "letters": 3888570
+ },
+ "Turkish": {
+  "alphabet": "abcdefghiklmnoprstuvyz",
+  "letters": 2669035
+ },
+ "Vietnamese": {
+  "alphabet": "abcdeghijklmnopqrstuvxy",
+  "letters": 2761004
+ },
+ "Zulu-NT": {
+  "alphabet": "abcdefghijklmnopqrstuvwxyz",
+  "letters": 729235
+ }
+}

@@ -1,0 +1,98 @@
+[
+ {
+  "text": "VMS IT all",
+  "pairs": 29477,
+  "identical_adjacent": 286,
+  "per_1000": 9.7,
+  "shuffle_mean": 242.8,
+  "ratio_to_shuffle": 1.18
+ },
+ {
+  "text": "VMS IT Currier A",
+  "pairs": 8952,
+  "identical_adjacent": 99,
+  "per_1000": 11.06,
+  "shuffle_mean": 81.9,
+  "ratio_to_shuffle": 1.21
+ },
+ {
+  "text": "VMS IT Currier B",
+  "pairs": 20097,
+  "identical_adjacent": 184,
+  "per_1000": 9.16,
+  "shuffle_mean": 156.7,
+  "ratio_to_shuffle": 1.17
+ },
+ {
+  "text": "VMS ZL all",
+  "pairs": 29294,
+  "identical_adjacent": 279,
+  "per_1000": 9.52,
+  "shuffle_mean": 250.8,
+  "ratio_to_shuffle": 1.11
+ },
+ {
+  "text": "Latin Secreta_Secretorum_LAT",
+  "pairs": 30216,
+  "identical_adjacent": 8,
+  "per_1000": 0.26,
+  "shuffle_mean": 444.9,
+  "ratio_to_shuffle": 0.02
+ },
+ {
+  "text": "Latin Latin_Aix",
+  "pairs": 30216,
+  "identical_adjacent": 0,
+  "per_1000": 0.0,
+  "shuffle_mean": 196.8,
+  "ratio_to_shuffle": 0.0
+ },
+ {
+  "text": "Latin Steganographia",
+  "pairs": 19136,
+  "identical_adjacent": 5,
+  "per_1000": 0.26,
+  "shuffle_mean": 64.7,
+  "ratio_to_shuffle": 0.08
+ },
+ {
+  "text": "Italian Rettorica",
+  "pairs": 28648,
+  "identical_adjacent": 6,
+  "per_1000": 0.21,
+  "shuffle_mean": 302.9,
+  "ratio_to_shuffle": 0.02
+ },
+ {
+  "text": "Middle English Cirurgie",
+  "pairs": 30216,
+  "identical_adjacent": 31,
+  "per_1000": 1.03,
+  "shuffle_mean": 575.3,
+  "ratio_to_shuffle": 0.05
+ },
+ {
+  "text": "Middle English Alphabet of Tales",
+  "pairs": 30216,
+  "identical_adjacent": 22,
+  "per_1000": 0.73,
+  "shuffle_mean": 324.8,
+  "ratio_to_shuffle": 0.07
+ },
+ {
+  "text": "Naibbe-like cipher of Latin",
+  "pairs": 30216,
+  "identical_adjacent": 39,
+  "per_1000": 1.29,
+  "shuffle_mean": 144.4,
+  "ratio_to_shuffle": 0.27
+ },
+ {
+  "text": "Latin letters as tokens",
+  "pairs": 30024,
+  "identical_adjacent": 731,
+  "per_1000": 24.35,
+  "shuffle_mean": 2277.1,
+  "ratio_to_shuffle": 0.32
+ }
+]

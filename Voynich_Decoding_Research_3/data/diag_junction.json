@@ -1,0 +1,27 @@
+[
+ {
+  "text": "Voynich IT",
+  "excess_beyond_edges_bits": 0.0479,
+  "z": 17.7
+ },
+ {
+  "text": "Latin Secreta",
+  "excess_beyond_edges_bits": 0.1726,
+  "z": 56.5
+ },
+ {
+  "text": "Latin Albert of Aix",
+  "excess_beyond_edges_bits": 0.1472,
+  "z": 44.7
+ },
+ {
+  "text": "Italian Rettorica",
+  "excess_beyond_edges_bits": 0.3529,
+  "z": 62.2
+ },
+ {
+  "text": "Naibbe-like cipher (Voynich-looking strings)",
+  "excess_beyond_edges_bits": 0.0719,
+  "z": 15.7
+ }
+]

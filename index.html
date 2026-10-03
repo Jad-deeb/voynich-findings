@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voynich Decoding Findings</title>
+<meta name="description" content="Four rounds of computational attempts to decode the Voynich manuscript: what was tested, what failed, and what the text turned out to be like.">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --accent: #2a78d6; --hl: #fdf0ea; --hl2: #e8f6f0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --accent: #6da7ec; --hl: #2e1d15; --hl2: #12271f;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --accent: #6da7ec; --hl: #2e1d15; --hl2: #12271f;
+}
+* { box-sizing: border-box; }
+html { background: var(--page); }
+body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 880px; margin: 0 auto; padding: 48px 16px 72px; }
+header .kicker { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.01em; }
+h2 { font-size: 22px; margin: 56px 0 12px; }
+h3 { font-size: 17px; margin: 28px 0 8px; }
+p, li { color: var(--ink); }
+.lede { font-size: 19px; color: var(--ink-2); max-width: 62ch; }
+.verdict { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--s2); border-radius: 8px; padding: 18px 20px; margin: 28px 0; }
+.verdict strong { display: block; font-size: 18px; margin-bottom: 4px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 18px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+.card .num { font-size: 30px; font-weight: 650; line-height: 1.1; margin-bottom: 6px; }
+.card p { margin: 0; color: var(--ink-2); font-size: 15px; }
+figure { margin: 24px 0; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px 16px 10px; }
+figcaption { color: var(--ink-2); font-size: 14px; margin: 6px 4px 8px; }
+.fig-title { font-weight: 650; margin: 0 4px 2px; }
+svg.strip { width: 100%; height: auto; display: block; overflow: visible; }
+.grid { stroke: var(--grid); stroke-width: 1; }
+.axis { stroke: var(--axis); stroke-width: 1; }
+.tick, .rowsub { fill: var(--muted); font-size: 12px; }
+.rowlab { fill: var(--ink); font-size: 13px; font-weight: 600; }
+.dlab { fill: var(--ink-2); font-size: 12px; }
+.dot { stroke: var(--surface); stroke-width: 2; }
+.s1 { fill: var(--s1); } .s2 { fill: var(--s2); } .s3 { fill: var(--s3); }
+.hit { fill: transparent; cursor: default; }
+.pt:hover .dot { stroke: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--ink-2); margin: 4px 4px 0; }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; background: var(--c); }
+#tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--page); font-size: 13px; padding: 6px 9px; border-radius: 6px; max-width: 300px; opacity: 0; transition: opacity .1s; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--ink-2); font-weight: 600; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+tr.hl td { background: var(--hl); } tr.hl2 td { background: var(--hl2); }
+.wrap { overflow-x: auto; }
+details { margin: 8px 4px; } summary { cursor: pointer; color: var(--accent); font-size: 14px; }
+a { color: var(--accent); }
+code { font-family: ui-monospace, Consolas, monospace; font-size: .92em; background: var(--grid); padding: 1px 4px; border-radius: 4px; }
+.files li { margin: 6px 0; }
+.small { font-size: 14px; color: var(--ink-2); }
+footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--grid); font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="kicker">Beinecke MS 408 · research log · October 2026</p>
+<h1>Trying to decode the Voynich manuscript</h1>
+<p class="lede">Four rounds of computational attempts used letter substitutions, cipher solvers, 46 languages and medieval texts. Every method was tested on hidden-key ciphers before it was trusted. This page summarises what was tested and what the manuscript turned out to be like.</p>
+</header>
+
+<div class="verdict"><strong>No translation.</strong>No method that cracked a hidden test cipher found a message in the manuscript. No word, plant name or sentence of the Voynich script has been read. The work did establish, with controls, several properties that any future decipherment has to explain.</div>
+
+<h2>Five findings</h2>
+<div class="cards">
+<div class="card"><div class="num">0%</div><p>The share of next-word dependence the manuscript keeps between words two apart. Every one of 46 languages keeps 33–76%.</p></div>
+<div class="card"><div class="num">1.2×</div><p>How often a word is followed by itself, compared with chance. Every language avoids this (0.42× or less), except Indonesian, whose hyphenated doubled words were split into separate words.</p></div>
+<div class="card"><div class="num">k/t, ch/sh, e/ee</div><p>Words that differ by these glyphs occur in the same contexts, like interchangeable spellings. The preferred spelling drifts by section.</p></div>
+<div class="card"><div class="num">4 glyphs</div><p>A simple chain predicting each glyph from the previous four, trained on the manuscript, reproduces almost every word-sequence statistic measured.</p></div>
+<div class="card"><div class="num">0 of ~42</div><p>The number of language models with which the best cipher solver found a message. The same solver recovered 93–99% of letters from hidden test ciphers in six languages, including 15th-century German herbal text.</p></div>
+</div>
+
+<h2>The clearest result</h2>
+<figure>
+<p class="fig-title" id="chart-title">Dependence kept between words two apart, as a share of next-word dependence</p>
+<div class="legend"><span style="--c: var(--s1)">Languages</span><span style="--c: var(--s2)">Voynich manuscript</span><span style="--c: var(--s3)">Models of how it might have been made</span></div>
+<svg viewBox="0 0 760 328" role="img" aria-labelledby="chart-title chart-desc" class="strip">
+<line x1="190.0" x2="190.0" y1="22" y2="300" class="grid"/>
+<text x="190.0" y="318" class="tick" text-anchor="middle">0%</text>
+<line x1="325.0" x2="325.0" y1="22" y2="300" class="grid"/>
+<text x="325.0" y="318" class="tick" text-anchor="middle">20%</text>
+<line x1="460.0" x2="460.0" y1="22" y2="300" class="grid"/>
+<text x="460.0" y="318" class="tick" text-anchor="middle">40%</text>
+<line x1="595.0" x2="595.0" y1="22" y2="300" class="grid"/>
+<text x="595.0" y="318" class="tick" text-anchor="middle">60%</text>
+<line x1="730.0" x2="730.0" y1="22" y2="300" class="grid"/>
+<text x="730.0" y="318" class="tick" text-anchor="middle">80%</text>
+<line x1="190" x2="730" y1="300" y2="300" class="axis"/>
+<text x="176" y="83.0" class="rowlab" text-anchor="end">46 languages</text>
+<text x="176" y="101.0" class="rowsub" text-anchor="end">(same Bible text)</text>
+<text x="176" y="198.0" class="rowlab" text-anchor="end">Voynich manuscript</text>
+<text x="176" y="262.0" class="rowlab" text-anchor="end">Models</text>
+<g class="pt" data-tip="Hungarian: 33% (next word 0.576 bits, two apart 0.188 bits)"><circle cx="410.0" cy="79.0" r="12" class="hit"/><circle cx="410.0" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Chinese: 33% (next word 1.627 bits, two apart 0.536 bits)"><circle cx="412.5" cy="90.0" r="12" class="hit"/><circle cx="412.5" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Farsi: 34% (next word 0.773 bits, two apart 0.259 bits)"><circle cx="416.4" cy="68.0" r="12" class="hit"/><circle cx="416.4" cy="68.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Vietnamese: 37% (next word 1.453 bits, two apart 0.539 bits)"><circle cx="440.3" cy="79.0" r="12" class="hit"/><circle cx="440.3" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Amharic: 37% (next word 0.614 bits, two apart 0.229 bits)"><circle cx="442.4" cy="90.0" r="12" class="hit"/><circle cx="442.4" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Quichua: 38% (next word 0.654 bits, two apart 0.252 bits)"><circle cx="449.8" cy="68.0" r="12" class="hit"/><circle cx="449.8" cy="68.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Shona: 40% (next word 0.733 bits, two apart 0.290 bits)"><circle cx="457.6" cy="79.0" r="12" class="hit"/><circle cx="457.6" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Thai: 40% (next word 1.439 bits, two apart 0.581 bits)"><circle cx="462.7" cy="90.0" r="12" class="hit"/><circle cx="462.7" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Indonesian: 41% (next word 1.096 bits, two apart 0.447 bits)"><circle cx="465.1" cy="68.0" r="12" class="hit"/><circle cx="465.1" cy="68.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Zulu: 41% (next word 0.644 bits, two apart 0.264 bits)"><circle cx="467.0" cy="101.0" r="12" class="hit"/><circle cx="467.0" cy="101.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Swahili: 41% (next word 0.780 bits, two apart 0.323 bits)"><circle cx="469.7" cy="79.0" r="12" class="hit"/><circle cx="469.7" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Estonian: 42% (next word 0.751 bits, two apart 0.312 bits)"><circle cx="470.2" cy="57.0" r="12" class="hit"/><circle cx="470.2" cy="57.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Cherokee: 42% (next word 0.495 bits, two apart 0.209 bits)"><circle cx="474.6" cy="90.0" r="12" class="hit"/><circle cx="474.6" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Korean: 43% (next word 0.618 bits, two apart 0.267 bits)"><circle cx="482.3" cy="79.0" r="12" class="hit"/><circle cx="482.3" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Armenian: 44% (next word 0.646 bits, two apart 0.286 bits)"><circle cx="488.7" cy="90.0" r="12" class="hit"/><circle cx="488.7" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Basque: 46% (next word 0.620 bits, two apart 0.282 bits)"><circle cx="497.7" cy="79.0" r="12" class="hit"/><circle cx="497.7" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Arabic: 46% (next word 0.690 bits, two apart 0.316 bits)"><circle cx="499.1" cy="68.0" r="12" class="hit"/><circle cx="499.1" cy="68.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Hebrew: 47% (next word 0.664 bits, two apart 0.310 bits)"><circle cx="504.8" cy="90.0" r="12" class="hit"/><circle cx="504.8" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Finnish: 47% (next word 0.751 bits, two apart 0.355 bits)"><circle cx="508.7" cy="79.0" r="12" class="hit"/><circle cx="508.7" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Q&#x27;eqchi&#x27;: 47% (next word 1.044 bits, two apart 0.493 bits)"><circle cx="508.7" cy="101.0" r="12" class="hit"/><circle cx="508.7" cy="101.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Nahuatl: 47% (next word 0.831 bits, two apart 0.393 bits)"><circle cx="509.3" cy="57.0" r="12" class="hit"/><circle cx="509.3" cy="57.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Turkish: 48% (next word 0.711 bits, two apart 0.338 bits)"><circle cx="510.8" cy="68.0" r="12" class="hit"/><circle cx="510.8" cy="68.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Coptic: 48% (next word 0.743 bits, two apart 0.354 bits)"><circle cx="511.3" cy="112.0" r="12" class="hit"/><circle cx="511.3" cy="112.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Syriac: 48% (next word 0.693 bits, two apart 0.332 bits)"><circle cx="513.8" cy="46.0" r="12" class="hit"/><circle cx="513.8" cy="46.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Italian: 49% (next word 0.815 bits, two apart 0.396 bits)"><circle cx="517.9" cy="90.0" r="12" class="hit"/><circle cx="517.9" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="German: 49% (next word 0.843 bits, two apart 0.410 bits)"><circle cx="518.7" cy="123.0" r="12" class="hit"/><circle cx="518.7" cy="123.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Latin: 49% (next word 0.508 bits, two apart 0.248 bits)"><circle cx="518.9" cy="35.0" r="12" class="hit"/><circle cx="518.9" cy="35.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Romanian: 49% (next word 1.071 bits, two apart 0.529 bits)"><circle cx="523.4" cy="79.0" r="12" class="hit"/><circle cx="523.4" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Hindi: 50% (next word 1.098 bits, two apart 0.549 bits)"><circle cx="527.7" cy="68.0" r="12" class="hit"/><circle cx="527.7" cy="68.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Malagasy: 51% (next word 1.058 bits, two apart 0.535 bits)"><circle cx="531.6" cy="90.0" r="12" class="hit"/><circle cx="531.6" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Spanish: 51% (next word 0.947 bits, two apart 0.481 bits)"><circle cx="533.2" cy="101.0" r="12" class="hit"/><circle cx="533.2" cy="101.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Greek: 51% (next word 0.980 bits, two apart 0.504 bits)"><circle cx="537.2" cy="79.0" r="12" class="hit"/><circle cx="537.2" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Maori: 52% (next word 1.100 bits, two apart 0.572 bits)"><circle cx="540.7" cy="68.0" r="12" class="hit"/><circle cx="540.7" cy="68.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Lithuanian: 53% (next word 0.568 bits, two apart 0.302 bits)"><circle cx="549.4" cy="79.0" r="12" class="hit"/><circle cx="549.4" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Cebuano: 54% (next word 0.914 bits, two apart 0.489 bits)"><circle cx="551.5" cy="90.0" r="12" class="hit"/><circle cx="551.5" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Portuguese: 54% (next word 0.748 bits, two apart 0.407 bits)"><circle cx="556.9" cy="68.0" r="12" class="hit"/><circle cx="556.9" cy="68.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="French: 55% (next word 1.010 bits, two apart 0.552 bits)"><circle cx="558.6" cy="101.0" r="12" class="hit"/><circle cx="558.6" cy="101.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Romani: 55% (next word 0.992 bits, two apart 0.542 bits)"><circle cx="559.0" cy="57.0" r="12" class="hit"/><circle cx="559.0" cy="57.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Czech: 55% (next word 0.612 bits, two apart 0.336 bits)"><circle cx="561.0" cy="79.0" r="12" class="hit"/><circle cx="561.0" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="English: 55% (next word 1.048 bits, two apart 0.576 bits)"><circle cx="561.1" cy="112.0" r="12" class="hit"/><circle cx="561.1" cy="112.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Polish: 55% (next word 0.653 bits, two apart 0.362 bits)"><circle cx="563.8" cy="90.0" r="12" class="hit"/><circle cx="563.8" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Somali: 57% (next word 0.905 bits, two apart 0.514 bits)"><circle cx="573.2" cy="79.0" r="12" class="hit"/><circle cx="573.2" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Esperanto: 58% (next word 0.838 bits, two apart 0.488 bits)"><circle cx="583.6" cy="90.0" r="12" class="hit"/><circle cx="583.6" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Japanese: 65% (next word 1.545 bits, two apart 1.009 bits)"><circle cx="630.7" cy="79.0" r="12" class="hit"/><circle cx="630.7" cy="79.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Albanian: 65% (next word 0.777 bits, two apart 0.508 bits)"><circle cx="631.5" cy="90.0" r="12" class="hit"/><circle cx="631.5" cy="90.0" r="5" class="dot s1"/></g>
+<g class="pt" data-tip="Tagalog: 76% (next word 0.874 bits, two apart 0.662 bits)"><circle cx="701.9" cy="79.0" r="12" class="hit"/><circle cx="701.9" cy="79.0" r="5" class="dot s1"/></g>
+<text x="410.0" y="148.0" class="dlab" text-anchor="middle">Hungarian 33%</text>
+<text x="701.9" y="148.0" class="dlab" text-anchor="middle">Tagalog 76%</text>
+<g class="pt" data-tip="Voynich, as written: 0% (next word 0.119 bits, two apart 0.001 bits)"><circle cx="192.8" cy="194.0" r="12" class="hit"/><circle cx="192.8" cy="194.0" r="6" class="dot s2"/></g>
+<text x="202.8" y="180.0" class="dlab">as written 0%</text>
+<g class="pt" data-tip="Voynich, variant spellings merged: 9% (next word 0.184 bits, two apart 0.017 bits)"><circle cx="250.4" cy="194.0" r="12" class="hit"/><circle cx="250.4" cy="194.0" r="6" class="dot s2"/></g>
+<text x="260.4" y="216.0" class="dlab">variant spellings merged 9%</text>
+<g class="pt" data-tip="Timm–Schinner generator (no message): two-apart dependence -0.019 bits (none)"><circle cx="190.0" cy="239.0" r="10" class="hit"/><circle cx="190.0" cy="239.0" r="5" class="dot s3"/></g>
+<text x="202.0" y="243.0" class="dlab">Timm–Schinner generator (no message) — none</text>
+<g class="pt" data-tip="Greshko Naibbe cipher of Latin: two-apart dependence -0.005 bits (none)"><circle cx="190.0" cy="258.0" r="10" class="hit"/><circle cx="190.0" cy="258.0" r="5" class="dot s3"/></g>
+<text x="202.0" y="262.0" class="dlab">Greshko Naibbe cipher of Latin — none</text>
+<g class="pt" data-tip="Glyph chain, 4 glyphs of memory: two-apart dependence -0.022 bits (none)"><circle cx="190.0" cy="277.0" r="10" class="hit"/><circle cx="190.0" cy="277.0" r="5" class="dot s3"/></g>
+<text x="202.0" y="281.0" class="dlab">Glyph chain, 4 glyphs of memory — none</text>
+</svg>
+<figcaption id="chart-desc">In real language, grammar and phrasing link a word to the words two and three places on. Each blue dot is one Bible translation, cut to its first 34,000 words from Matthew onward. The manuscript keeps none of this link, even after its variant spellings are merged. Neither do a letter-level cipher, Timm and Schinner's meaningless generator, or a short glyph chain. Hover a dot for values.</figcaption>
+<details><summary>Show the data table</summary>
+<div class="wrap"><table><thead><tr><th>Text</th><th class="n">Next word (bits)</th><th class="n">Two apart (bits)</th><th class="n">Share kept</th></tr></thead>
+<tbody><tr><td>Tagalog</td><td>0.874</td><td>0.662</td><td>76%</td></tr>
+<tr><td>Albanian</td><td>0.777</td><td>0.508</td><td>65%</td></tr>
+<tr><td>Japanese</td><td>1.545</td><td>1.009</td><td>65%</td></tr>
+<tr><td>Esperanto</td><td>0.838</td><td>0.488</td><td>58%</td></tr>
+<tr><td>Somali</td><td>0.905</td><td>0.514</td><td>57%</td></tr>
+<tr><td>Polish</td><td>0.653</td><td>0.362</td><td>55%</td></tr>
+<tr><td>English</td><td>1.048</td><td>0.576</td><td>55%</td></tr>
+<tr><td>Czech</td><td>0.612</td><td>0.336</td><td>55%</td></tr>
+<tr><td>Romani</td><td>0.992</td><td>0.542</td><td>55%</td></tr>
+<tr><td>French</td><td>1.010</td><td>0.552</td><td>55%</td></tr>
+<tr><td>Portuguese</td><td>0.748</td><td>0.407</td><td>54%</td></tr>
+<tr><td>Cebuano</td><td>0.914</td><td>0.489</td><td>54%</td></tr>
+<tr><td>Lithuanian</td><td>0.568</td><td>0.302</td><td>53%</td></tr>
+<tr><td>Maori</td><td>1.100</td><td>0.572</td><td>52%</td></tr>
+<tr><td>Greek</td><td>0.980</td><td>0.504</td><td>51%</td></tr>
+<tr><td>Spanish</td><td>0.947</td><td>0.481</td><td>51%</td></tr>
+<tr><td>Malagasy</td><td>1.058</td><td>0.535</td><td>51%</td></tr>
+<tr><td>Hindi</td><td>1.098</td><td>0.549</td><td>50%</td></tr>
+<tr><td>Romanian</td><td>1.071</td><td>0.529</td><td>49%</td></tr>
+<tr><td>Latin</td><td>0.508</td><td>0.248</td><td>49%</td></tr>
+<tr><td>German</td><td>0.843</td><td>0.410</td><td>49%</td></tr>
+<tr><td>Italian</td><td>0.815</td><td>0.396</td><td>49%</td></tr>
+<tr><td>Syriac</td><td>0.693</td><td>0.332</td><td>48%</td></tr>
+<tr><td>Coptic</td><td>0.743</td><td>0.354</td><td>48%</td></tr>
+<tr><td>Turkish</td><td>0.711</td><td>0.338</td><td>48%</td></tr>
+<tr><td>Nahuatl</td><td>0.831</td><td>0.393</td><td>47%</td></tr>
+<tr><td>Q&#x27;eqchi&#x27;</td><td>1.044</td><td>0.493</td><td>47%</td></tr>
+<tr><td>Finnish</td><td>0.751</td><td>0.355</td><td>47%</td></tr>
+<tr><td>Hebrew</td><td>0.664</td><td>0.310</td><td>47%</td></tr>
+<tr><td>Arabic</td><td>0.690</td><td>0.316</td><td>46%</td></tr>
+<tr><td>Basque</td><td>0.620</td><td>0.282</td><td>46%</td></tr>
+<tr><td>Armenian</td><td>0.646</td><td>0.286</td><td>44%</td></tr>
+<tr><td>Korean</td><td>0.618</td><td>0.267</td><td>43%</td></tr>
+<tr><td>Cherokee</td><td>0.495</td><td>0.209</td><td>42%</td></tr>
+<tr><td>Estonian</td><td>0.751</td><td>0.312</td><td>42%</td></tr>
+<tr><td>Swahili</td><td>0.780</td><td>0.323</td><td>41%</td></tr>
+<tr><td>Zulu</td><td>0.644</td><td>0.264</td><td>41%</td></tr>
+<tr><td>Indonesian</td><td>1.096</td><td>0.447</td><td>41%</td></tr>
+<tr><td>Thai</td><td>1.439</td><td>0.581</td><td>40%</td></tr>
+<tr><td>Shona</td><td>0.733</td><td>0.290</td><td>40%</td></tr>
+<tr><td>Quichua</td><td>0.654</td><td>0.252</td><td>38%</td></tr>
+<tr><td>Amharic</td><td>0.614</td><td>0.229</td><td>37%</td></tr>
+<tr><td>Vietnamese</td><td>1.453</td><td>0.539</td><td>37%</td></tr>
+<tr><td>Farsi</td><td>0.773</td><td>0.259</td><td>34%</td></tr>
+<tr><td>Chinese</td><td>1.627</td><td>0.536</td><td>33%</td></tr>
+<tr><td>Hungarian</td><td>0.576</td><td>0.188</td><td>33%</td></tr>
+<tr class="hl"><td>Voynich, as written</td><td>0.119</td><td>0.001</td><td>0%</td></tr>
+<tr class="hl"><td>Voynich, variant spellings merged</td><td>0.184</td><td>0.017</td><td>9%</td></tr>
+<tr class="hl2"><td>Timm–Schinner generator (no message)</td><td>0.067</td><td>-0.019</td><td>none</td></tr>
+<tr class="hl2"><td>Greshko Naibbe cipher of Latin</td><td>0.102</td><td>-0.005</td><td>none</td></tr>
+<tr class="hl2"><td>Glyph chain, 4 glyphs of memory</td><td>0.033</td><td>-0.022</td><td>none</td></tr></tbody></table></div></details>
+</figure>
+<p>Any reading that turns each Voynich word into a word of a language inherits this property. The decoded text would have no grammar linking words beyond their immediate neighbours, and no language tested behaves like that. In practice, word-for-word "translations" of the manuscript cannot be ordinary prose in any of these languages.</p>
+
+<h2>What the manuscript's word stream looks like</h2>
+<div class="wrap"><table>
+<thead><tr><th>Text</th><th class="n">Same word twice, per 1,000 pairs</th><th class="n">vs chance</th><th class="n">Two apart (bits)</th><th class="n">Glyph link across the space (bits)</th></tr></thead>
+<tbody>
+<tr class="hl"><td>Voynich manuscript (paragraph text)</td><td class="n">9.7</td><td class="n">1.19</td><td class="n">0.00</td><td class="n">0.176</td></tr>
+<tr><td>Latin prose (<i>Secretum secretorum</i>)</td><td class="n">0.3</td><td class="n">0.02</td><td class="n">0.125</td><td class="n">0.038</td></tr>
+<tr><td>Croatian Bible</td><td class="n">0.6</td><td class="n">0.07</td><td class="n">0.282</td><td class="n">—</td></tr>
+<tr class="hl2"><td>Timm–Schinner generator (no message)</td><td class="n">10.2</td><td class="n">0.80</td><td class="n">−0.02</td><td class="n">0.012</td></tr>
+<tr class="hl2"><td>Greshko's Naibbe cipher (Latin message)</td><td class="n">1.4</td><td class="n">0.31</td><td class="n">−0.01</td><td class="n">0.002</td></tr>
+<tr class="hl2"><td>Glyph chain, 4 glyphs of memory</td><td class="n">4.2</td><td class="n">1.25</td><td class="n">−0.02</td><td class="n">0.182</td></tr>
+</tbody></table></div>
+<p class="small">The glyph link across the space is the mutual information between a word's last glyph and the next word's first, above a shuffle. In the manuscript, after <code>-y</code> the next word starts with <code>qo-</code> 1.65 times as often as chance and with <code>a-</code> 0.14 times. A short glyph chain reproduces this; neither published model does.</p>
+
+<h2>Decoding attempts</h2>
+<div class="wrap"><table>
+<thead><tr><th>Approach</th><th>On hidden-key controls</th><th>On the manuscript</th></tr></thead>
+<tbody>
+<tr><td>Letter-for-letter substitution into Latin, Italian, English, Spanish (48 configurations)</td><td>98–100% of letters</td><td>No readable text; entropy far too low for any of them</td></tr>
+<tr><td>Each word = one or two letters, fixed word divisions (Naibbe type)</td><td>99.8–99.9%</td><td>Real text no better than shuffled text</td></tr>
+<tr><td>Same, with the word division learned together with the key</td><td>93–99% in six languages</td><td>Nothing with 35 Bible languages, period German (1460–1543 and Middle High German), Old Czech, Middle English, Old Occitan, Latin, Italian; per section; right-to-left; line by line</td></tr>
+<tr><td>Cluster the word pieces, then solve as a substitution cipher</td><td>70% of letters</td><td>Real text no better than shuffled text</td></tr>
+<tr><td>Words of 1–3 pieces with null fillers</td><td>Failed its own control (collapsed into nulls)</td><td>Not used</td></tr>
+<tr><td>Calibration: a known Latin cipher solved with the <i>wrong</i> language</td><td>+0.58 to +1.10 bits/word above shuffled</td><td>Manuscript with the same five models: +0.04 to +0.39</td></tr>
+</tbody></table></div>
+
+<h2>Outside proposals checked</h2>
+<h3>ZFD, "15th-century Croatian apothecary shorthand"</h3>
+<p>ZFD decodes each Voynich word through a fixed glyph-to-sound table, so its "Croatian" inherits the manuscript's statistics. Its decoded text keeps almost no link two words apart (0.038 bits, against 0.282 in real Croatian). It repeats words immediately 19 times as often as real Croatian, and 66% of its English glosses are "?". Its validation score ignores word order, so a shuffled manuscript would score the same.</p>
+<h3>"Mostly Hebrew, words written right to left"</h3>
+<p>Letter for letter, the manuscript is far more predictable than written Hebrew: 2.2 bits per glyph against 3.4, in either reading direction. Hebrew words link two apart (0.315 bits); the manuscript's do not. Hebrew as a cipher plaintext was also tested in the solver sweep and gave nothing.</p>
+
+<h2>What could still change this</h2>
+<ul>
+<li><b>A crib:</b> one plaintext word securely tied to a Voynich word. The Latin-script German on f116v is the only candidate and it is weak.</li>
+<li><b>Physical evidence:</b> multispectral imaging, erasures, the original page order.</li>
+<li><b>Untested cipher designs:</b> pieces standing for syllables, or rules that change with position in the line. Without a crib, the space of such designs is effectively unlimited.</li>
+</ul>
+<p>The simpler explanation, a text written by a short-memory procedure whose spelling habits drifted over time, now fits the measurements at least as well as any cipher tested. That is not proof that the text is meaningless.</p>
+
+<h2>Reports and code</h2>
+<ul class="files">
+<li><a href="Voynich_Research_Notes.html">Attempt 1 — first statistics and reading guide</a> (<a href="Voynich_Research_Notes.md">Markdown</a>)</li>
+<li><a href="Voynich_Decoding_Attempt_2.html">Attempt 2 — letter-for-letter substitution searches</a> (<a href="Voynich_Decoding_Attempt_2.md">Markdown</a>)</li>
+<li><a href="Voynich_Decoding_Attempt_3.html">Attempt 3 — word-level tests and a structure-aware cipher solver</a> (<a href="Voynich_Decoding_Attempt_3.md">Markdown</a>)</li>
+<li><a href="Voynich_Decoding_Attempt_4.html">Attempt 4 — 46 languages, period corpora, three new solvers, outside claims</a> (<a href="Voynich_Decoding_Attempt_4.md">Markdown</a>)</li>
+<li><a href="Voynich_English_Reading_Guide.pdf">Illustrated English reading guide (PDF)</a>: describes what the pictures show; it does not translate the text.</li>
+<li><a href="voynich-research-code-and-results.zip">Code and results (zip)</a>: Python and Node.js, standard libraries only, plus every solver log, key and statistics file.</li>
+</ul>
+<p class="small">Data used, not redistributed here (the scripts download it):</p>
+<ul class="small">
+<li>Takahashi (IT) and Zandbergen–Landini (ZL) transliterations (<a href="https://www.voynich.nu/transcr.html">voynich.nu</a>);</li>
+<li>Lindemann–Bowern historical corpora;</li>
+<li>parallel Bible corpus (<a href="https://github.com/christos-c/bible-corpus">christos-c/bible-corpus</a>);</li>
+<li>HistCorp period German and Czech (<a href="https://zenodo.org/records/10013189">Zenodo 10013189</a>, CC BY 4.0);</li>
+<li>COMETA Old Occitan (<a href="https://zenodo.org/records/15300719">Zenodo 15300719</a>, CC BY 4.0);</li>
+<li>Timm and Schinner's generator sample (<a href="https://github.com/TorstenTimm/SelfCitationTextgenerator">TorstenTimm/SelfCitationTextgenerator</a>);</li>
+<li>Greshko's Naibbe ciphertext (<a href="https://github.com/greshko/naibbe-cipher">greshko/naibbe-cipher</a>).</li>
+</ul>
+
+<footer>Research carried out with AI assistants: attempts 1–2 with GPT-based tools, attempts 3–4 with Claude (Anthropic). No part of the Voynich main text has been translated. A claimed reading should only be trusted if a fixed key predicts pages it was not built from.</footer>
+</main>
+<div id="tip" role="tooltip"></div>
+<script>
+(function () {
+  var tip = document.getElementById('tip');
+  document.querySelectorAll('.pt').forEach(function (g) {
+    g.addEventListener('mousemove', function (e) {
+      tip.textContent = g.getAttribute('data-tip');
+      tip.style.left = Math.min(e.clientX + 14, window.innerWidth - 320) + 'px';
+      tip.style.top = (e.clientY + 14) + 'px';
+      tip.style.opacity = 1;
+    });
+    g.addEventListener('mouseleave', function () { tip.style.opacity = 0; });
+  });
+})();
+</script>
+</body>
+</html>

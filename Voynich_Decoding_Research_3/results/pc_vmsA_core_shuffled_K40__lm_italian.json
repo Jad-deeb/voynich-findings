@@ -1,0 +1,283 @@
+{
+ "params": {
+  "data": "../data/pc_vmsA_core_shuffled_K40.json",
+  "lm": "../data/lm_italian.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 17085,
+ "seconds": 127.372,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -175588.02788984077,
+   "train_gain_bits_per_token": -0.7665972951970517,
+   "heldout_gain_bits_per_token": -0.8426637661297478,
+   "heldout_tokens_scored": 4184,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -178920.94944638998,
+   "train_gain_bits_per_token": -1.048036534372086,
+   "heldout_gain_bits_per_token": -1.1203665157726272,
+   "heldout_tokens_scored": 4184,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -175595.15227934456,
+   "train_gain_bits_per_token": -0.7671988943428802,
+   "heldout_gain_bits_per_token": -0.7752069211832355,
+   "heldout_tokens_scored": 4184,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -176211.51157593768,
+   "train_gain_bits_per_token": -0.8192456312817564,
+   "heldout_gain_bits_per_token": -0.9303901998024524,
+   "heldout_tokens_scored": 4184,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 0,
+  "J": -175588.02788984077,
+  "train_gain_bits_per_token": -0.7665972951970517,
+  "heldout_gain_bits_per_token": -0.8426637661297478,
+  "heldout_tokens_scored": 4184,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c12",
+    2676,
+    "e"
+   ],
+   [
+    "U:c5",
+    1448,
+    "a"
+   ],
+   [
+    "U:c8",
+    1308,
+    "o"
+   ],
+   [
+    "U:c22",
+    1217,
+    "o"
+   ],
+   [
+    "U:c19",
+    946,
+    "n"
+   ],
+   [
+    "U:c33",
+    929,
+    "l"
+   ],
+   [
+    "U:c2",
+    894,
+    "i"
+   ],
+   [
+    "U:c30",
+    731,
+    "r"
+   ],
+   [
+    "U:c13",
+    714,
+    "d"
+   ],
+   [
+    "U:c28",
+    691,
+    "m"
+   ],
+   [
+    "U:c35",
+    671,
+    "t"
+   ],
+   [
+    "U:c37",
+    620,
+    "u"
+   ],
+   [
+    "U:c31",
+    558,
+    "s"
+   ],
+   [
+    "U:c7",
+    445,
+    "s"
+   ],
+   [
+    "U:c32",
+    399,
+    "i"
+   ],
+   [
+    "U:c29",
+    391,
+    "d"
+   ],
+   [
+    "U:c23",
+    346,
+    "s"
+   ],
+   [
+    "U:c3",
+    325,
+    "c"
+   ],
+   [
+    "U:c6",
+    289,
+    "n"
+   ],
+   [
+    "U:c18",
+    223,
+    "n"
+   ],
+   [
+    "U:c17",
+    113,
+    "g"
+   ],
+   [
+    "U:c21",
+    111,
+    "r"
+   ],
+   [
+    "U:c20",
+    107,
+    "i"
+   ],
+   [
+    "U:c38",
+    93,
+    "s"
+   ],
+   [
+    "U:c9",
+    86,
+    "p"
+   ],
+   [
+    "U:c16",
+    83,
+    "n"
+   ],
+   [
+    "U:c27",
+    75,
+    "p"
+   ],
+   [
+    "U:c0",
+    70,
+    "n"
+   ],
+   [
+    "U:c10",
+    63,
+    "l"
+   ],
+   [
+    "U:c25",
+    54,
+    "n"
+   ],
+   [
+    "U:c11",
+    53,
+    "t"
+   ],
+   [
+    "U:c14",
+    51,
+    "a"
+   ],
+   [
+    "U:c34",
+    45,
+    "n"
+   ],
+   [
+    "U:c39",
+    44,
+    "i"
+   ],
+   [
+    "U:c4",
+    44,
+    "i"
+   ],
+   [
+    "U:c24",
+    40,
+    "c"
+   ],
+   [
+    "U:c26",
+    38,
+    "b"
+   ],
+   [
+    "U:c36",
+    34,
+    "f"
+   ],
+   [
+    "U:c1",
+    33,
+    "f"
+   ],
+   [
+    "U:c15",
+    27,
+    "a"
+   ]
+  ],
+  "decoded_train": [
+   "anesonidtesisonesosiualarodiuonemeponoloriuestintalinononeuedonic·enonesosodisodaliuenin·",
+   "·osesisidemenedtaloneresoresoresonirerolauoniuonelom·",
+   "·anonenesiutesonemedisauisinonodoniuesesesonanofauoneseserontiponicestidemonertesoloniuesademisiueninasesisicisomoltomineranibosemosemononesonadesertisertetimanidar·esenidisoneranion·",
+   "·ideraltolonirides·idadenticoleriuestilibeses·",
+   "·es·odaneuisenomti·inonicanon·ememasegoriuaremalirartolefipaponemouereseseroremonemonomiu·isanoreresonesesemoridiemeuirerereroledtorodesarenededisontesereuomtolarireuesisiuouonanolodiuiorterorerodonimorod·adeuttiueuimalimeratonenolasesonodoledontarestemoniuemerononiuemonenesilontamolesalomon·isesesesefimoneuimiutinonauesiueninautonorisitononenasidenonoliuiortoneronononirodederonenemeresenonon·ereselesalocesegolopolalenesesereuerenonouemiuonememoneserod·eremenonolesesolomoleripesenonerttononeneuemonanemonesedemom·apamenemerimediuiradtemomesemiceronedonicesorerisesesalederononimarestoremadoloded·adinemttad·onoladonolememipemenafisodononinaserer·aremonaloledestedtemaltonasoniuodicauicedt·esatodoresesaliueresalesemesirodanonoleralesemou·emoresanamiutapopoleganalesemonouiesesononanopolidalemicirestenalemolalineserod·enesedegananesesememodesesonesic·toltesololapapesenesasesinesarip·teutoliraledtegamiuidiposeueronenalesesenodepastimimimestesiuosasesilteserementemin·onipontilontemiuademaleuolodedeseu·icadolemaroriutesiresololimonomolemaraminesauiuoloconidiramemtentiuomesemontesamerolodiciderticim·esereminonisalololesemedonaliralodesilalinasicaseresesoninal·anesolesesedeneseronolepisopalesesediconesosiderenolemoledoderal·tomenodorenoronesaloradaliledopomerolorisomesedesolesorisegouol·onitasinemadouenonemesonenesimatodolalesiuenoniresiuedeueresoneuioliuicenatisesereuegorededesiroladeseroleporem·emoniderienoninefauaderiresoreserorestolonesoremononeuir·eseseuonorolonantomerololentemenolonodesoresodoleuepiesiueseresegolisonereremonenitatisertedonouoreuesesemaliutis·oltonorenonesidirimerontolenoniroradtonfisaredinerisoleroralederemonolimemoneremeraues·oniuononomiuiuamoremontanemesetolisiuiuomenenesomicemtoriuesontiuoresefictisodonodonelesal·anadt·auontolimolilonanauerirosiperoltalonitonesaripoloniuauanesoniparodonodal·ogolemolonauememeromorireuonemouauineseronimauaneregononiuomosesodanenemomaseuiuontimemolomon·ipesenoueuemoutesonoltiuiuadoueremictinodolantalonisemesoderoltomerouiltominiuonimonareneueson·enomononomaledolonesedodesouarisonouonadonesadiu·oltiutepololicalicomeniuiriuodiuouonouonatamegolesesiutaltt·arononemoleuontoneronoliuesemoltonolesolenenonem·arertolesesentesouesidonontautoleuiues·onedolomerodauolodalimtoniuesonerisalisiconolaltol·ertalesonololtalaloserolaltonalololeuauesericeniuololeresabalopictololicalolonorolol·onalicanonolorimentoniuestolauiseralintocalaliuauontariualoneuonartesaleualan·altouiuesolomesononepodtalilalomemosadipenodestalononegoueuoleuan·tedeuamesadtolonolemodeseroradiciuerictalodesisonartontolemorolesoltesenomegouic·onotouantolatiuononouoroleralteualiuesonimiualeualodalesalauonouonesesolalonoralesicalesonodisolesaloniutololoniliuautesononiuibalou·iciuinonopt·iuolalesonodtiuaueueresiuidtodedicolalasolanamanimtauontimericememtteseromemomarerodonolemoneronereseutiuicemonicemoledol·emoleseuesolopomegamonemegaraueseminonesicicesalil·ipiu·estanopononoptoloutolesilonolipauedilor·amouanonolemoleseroueroutomemalalegolemolauofictolaniuiniuesesesedemol·onimauimalolesemegadaltantemerenonolegorerononesonegodaneseseuemtirones·eminalolofalamalololesiripolalalemenegalintalefis·tedoneuipemomimolodimericalenonauil·erodonesaroleronic·inonicaliciciciradtadileremimimerasemedicesededonololiutadaladarolanasicedinomtesestodamentipenilicolttonoradaderomesopadicadanedegarimegolereneredtidadertesipanesoderesemolerodadanidaniuicesodelttesirasadttiramesasemisodtoledesolaperesiuteseneredolames·irodenonodenicalimtorononeseficolodesemimtolonodesidiuesalalememociuicenenonodereralatinecantont·oled·ttterteseualinicolalodiuolaladolarauomolaledtonaleutiromonttiuodipalinoraladtonodolemolauiepomomonadalteuaradaualenalapiniuodarolal·tolerestemolomedonolalalomteralonoleuolasodoniuidtidimoneronememautemocamouiuemoneuonauinoltanoleceutoloniuesenonesomaltolenesouolononoleuiuolau·odtalonofauonerolalonesatoloralegamonemimtemauoradomaloconertalolomodones·erolodaneueuesedoporimenonintolonesenoledolesegolem·imatisefauesonodedoroninentaledesepolesediualenenem·esesiuolesolodonodegoleremoriconedonolerodesestedomepemedepalibal·eriuerouteueseseuodesineneriuonarolitoueueseseresiuitopoleredemoutt·erinesesoniuemesonouortimedadaladerolanasarbnolas·euadadeconemeramouolauiuertananodonedonosoreseuoresereseuisolololemeresolositores·onemironiuonononolesolericauonolenonesesicaliseseraltodeseroresestonestolemesaltolesesoreralesoresesenonones·olenticirilonaloltonesicimauentticimtonarolemolesefimau·onariuiuoualesoninonomisimalegaridonalimtiriuorbuimadauauisol·onemodemomalicadomiuanoriualemesilonodoloneuonesticerolesaltolauariuimomonauolesol·aderanibauodonanicortiltanononalonodololictoltolalefic·amananeneltadaleminonicoltarosicicoladoficticemonadodesttictonegat·alomedicaranicicesalorororaricidicodanonoleueriraleresestontegalolarolicelamonolalicomonemoneseuicenodt·odoradirttttesestinemesesedodemeseladarentesediuimeronesidesarbfipiuontttedededidtesaninefinon·aremauolirinanedodtedtononosauoniuoriloniporipolauedalicinertolidodiresilafimticemtonisibaderidtont·es·ibesaresistesimicesolemalicipesidonalalonicil·afinibneniseresidartedieronodololicicanadolop·euedeniuonestisegonelenauouenoninolesonemononolinantemimesantolegolenininonononesibidenolesam·oleuiuanestinodololoneronereuisisoneueredereuesenonolodemiseseueniseneresesemeutic·eu·alefiueutalololtiuolesesaladalolestolesoleleneroneuerisesoriuonisauoreselesadesiuegoriniseualisaticoriuesesesibal·amaradanesesononameralesesanemodolaleualemenocalidesonalanorefidilonisiuadiriroresododolarololalimoliresenoreseseniresesouimtarolines·olesonolouimeseralicalenouonemttic·eresedatoualesomesouimesetonegonolimoleseuaneresemiuesegom·auodalolicouesoueseseuemesesericemtisoneuemesauesesiemimanaualesedeson·eseleseresteueresememomesolenesanidestanenesodonttonesiuolestarenodeseneu·eseuisesinonesalerinemimimalamesiceseueuocononenonesiuesiuanoltorererolorontan·euticiseselesesadeficatololiuas·egodadtegolisemenoneselimesodomesemegasesodisolodesodtesonisesemtonolemesesesentimefidenesopolesasiu·esenedalepiseriseseseuedesesonaremolopesictisodonimtesegolenemedilomonesisoresoleses·esonenorololesesestonolironauesiseutalononesauerinesonalicononisoniuonamoniresolemonimtor·icalesolinonesonesegoltololeutisecenadinerenireueseseserenapesenedaladonten·ononemonesonteneresicenonireniuonemtolouoniuiuerodificesonontonononololalisedolontedenicediconontonim·egalolonolononesoponemtemonolinenesiuiuoresesadenonemedololtonemoleremodtonaledoliuoneuereuarononontestalimolertonesoutiuinesesadesesegoltodaperalodesenoniroredistic·ictoneuiononananimoniuimoltosiliuesegonod·alenoderilimeutienicomiriutiertodiremololaranoltononomoltononiponenirolor·omodalanonimolonanauodesortonesimaloliltauonidalepodanolaualol·erauaregauemesolenolouomononimesodanisadonodonorttesemonononidolauesiromonau·olimimalaralenonodononiesadonesonomomaniroderem·imolalaualoliuiresantamonauatololomesonoliran·tironemomeuemonorauonanoremiuananononeueresemodtomanalost·ilaterepolononimonidegoradolonomomodonesesesononadadonesesod·oronononeresatomodomodesemononomonoladimonontimenonodonerosesesoradt·ictadomtamonesoniriconeuedadosontedemononeronosilontadonopesoneselauadtesosononemteronadtteranonadesedos·esicasaronouomodic·alodemonesesolidedeseresiuemeseseresemeribenenteseg·oneleuiueseneualedonononiuololonerononoderefisoneralomomemesarolinesimesisesonenenonimiresesoliranaleroniraderosesegolos·enonel·amenopesesenononttaroneresedesontistaltesesesisttegoltesenonocesareseronauisesemeuapenesesemtedosononon·erolodesemalolouololauodisarolaralemiuolodoniuosares·estinoltalesauiueuodalolorimtolopaniutt·oleuoneratolalonedalesemosonaueriuolalalonosalaltemol·esomolestanareresasiriuerinoliricinonenicouaporal·olenesalolanartalisiuisilororontoliuimoparememalorerolalalinoneron·esironemoconoltiradiueseronafinesolimarediuertouiolodonalediualeminines·eraladtttolonaloladodonololonadenadesedarimediononauononalt·ieuolodaledoricanodtaledtautortoladoresidesolorouoleuemaronaliutinimal·icadonofiuicouitamesimolalonesesalauamemauolas·ttoneroltiemtalalalemiuisiutoronibemtonolol·egoleseuemodorederemoresesenononesesesesemiuonanonesiuelononadesalolesonoueses·auedoreleuesaliriloroninideuiueronosononiuoreremtolomolononontideuteseuemoniladererereseu·edeuedimonemesedeuonesisolisiroleronicicoltesinolemtesestestesesttol·oleresesesolopesicoltadegoremaresoresenoreser·onononinesedesinisesesoreresesemarareniuefistodonidolesemesesesonadistesolonemareseresonodenoleremonolesentesiuisemitesteseristoleu·ipolinononomidiuaronedonimedalestorirenonamiuamesidanoranesesadironesonaninesonereganarestoderadomasonimarenodadtonadenonoreseuiuonolarareuaranirenasiuonon·ipomtauauolododauimomonesolauentibstimalalouidodepononalolorantolttolalauadolapalonononesonemonolauesalomouemalesadodemedauodoled·isegadttatolefaminirenodeseuicimisoledomedadinemonomolenonimipolaloriuisononic·euicemimoderononanefiueseramamimidedoridonadaualontidiuiomaderoledom·onicolamalodouanonanipiuinaradauoliuaresintasalorouficauasauesonopolauanalesenisauilesectolalalenereselalasic·enonegonolimiliptalereremonemonenipesolalenonauonadesicicidonimiriuenauolefimonesidolodidalesisonosariuedegaderomedololtisauodierinedicesiriesiuol·egolodttodtamicicentomtisonoralesestimemteredemodaridiromerest·emtemanoleroresteleuonenestoltoneuenoletolesonoliualesegodonegodiresemolomonesadoderaleueraleseseser·euesesesesaleronimatesisolesolesesaleriuesiegaualeuieseseuolegalesadonoresesesesesegolemolas·onesololeserauoltaloneradtesonedonolisolepodiloneroloneroricodoneserorererolemesesesononololideronalolides·efauesenenicontodadesonolimegolentaresicadicontodanonenonanaledolaueuaniceuesedadadorentonenicemauesadasoronireroficeficicatorenauomomonoredesemoredesoranonodesasadanttodesonadaneronemarenesededesiceuicesamistonironesorecemticorirafiutonticenoficesadonanonenadeg·anonananedodiranerenonasiuauanesonesticanonesasasedanantadanadantisesanicedadatauantanesofictaderadadtesanantanedonanolanonanasastesaniceficantefiuadonticasonebidonolanonesesadatodictacadonesortadesonadanedadonodipodicolodaniuodtedicicesisonesonanasonananesictolesanadanidanolanomisicodanesonopolonasadofanegatesesonoreromanonedonanodoneseraronanicodedtaniuicanonadanalonicalaneranesanadegonicidasoliceramtan·iconatoladantaresictesanamesicadodadonouanononolanegamanonodenanat·ilananodemosibtenesasolanonodonicaricadesadonanouanesantademesoninegopoderarecegtananolanademanic·ononoresesonomolicemonolentesorederisonisisauidosesouonesimoniuemos·tedisoronisiuesodesadictarinonodaniuisilicicauoltemisistidoniuasidiuoladibresoponetanoniciu·amiraseseremesesedtesicedeserediconestterticaresorasesitoderenomiponeutason·ononesartoltesesiconbeseuidiraderoresicaredontesinefisesegaronesapodedaralesododononeresemin·ironesesadedeuodedonarononicoredelesodastadasiuonimadonadesesaremadtedibic·esonibedimosibtasademedonemicamoneltanegalicedonictonononenononoltonadtesesaledeganiced·inedemedimonisiconasononesoleredoladesoniperanenicadadesesesticodtised·edolonenesonesiresodicesidononontasonauiticoradtonertiuonesesasedadadesipontadonadodadoradesononttesedaredadtadademonic·olepticeuemontomapticesedoreseranipodasedesadtasenedenoniuadeponasanesiconasadatesopanedemodesodonolesemadamiseu·tanesodononadiremosesesodicodonemisonbuemodemocidesipiuonisad·ortiricodtesodaronanonticonodonontanon·ntedadisicicaptesaraniuelodtiponononicisegaradilesonesadonaresegaricononentiponeuonedadononadouomontomonaririconadalanodirododasonones·aresonenonosanadimarenesadonimtolisenororononicisedesaposiuemadoniminederolonenauanicaresonimegodegaronoresiuodenicadanesasalemilesicaroneriminediuedoneror·altolaliueganerimirafinesolemiuomademadomesadasodaregoresonalonamonoresaledauiuasenonesibadiuomeseseniresanaladinonoresadaradorasamtttal·eroponinanasontisemesodtesicisemodesontadidisedicalonolttonadicimamtestomtttadanisadont·esadadapedolicededenonegalisonttononoladonolisasiedtaregoleueson·emidesadedorolodtolidadodedoredeseutenadesibificenedaptinicadadedes·icaredodiuemoltedaresictidertonesicenenonedolanedttesedesesaptolauodilefictesolouegadedonedesistosoresas·edtttodomedisictesodicesesorisiuadaloroponenididisomesenedadaderisisaderefidapegtomesimalederisonadesenapat·enesttortisadisesesefimauisoladeredesenesimtemesedasonar·osimoradododonisedidolonicesidedodedonadtasonedttademadadoremerasadtarisenonap·esaroladesbtanopapesaparanararadiceromamadicisicadonicadasadadasofadt·icadegodisicananicadesademidanantadonadereserartadaderistauicartictiu·adiesadesentefadtonadadedemteradesesononbuelificesesedenomenonadadipesonesemadodononeseseseresedeponedesesasinierestinorarinonadamolesesestesesat·icomicesarestaderemeraradicadesenodesedanopibadonicadantomtadicidesadiconodeponodaledal·esidamedegodonicedestadolauimasesesoromesodelicesidoneradiresiconontesesestesonegoreronicasesicedesesoricesttomonedesicedinidestesadaresedisidestesesedenodtadadised·aradoleuedticalin·onareuestedononidiuadontibemalodtadaseredapoponantesadesadaltecadiconedolonesesoralertolasesoronemeresestontadegoredadegtanomad·ticolodipadticiued·",
+   "·esticasiseremederbidisonemolicisiricen·",
+   "·icedodador·edinonesodirenanodoricinolesest·",
+   "·ipaledapadadis·adadoniciuadested·"
+  ],
+  "decoded_test": [
+   "onedonononerolemaneresenteninorenesorisimeuimodenenemerertt·esopicidtisonololaliceuiuoltanesiueminilip·elemonaronegolegolorenontiamomomadonononemaloneseresonereronenimimiranertemolonodalaral·esininedodtemeresontiueriutolestimiuttesimolinesiredesemteminosinodesiueuonocadedtemoliralteridonidodesimeramonanelonaneualtododesicestemesisicesasonicinemegon·emintesonederesesemeraresodesononodeserenolonesalauesoleroleresomimidonolinonesemesesesinodidonerosoporentanesesererenenesiuodalesesesolinesodemer·ononemesonolerouimonolonertenoniuederegosonolenesolesart·alalalimoloriuomodesameuoualoniptemttttiriralareroltesiuodolic·odalesesauononolonanegacaroniceuauononemolouorauinolenaleu·",
+   "·odisegtoniliuolimesonanimomesemidiuenomim·esadanauouoredtiramicosaneuodededesodeuesalolesonemtoresodtosonteresesesonolesetesalinttesesteseralen·oniuiualimtoltatireranodoniuodononemiuticon·oreseranonalononalolalemtiuauaualeuinonalesololonaleuolanalon·eleranicegolomicolalisegareneuicesiranalilodesaresedenatoficicirer·enteselesisononoltenodauononoleltedolesesererononoleuesiroltodomereuoladasieuimodesoleuenon·eutememoltenonalereuodedoronedesesoleseser·esor·ouestorironononeremolemaremoleseuolonaneuedomtegt·onereronalaresesemeuenirouonolirenininesicttonistedisonteuereremonones·olerorinodolouerideuenatopedesesteronenesererereseuemerinorericeralidtoloneserarereuonol·od·ereson·emoporidodolonesericererolteroladesefiuediueuiuesestastaresegoltodaraneresololtaloricesonadteganicerodicilic·esimeseseresonedesesomiponesopolonemteneraleg·oleserolesesiuomereserolemopolonegasesemesesicononomesinediuisesomedentolemtolonesegodenonaronesesemipouem·ttiponolonidepolipolanoleronimisauolodesicimtirinomoralononemtesinasibasadesiradauisisanaridolorisefinoriresasisoliparaliuadonedicarem·alisoraloninenoridarimoneridiutad·icenicedodadicanodoronolonontadauolipadanttonadiliconofictadonasesosasonoriuanesantadolanononicericiconenoned·inemesenefiptadad·onapolediuenonisoloneporesesodalisisolauinestidisolonasedicedicisestiesonocicis·aridedadimadonorisedaradonadtasidaradanestasauteladadonodededegomodesedisodemtadortedes·ont·ononodeseneredonouiledesononalononedidonontododirisaderododesiueseseroralirtolonon·opoleradadtarodinticidanbresesasoraloradadesisisomidadesesoltodiceripidtesad·icidilalipoltoresisesttemenemoremesarinestemoriramorestoltiridiuolererenonimadedesemonamemesesonalolenisedtenireseseriuttatimeneramarisoresttonofaseronemoricalesolemosesomantonironimesopomeponiserodtodedeseresoroleseseseresorerisinesepoltemegorentirtesesalesataladesesamipolatolamisenones·tademireronorisentedadoradtemadadesasonolicororiuarticolauicamalarenidiresad·esapicirisimidapadidticidanomadaliuodefipofanonicosintomadasolodonededolapemadolerodaremor·toraresesaredidantoresasadicasasastoriramonaradadonodeserodad·onisereroridesereroniradonirediriueredesarerinofisadolenodesedemesemiuesiuisanbereradadesoderademonisilibedibes·adipontesorenader·",
+   "·asicadieniidadilesesinolemtanicidiror·",
+   "·iuedisemododtedapadamodtidonisipededor·"
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+[
+ {
+  "text": "Voynich IT",
+  "word_d1": 0.117,
+  "edge_d1": 0.1761,
+  "word_d2": -0.0096,
+  "edge_d2": 0.0055,
+  "word_d3": -0.0582,
+  "edge_d3": 0.0008
+ },
+ {
+  "text": "Latin Secreta (prose order)",
+  "word_d1": 0.1835,
+  "edge_d1": 0.0381,
+  "word_d2": 0.1249,
+  "edge_d2": 0.0105,
+  "word_d3": 0.0717,
+  "edge_d3": 0.0021
+ },
+ {
+  "text": "Latin Secreta, words scrambled within 9-word lines",
+  "word_d1": -0.0068,
+  "edge_d1": 0.003,
+  "word_d2": -0.0081,
+  "edge_d2": 0.0034,
+  "word_d3": -0.0064,
+  "edge_d3": 0.0025
+ },
+ {
+  "text": "Italian Rettorica (prose order)",
+  "word_d1": 0.5207,
+  "edge_d1": 0.1214,
+  "word_d2": 0.1756,
+  "edge_d2": 0.0217,
+  "word_d3": 0.0573,
+  "edge_d3": 0.0039
+ },
+ {
+  "text": "Naibbe-like cipher of Latin",
+  "word_d1": 0.114,
+  "edge_d1": 0.0026,
+  "word_d2": 0.0164,
+  "edge_d2": -0.0001,
+  "word_d3": -0.0018,
+  "edge_d3": -0.0001
+ }
+]

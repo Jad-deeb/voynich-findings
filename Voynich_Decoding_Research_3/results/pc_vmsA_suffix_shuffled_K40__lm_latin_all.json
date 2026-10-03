@@ -1,0 +1,283 @@
+{
+ "params": {
+  "data": "../data/pc_vmsA_suffix_shuffled_K40.json",
+  "lm": "../data/lm_latin_all.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 17376,
+ "seconds": 100.791,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -177224.9411127442,
+   "train_gain_bits_per_token": -0.6298292540691804,
+   "heldout_gain_bits_per_token": -0.6713470439631329,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -176033.11599453434,
+   "train_gain_bits_per_token": -0.530874362975241,
+   "heldout_gain_bits_per_token": -0.5273840635107174,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -179189.96033939708,
+   "train_gain_bits_per_token": -0.7929809284213645,
+   "heldout_gain_bits_per_token": -0.8414633066808915,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -178096.3711967902,
+   "train_gain_bits_per_token": -0.7021823768094304,
+   "heldout_gain_bits_per_token": -0.7428904855310489,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 1,
+  "J": -176033.11599453434,
+  "train_gain_bits_per_token": -0.530874362975241,
+  "heldout_gain_bits_per_token": -0.5273840635107174,
+  "heldout_tokens_scored": 4253,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c5",
+    3263,
+    "e"
+   ],
+   [
+    "U:c20",
+    2152,
+    "i"
+   ],
+   [
+    "U:c0",
+    1635,
+    "r"
+   ],
+   [
+    "U:c16",
+    1438,
+    "a"
+   ],
+   [
+    "U:c17",
+    1052,
+    "u"
+   ],
+   [
+    "U:c38",
+    976,
+    "s"
+   ],
+   [
+    "U:c10",
+    763,
+    "t"
+   ],
+   [
+    "U:c14",
+    578,
+    "o"
+   ],
+   [
+    "U:c24",
+    485,
+    "n"
+   ],
+   [
+    "U:c29",
+    476,
+    "a"
+   ],
+   [
+    "U:c31",
+    454,
+    "e"
+   ],
+   [
+    "U:c13",
+    422,
+    "t"
+   ],
+   [
+    "U:c4",
+    309,
+    "t"
+   ],
+   [
+    "U:c9",
+    296,
+    "s"
+   ],
+   [
+    "U:c22",
+    287,
+    "d"
+   ],
+   [
+    "U:c3",
+    280,
+    "d"
+   ],
+   [
+    "U:c19",
+    258,
+    "m"
+   ],
+   [
+    "U:c30",
+    248,
+    "t"
+   ],
+   [
+    "U:c36",
+    242,
+    "c"
+   ],
+   [
+    "U:c39",
+    208,
+    "l"
+   ],
+   [
+    "U:c35",
+    175,
+    "r"
+   ],
+   [
+    "U:c15",
+    161,
+    "m"
+   ],
+   [
+    "U:c28",
+    127,
+    "p"
+   ],
+   [
+    "U:c27",
+    126,
+    "m"
+   ],
+   [
+    "U:c25",
+    126,
+    "n"
+   ],
+   [
+    "U:c33",
+    114,
+    "o"
+   ],
+   [
+    "U:c21",
+    111,
+    "t"
+   ],
+   [
+    "U:c7",
+    103,
+    "x"
+   ],
+   [
+    "U:c34",
+    102,
+    "c"
+   ],
+   [
+    "U:c37",
+    97,
+    "n"
+   ],
+   [
+    "U:c11",
+    70,
+    "b"
+   ],
+   [
+    "U:c18",
+    46,
+    "g"
+   ],
+   [
+    "U:c8",
+    38,
+    "p"
+   ],
+   [
+    "U:c2",
+    35,
+    "s"
+   ],
+   [
+    "U:c32",
+    25,
+    "p"
+   ],
+   [
+    "U:c1",
+    24,
+    "q"
+   ],
+   [
+    "U:c26",
+    24,
+    "n"
+   ],
+   [
+    "U:c6",
+    20,
+    "u"
+   ],
+   [
+    "U:c12",
+    17,
+    "h"
+   ],
+   [
+    "U:c23",
+    13,
+    "n"
+   ]
+  ],
+  "decoded_train": [
+   "tamaniditatauiuicogepoteneuitauirecibitexatadistitaletidiuirarisidi·riuiqneseteuilescati·",
+   "·leresesiredimosteuirerexassereuitereresauisauirose·",
+   "·siuiditeposmenorerecicatephoseuitamagemesisiuexauiresreuitatiuidiretatirenoretareracotatenaretedirilipotiretamonetessedirenimouirecoreuinosdinereretomoremedinositise·dicotidiuirenosui·",
+   "·tirecastaletelita·tanedisditerexatisuicodedi·",
+   "·re·sesitasetiuess·mauibisiui·rereredesetaseretetesetamedimicireresareterereuerenoreuiseta·tedicaretanoprereuetiuereraterereretarireueuimesedirireteuitadererametamasemelamaletasanesileuitauesetarexareuiuileueui·serasstaratetirerereuiricasetanisetireuissetasrenicarerecoditareterinicomouaselirenneta·tetaretamocemeratelatauinisatitarimasaneuisetediconimireteriuilesatotesuiresiuiuileporerenirirerecodiuiui·rerepotatatatastereteteritamererareranosaretauireremererese·direpouitereretauererepocadiuiressuiuidirareuinireuideremeue·desedirereterisatesetarepomerenorereritidirererererereterereuisteseretamoremereuiri·senolestane·notiseditereredireribibinirereuirerere·serecatexariresresretetauideuitauitasameres·renenetedisetetareretexareretesenireteretediresa·redinissetataticotedisitinorecanasdinidicosicitititarediteresdileretetiuirerere·rirerexaninirexareresemareuirede·uatauaretederenodedileserecarenemi·tarastetetirispasetasimiueraremeriledomanouidiquateteletasditacomomanosmererexatoreti·uinenosnonisrelaniretaratediricola·misitoreseuetasditedicatemenonecoresesedirenatageciuititeseresmetatauecoreuiuamaselenoniditiresnote·tadirepouiletageteporerentatetamotauitenorecogerexamauicate·niretametarenomareuinocisepolererecadiuitaselererinoretereserete·tauexauexamoueuiteteuepomaninodeuediteueteuemarererareretomasate·biueuacasiredisatauirereuibiremetiuibinetalariuileretarexareresiralasetataritatelerequeprideraseresicodirecetore·reuirereuedibibitamasidiserenerereuetatadenoupreuinorate·nageramouetesisitaserexaterisremicacouidinireuitaradeuerelatediteporediuirerereuidisuaplereuaresilamoralemareledimate·tetauiueriniditirereretinauitiuitemenetauisteserirerelaridisetidirereuitetereuirererexadi·nibinininetataserereuitasireleditetexalaueridiconedirenamosanidistaserecaniuatecauimiuirotate·nocas·sauitaretelemauinisaretenemisereuatauireuininedetenatasanitauinogecouipote·xalaretasinarereredereserauirenanacomareuilenasiremasiuicosennicasicareseseratauiuaterereueui·cetidinararepouatauimaualatanisareretasdiuiteteuatanoleremauireuetaserenatossetitasiteuinenonareui·dineuiuisexacatenitacacadesasereuisauicouiteseta·tauatauanitarauetedaueritaletadotasauitauicagexatediresaualeuos·neuiuireteranosuireuisetamaretasuitetamaridauire·toreuatanomatauatasatasireuiuasastaralata·uicoreueresesateuitateuauilareporetetetessiteteuauo·reualitamogetastaleseretatesuitetaterasageremorilasataretamatatitauamatemomateuiuetata·uitamomositepotecasuicarestenamoretauisnolatexasauiuasetatauirauisesretaratasi·lauasamastadetauiuicecauateretemeresesenocouitantauiuitesarauirasi·scataseresenatauitareuirereuesetomaremeuatetaretasseuauiuateresetetatasrennedisaui·uicasamaualeditadohonasererexauaramastauiteraleratauitanatanauisauiletamatanouetetamoletauinomasagelauinostatabiuitasauamadeuilamotasa·netapauideua·tatetaresiuistasarareretacatatacatatetesetesisesitesnauitateretareresstareneresereretasibireuiresiretaraspatareuimoretecaco·retareraretageuexaneuireponetamaremamotatauetalaui·nota·rouanonibinitiuatasauatetatouitanetadirepo·nesaniuitaretetaresaresasnemetetamataredisamauinatisiramotaniuamahoreta·nitenatetamatareleditaspesrerecauitaleprecauitauitedisiniterareualeuita·repolesediteseterexatadedometatarexauiteuistapre·tarinorauireuerephoserenotascamama·reuicodiseporeuimi·tabimiredibouiseretaserarereteteredereremeredemeuiueuitatosilessetesisediretiuetaneretarenecatamiraretamonatauiuedeserenerecinedisenideuisetemetirediretetateseresremisicanirereretereuiresitetotameteuinostanetesesetauatenessereseretaterimatedereretasdedireretirene·teuiriuiuimametemesneuinotagetitemotiretestimiuitatitamatelireretatauinonouiuireretetitimesisuiua·temo·uatasrestarataliuautacolauotasitasequetaleritadetaratareseuiuatarauicotamanetasisnouiteretasasponeuenonatasrasesisatacouicoticacesetate·tareretasretauemouitatetauesreteuiteramatauiuicanouatiteuiretereresasrediretamareuirauisadexasuitauirauateuihotecauidouetestaridosatadauimararatesa·sestauiditauiretepocatauitaselicoseuiretereresaneniuequeuireslenneuiuima·retesenisarauicaceretepouicostauitalimacatedepouire·leretecicareuirereseuilibitateretemoteteretalemedire·detalataretauiuiseteterereuenocaredimeleseremasreneporecabitamote·resaretasramataraserepodiretauineseresaracorerematamacitarereresasta·remitenisitarereuisaseuaterereteseditesitanetirepo·nanicaceuirerenesamasamaresninineuirenomamorerasereretaratetetelerereretesexarete·uireteuitauiuiuitereteredisauisediuimemamatatereditequetereditadephorestareretaphetataseretaresetauitauicape·marinatalereuiteletauitirelesadetasdetespisetereterexatesa·uisetannatamauitiuisepolelamasecauitalestemesetanenosanatesa·uirederenetamaniuetaniretatereteueuiuiteuiranicasdiretamamatasisasetareuedisatatata·poresinonauiuinomauetamouamouitataquideseditatasteledic·sesisiripotamoterexauiretisnesetauereseremospireuideuipostanotauicata·tauemeposesistatateueuenenemedidiuisiuiterareteterediresuitamoletasesedinonetauetediuenoreuirerauineuip·uisedicentauatareletauererererinirereposedatistiritateresistissexanotacosssreriretisreniticomoui·biresadetetisirenisritauiuitesauitauediuicoseditisaditamouirestatisitetinomaresdiretauirexaniretitauis·re·tasperemetaretederetiretetaderelinomolenouico·bimeuedicoterereponeuaresrenisenodidiuidisirepo·ramorimauirenamamodiniricalariuilitamauiresidatamonosretetisismanitirititiuiuinonanoponotemane·teralanireuasiuitatenoreuireratemeuirarerirerarepouiteporeledoranotecorererereraspi·ra·teplaranmosetesrataradetaseteteneuatarederobiretararetaretamacoresanenicomanorelaphomereralelomalonelamareresto·nesesicamamauiuineretemarenireneteterateredinatetetauilexauerelimouiremanotetesetaueuidinecetiteretetemamoditatacotereresateuaneuiuite·retauisesatereretetoterisacorentata·retanossatacosetasalemamasicaditatetererasirereretadicase·sasetatitasamasatamararessrecoreuaquirarecomalareuereresinatatarenoui·retateresshorepreresetepometasinotassirireuiuissuirotatetasneriuicarira·sracorecouiretaretireteletenereuireraratadiuiriuiretassasitanamorereteuesissi·rauanorererorerecatiditomatetane·miredisdatetereridanedilereuiuereredicadetadetasererenareuiterereuauitarerereterisretelereredetiresexa·redisitadileretediteragenitanicaretidireuemerecamitetadiretedirererenecastenetererere·reuidiuetetasteresuiteteuinareteratateuiuiretaredirecetamiuiuitonotauisenolecotareuiresue·tateditalisitanoretitastatarasteraricatireriteramauitarediditariretineuisri·uiuiresidiuisriretitaricateritauilestesasitatarenocetarauisimonisiuitetetedireteceuaririmerimouisisuite·malaquitereuimauiuiretereuitetidirelatadibimasetiuinicatauitauiretareresisuileretelauirareraseuiuiuitarestelererepuimanastaliditasereretetatotacoretisireniuileseritataui·posuiratouibisisiseditaretauauiresatauinipo·latauirereterastarinisetelascorenacateretetasecereuauisimedisnouibiuiritenose·sepotaniuitetauisisasireuesuirotexatediuanagecalecisenicanatite·renamotisaretateritasaueuiuitexaninicanicocaconestotaleuinouisitesasteneuisa·xatetelenetariuiuiuitacoretauireuisesesimecarede·lesetanatetatalereniuasenosagetereneneuitatesi·uateuirenerarenisesauisirerexasisiuiuirarerereuitasecoteseua·toporedeteuiuiteuiteresetatesitesecauitimetauiuicocauireteca·neuiuiuiditamouetauemogereuiuiseniretanouiuisrecouicauirenereresetaua·tassesesseuiteuiretanoranosereuiscareuiuireuisemonosneuirereuiretesasetateseuiuiresremoressrequisererise·titasediuisaueseta·timoredirererileritaretamareretiretereretariristite·uipoqmacodiratericoniuicauicosirediuiuirexamataretetesereresestiteteutetauiririsiretetamametenilereuiresirecotamotema·diuidi·sexauiretauiniditasseuidirerireuinareuatareteteremessderetaremeuicospicareuisaderemoradiritareresdisesiuisi·reteuitaretagenagetesauimaneteselarexatasepolanesta·xatonotaplemasanorauilepharetauepositauas·maracaredisetexaretarereseuisaretatatatauiretetesreta·tasetanasnirereresetetaretimetemesiuiridisamosete·poritatatisinetatetetateposesenouasataleposerenetauerematelesiniresi·retecarequiseuamenotatareuitetiresereneremaretanametiseniteretatiretitita·releseretatatedililisesiuitesimenirisexarisemeriqnouisauisitas·coratauitecasenoditauaterepnanasetatesiseteporetesesaterareseuiletatanoseta·dimetoditatasanouasenereretanoprelenaneresatose·suanarereuasretatalilaretaterasuecogeresuireti·xatetarareuicarirerexalitaricocaretarererelanomouiresanoniuinetatetareuisameta·tareproraditeretosenicolerarareuiseuinitasererenaleueuisniuiuarerastararenimenererererera·rerareleuiresererauiteretedeletereuimenamauamauiteresroderedespamesste·noredidedomomoretatessetidoreqmatadequetere·biuicatirenoretiretarereremarererineristelesuiuiletetarereretiuinotestiteuireremaredediuimetareleuiretariuatatamareremaspereleuatera·uiteuiuisinetetaseuiresireretedespitericosetaserecobisenitamenerenicauitimoreuidisnisetesuiresenesemeteredinisesuireconirexaratauitesetedisesilederetauiui·uiseuasasateuiuinaleuemoremesauisueretatelilenalepotanoditedisenophiuaspalenanitanomouiuiuiconarenolasatiliuesaretamasesirerenapoteri·ueteniuaspatetereuitetiuireratateteredesetadisireninetetecatederetesepotequidi·rataretenereuiuisiretatereseseteterenetedisenateditatetamonerereterepo·uidedisetauisacouicomotamaneponateponemeuetoneteuesannenacodicouidiresacoteticomenatotecistatoterirenpopodoge·xauiteuiresecouitalererereporeuidiuiresetediuinacosenodiuiliuitetetadicatauiteuicareseuitetediseuisselarexanoreserereresresauipredirediteteuerexata·rereuitatanitaseditatitauestedauetemaretaceresrerireuisetetesereres·resresiterenitauarorauitereuamasuiracatetetateuitisalaremeseuissetereretiseuiresisereterareticaditare·ragereretetaresitediteleteretetateteretarequenaterastenirateretereseuiretemarexameretaretexa·sidetatereresadesteuirecatatacoreuirecotideuecouireteuirenetareuipreserereteretirerequicatetereuitetetire·xataredirinimetanirepouiuitedireritamonimenitouiuanimimereuimetoretisaramitorauirexasexauitanimimaresaresinedicoserediuirepouicagerinasenesicoritimibireresesimenimaphisitatauitamininireuimiremitaririremoramitasexatamaleuinodiciretadibilemetasuitamedibibitinisinibirisexa·siuisisidiuitemiredinicotasagemaniresssimimesereresisitasesisisitamotasinarinibicanotasicogenetasireposetatamositasireuisidimosinosenetatamomireminitatimasisitataseuicaleuiteniuiporedexaseditanosicoresetasiconisinoresesicamosimitenisicauitarimidititesitenosisedinosidimisteresisisitisiconosemeuiuisitemouicanosereresitiretamenirereuenimirenonouimimarerisinitaciressitamasiuirimenonimitesiresitesiserenomitepotedidisetasi·meuibexasenossemauitamonisetemeseuisisisasicouimimibisesireuidinire·resisiuirecissridesetisiminibicosedisitesisisisasidesitasidetauidibidesirenecidataninonisiseresita·uinibinoredinepomorenicotesdedirerexauitecomadexassauidetecomarese·taretedinococanosererecatanemenicasicomamogerentareteporerenitapotererepomaprededinatanimita·sesenererererenoretaredirerereremonidetataretamasedesesetexauirepouemediratadeni·nemididetatetareditauephiratetererexamataserenisdicauitereledeuitareseresetedemoniniuiretereti·teuitatanererarereuineuicotautepomauiretanerexauireneuiseremaseredeuarexani·reuitariresexatanererereuiretoseuinotacomatanoreuidisnauitauenisidiuauisetataretorexasitare·uirererereditemiuiseuiuidetereretesetauirerenodinasesitacomastauistore·retenacadeuicoretatamoditauiuinosdeuisacatatouesesnorespauiprerereseseremeuisseuiretaseseserecauistauereseresetasedereuiui·gecestararediuanentatatalibiredinimeuisererentacocoreuiuitasinenosesitetadinosenanogesidoreuinouidilenoresimomora·ssirecabiuirererepoditauitauiuidetepomareuirecitecomitauitese·uesrediretadiuisecanonotadeuiuiuinosnoni·ntaretatedirecistisesitaroniuameuibiuitatetesenicoreditasiuisemetisenauistitomenilauireseuiuinicaueuitasenosetediuiseteniuiteneuiseremodi·seremotiuinesisetenditasiuitetasepomaneneuinimosemorexasetaresiuitetareretauinonasidisereniseresibiseuiteretauidinosexataselereredetaseuiretemarexareuirere·posretatauibireterexauireterexaseseresenereresesedogererepococosenoseneteresalapomonicogenetasedetadiremacoteseuiquetagesesesesesetasste·rereuinosirenitamerededetadedetoreseteuimepogetereuinonicotamenicatatesetadesuestasdesidereuis·reresederetemireredinistamanisspeuirenemipodogemoresdexaporadeni·reporenerenepouistesesenireseretaratadirenomoditacarecesuiposeredeco·pomatenetarerenadepostanateresuitemodimeuiretidiretasreremetadessesasexagetasderenamaderesitetepotacoderepo·retatassesereditatarosenonecouererereteseciuideteteteuetedereresediteteneretasedetesnemateporereleuisemedirede·direuasnetaserepotamatemenamacogeredememedetetaremareseuise·leteseseremiuiseretereuitareteresereuinetamouiretasserereseserereresetasetereuide·maseresedistasidepotadesedisesesetareueseseditesseuinoresesemenexasen·tamogenitedidisitadereseretemisiuasenicaremaresetarederemessadeneuamotata·sesteretemitateretauineserereuaresemimauidicalexamanomadeconecanosesecemenicoreseseuiredotamareporenedirereresenemaretetaconesenonisiseteremetataredere·tasemitenerotasererereseserenerelaninerenidediseuitasenissetadeditedimotadeuireuiuiledete·teteserereneuimidemeuaseresameseretaseueredexataredecaresetenmeuiuitateteretarenoterereuitasetenaretequeuiresssenireretadeuitenetaresesedereteteresrereredisetaneselere·seseteraretaceteti·uideraresreuiuispameuitamaretecatasesererephouiretatesenoretatamosenibineleuidemesexagetaleseniuecarereretetauitanequeredemetasiuede·tanateuimesetaditare·",
+   "·retatamomirerereresteteuirerenitadedimi·",
+   "·direnosere·dediuiscatecanirenemeuirirorena·",
+   "·meterereresete·deseuitaueseposre·"
+  ],
+  "decoded_test": [
+   "direuiuicareteresirererisdisicaricamatelerateporirirerereuata·recemetiuateuisaretauaratalassinotareticami·nomouineuitotequenogeuireueresenetauinopreteuileretiuirereuiditetelenirenaretesitatenela·detitimeuisrererenistaredistenotatetatastatereuititedetaresretiqnouiretaranidicaritarerisetitoretiuipouimatereseuisinouiniratitasisicodiretorepreuicosesiniuireteta·retimadibiriredirererenedeuidisiuiuirererirauicalesatipreterepomiletiditagemidiretibireconitiuirexadinerimanicaredireririmamauitiditamatatireuirere·uiuirereuitarexateuiresireuateuitacaretineuireditatetases·deletaletexalaueuireseramalauinosresssualeteleseretastamatamaui·caunamasamanitenisicamaseuicoratauicoredesasesamataditera·",
+   "·uitetespauetalaredissireuetareticamanete·tacacanataserissenetasesirahocamononararetatamauirespemauiscouiuaretirocouitedinaretatitatarerestarelari·nitamalalesritabitereniuiuitatauiuiretauadiui·poporesirenouinitacatireuatanasateramouitaretetauilirataniteui·lorenoniquenenereleledisederaueresesiphouitamotarecauicamonilere·riuacopocoteuiuiteuoriuinamouiteposrirauitererereuicorarelecauaseuererateresemaratesereterageui·rasrerereuariuitererauicaseuicareditexanire·nita·sarauatateuiuiuirererereneremereratauisirarenestas·prereuitereretarerarilequitaseraditireditasuitereriteuisradirereuisis·rereuediuiuitareteraricadiritistoreuirirerereretirareretineretaretecasreuirerenerequiti·ui·remaui·rerepotinitenimerederereteuaretesetatisaretaratasetessesseretetatauinecoreretetauoleditatauinesticatareseuamame·talerereleremicaumauedeuirerereuireretaretane·terererereremoserepretarereredimesereremaremesiuiuetibicotaleresereresteretoteditauasedauinecomamareretare·stabisidiuitedetepolenitedesilemonauiuirediresteuiuesetauiuibistiuicomasesiredidisatetepoditeteditepiticauitasetetauisetedisediremosere·teteseteuitibibitesetenaresetataco·todetadisiserenoposeuitenonisdisaremisediuatanorenitasirenotasenisetasesepoditaniresissinosiuisitoreditauicauidi·norereribimitasise·nibitedereretaterediceremecodetexamogesauicaslepoteuiserediretatodetarareuiuexama·seredenilesenicoledeseseuisesdetesesesiretasesataposiseuinirerecosenidereteuiretamouesrexa·uip·uiuiuinodidireponauiredeuiuitauiuireteuiuitauiuitetesereneuiretamageresetibistemodi·reporeporetaneneuitaualerererererenedinenerenotetemepodemenogetatataretasenarere·bitetodiderespaderetitasrecoreporetisemirepreneteseuetitapotatetitatauirediuiteserirereuineremanouilededitedesditenororecasphomedilesenecouemassuimedirenireuepotetederepomaneditauiteuitereuisediuicoresesuirererereuetetoretedicamareditidedilesretetodistespotalerepomonexareseretestesetedidide·taseretereuiredexasresesemouareseseneseuisemisesetasetatalesamoretesetatetemese·direniteletetededesetamorereueseletasexamerequitonerisueseseresedirererederepotereniserene·tasereretesetetemiuauetedidemogesesetaneteseuisenenenotaporeuise·milererepoterererediserentenosexarerererererediresemotecatareretareretexatedipreresedineseredeteuicoderererere·seneuiuadenodisere·",
+   "·setadestiuetepotoredotiretesdiniterese·",
+   "·taredeteuidesderenosenetateuidemererepo·"
+  ]
+ }
+}

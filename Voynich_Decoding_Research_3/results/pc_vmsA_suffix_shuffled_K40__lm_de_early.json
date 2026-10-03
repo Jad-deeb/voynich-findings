@@ -1,0 +1,283 @@
+{
+ "params": {
+  "data": "../data/pc_vmsA_suffix_shuffled_K40.json",
+  "lm": "../data/lm_de_early.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 17376,
+ "seconds": 105.949,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -183538.24882040513,
+   "train_gain_bits_per_token": -1.1540107527713257,
+   "heldout_gain_bits_per_token": -1.1646360732738024,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -181349.86250781085,
+   "train_gain_bits_per_token": -0.9723133494144481,
+   "heldout_gain_bits_per_token": -1.0014586823824077,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -188130.62255185508,
+   "train_gain_bits_per_token": -1.535306494499665,
+   "heldout_gain_bits_per_token": -1.5728347356945036,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -182900.5039490525,
+   "train_gain_bits_per_token": -1.1010600527682846,
+   "heldout_gain_bits_per_token": -1.0741882840247399,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 1,
+  "J": -181349.86250781085,
+  "train_gain_bits_per_token": -0.9723133494144481,
+  "heldout_gain_bits_per_token": -1.0014586823824077,
+  "heldout_tokens_scored": 4253,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c5",
+    3263,
+    "n"
+   ],
+   [
+    "U:c20",
+    2152,
+    "r"
+   ],
+   [
+    "U:c0",
+    1635,
+    "i"
+   ],
+   [
+    "U:c16",
+    1438,
+    "m"
+   ],
+   [
+    "U:c17",
+    1052,
+    "e"
+   ],
+   [
+    "U:c38",
+    976,
+    "e"
+   ],
+   [
+    "U:c10",
+    763,
+    "a"
+   ],
+   [
+    "U:c14",
+    578,
+    "l"
+   ],
+   [
+    "U:c24",
+    485,
+    "e"
+   ],
+   [
+    "U:c29",
+    476,
+    "t"
+   ],
+   [
+    "U:c31",
+    454,
+    "n"
+   ],
+   [
+    "U:c13",
+    422,
+    "s"
+   ],
+   [
+    "U:c4",
+    309,
+    "u"
+   ],
+   [
+    "U:c9",
+    296,
+    "d"
+   ],
+   [
+    "U:c22",
+    287,
+    "e"
+   ],
+   [
+    "U:c3",
+    280,
+    "e"
+   ],
+   [
+    "U:c19",
+    258,
+    "o"
+   ],
+   [
+    "U:c30",
+    248,
+    "i"
+   ],
+   [
+    "U:c36",
+    242,
+    "g"
+   ],
+   [
+    "U:c39",
+    208,
+    "a"
+   ],
+   [
+    "U:c35",
+    175,
+    "i"
+   ],
+   [
+    "U:c15",
+    161,
+    "i"
+   ],
+   [
+    "U:c28",
+    127,
+    "g"
+   ],
+   [
+    "U:c27",
+    126,
+    "o"
+   ],
+   [
+    "U:c25",
+    126,
+    "c"
+   ],
+   [
+    "U:c33",
+    114,
+    "z"
+   ],
+   [
+    "U:c21",
+    111,
+    "a"
+   ],
+   [
+    "U:c7",
+    103,
+    "y"
+   ],
+   [
+    "U:c34",
+    102,
+    "b"
+   ],
+   [
+    "U:c37",
+    97,
+    "k"
+   ],
+   [
+    "U:c11",
+    70,
+    "e"
+   ],
+   [
+    "U:c18",
+    46,
+    "o"
+   ],
+   [
+    "U:c8",
+    38,
+    "h"
+   ],
+   [
+    "U:c2",
+    35,
+    "d"
+   ],
+   [
+    "U:c32",
+    25,
+    "e"
+   ],
+   [
+    "U:c1",
+    24,
+    "d"
+   ],
+   [
+    "U:c26",
+    24,
+    "p"
+   ],
+   [
+    "U:c6",
+    20,
+    "e"
+   ],
+   [
+    "U:c12",
+    17,
+    "o"
+   ],
+   [
+    "U:c23",
+    13,
+    "w"
+   ]
+  ],
+  "decoded_train": [
+   "stomererstimererglonglanenerameringreranymamerdarstanarererimirerer·irerdenenanerandgmir·",
+   "·aninenerineroldanerininymdenineranininemeremerilen·",
+   "·erereringldincziningrbmanholenerumimoninererenymerindinerstirererinstarinczinstinimglamincminanerirarglirinstolenandenerineroleringlinerczderenininslolinonerkleraren·erglarererinczder·",
+   "·aringmdamaninarim·stenerderuninymirderblener·",
+   "·in·enerimenirendd·omerererer·inininenenameninananenstonerorgrinineminininineninczinerenam·anerbminimczhininenireninimaninininamirinenerineneririnanersteninimonstomenonamomanamemcneraneramenenstinyminereranener·enimddamimanarinininerirbmenimerenarinerdenimdinerbminingleraminunirerglolemenarinpenam·anuminimolgnonimanamstereremiramiromemenerenanerblerorinanireranemslunderinerereranglinineririninglererer·ininglimamstimdaninananirumininiminitczeminumerininonininen·eringlerunininamenininglgmererindderereriminererinereninonen·enenerininaniremanenstingloninclininirirerininininininanininerdaneninstolinoninerir·enczandsten·czureneranininerinirerererininerininin·eningtanymirindindinanstereneramerstemonind·inkneninerenunamininanymininanenerinaninunerinem·inererdenamstsrblanererarklingtemderkrerglergrarirumineraninderaninanarerininin·irininymererinyminineniminerinen·emameminuneninkleneraneningminenor·stimdananirirdemenameroreniminoniranelomczererdemanananumderamglolimkldinininymslinar·erknczdklerdinamerinamimanerirblam·oreralinenenamderanergmanonclenglinenenerinemamongreraranenindinstamenglineremimenanklererarindczan·imeringleranamonanglininpumanamolimeranczingloninymimerbman·erinumonuminkliminerklgrenglaniningtererimenaninirklinanineninun·stenymenymolenerananenglomkrkleneneranenunenimininimininalomeman·erenemgterineremumerininererinonarererknamamireraninaminymininerimatenamstirstananindenhireniteninerbleringnalin·inerininenerereramomerereninenininenimstenczehinercziman·emonimolenanerersteninymunirdinorbmglererkrineramimeneninamineringlinererinininererdemhaninemineramolimaniminaneroman·ansterenirererarinininiremerireranonensterdanenirininatirerenarerininerananinerinininymer·ererererenamamenininersterinanerunanymamenirerblenerinemolemererdameningteremangteroreriliman·czgtd·emerstinananimereremininenoreninemamerinererenenanctamemerimerklonglerglun·ymaminameremininineninenimerinememglomineranemerinimererblenpergtergminenenimameremanininener·gnareremiminglemumerimemamameremininstdererununemumczaninimerinensteninemsldenarameranerenczwminer·erenererenymgtanerimgtgtenemenineremerblerinenam·amemamemkramimenuneteniramanamelamemerumerbmonymanerinememaneld·enererinanimczderinerenimominumderanimomireterin·ulinemamklomstemimemumerinerememdamimamim·erblineninenemanerumanemeraminglinanananderununemel·inemaramolonamdumaneninamanderanamanimemoninoliratemaminamomumsrstemomunolomanerenamam·erumololeranglangtderbmindanemolinamerdczamanymemeremenumamerimerendinamimamer·amememimdamenamerergngtemaninanoninenenklglerumpumereranemimerimer·dgtameninenemameraminerininenensziminonemunstinamdenemeremaninenunamumdinpeneremer·erbmemomemaneramelolemenininymemimomdimeranimanimameramemumemeremeranumomamczenanumolanimerklimemonamerkldumstereramememimeneramolumem·enamemerenem·amanaminererdamemimininamgtststgtstananenanerenerandemerstaninstininddimineninenininstererinerinerinimimdemstinerolinungtgl·inaminiminamonenymeneringlenimominomolimstenamamer·klam·ilemczwrerersremamemetanimsleramenumeringl·enemereruminanumineminemdenonanumimamineremomeremurerimolameremimolinam·eranemanumimuminanerumdendiningmeramanhingterumerunerereriniminemaneram·inglanenerunenaninymumenelonamaminymeranerdumhin·stirczimerineninholeninczumdgmomom·inerblerenglineror·sterorinerelereninsmenimininananinenininoninenonereneramslerandenanerenerinsrensteninstinengmstoritinstolemsterenenenineningrenerenerenerenaninarinerinanstanenindinorerbmerinininaninerineranszamonunerkldstenanenenstemanendenineninstanirimanenininamdenerininarinen·anerirererimonunindenerczumonsranolurinandarorerumaramimanarininstamerczwlererininunararonerderem·anol·emstdindumimamareteumglamelumerumendenamanirstenamimstineneremstimerblumomenumerdczeruninumemdelenenczcmumdimeneremamglerblsrbmgnenamun·stininumdinamenolerumunamendinunerunimomumererbmklemaranerinanininemdinerinimominerimeremenymderamerimemanerolingmerelenundumirelemameterimimimanem·endumereramerinanglgmumeramenarblenerinanininemenerendenerindanpenererim·inaneneremimergtgninanglerbldumeramarimgtunenglerin·aninangrbminerininenerarerstanininolunininamanonerin·enimamaminamerereninanininenczgminerinaneninimdinenglingteramolun·ineminimdimomamimeninglerinamereneninemimglininimamomgraminininemdst·inorinereraminineremenemanininunenerunerameniringl·emkrgtgnerininenemomemomindererenerinclomolinimenininumimunanunaninininunenyminin·erinaneramerereraninanineremerenererinimomumaninerundenininerimenholindumininumhonimimeninaminenimerumerbmen·omiremstaninerunansteririnanemenstdenanderenaninaninymanem·erenampemumimerirerenglanamomengteramandanonenimknklememanem·erineninenumomerenamerinamuninanenereranerimerbmderinamimomsteremenamineneremamamum·glinerklemererczomenstolemolerstamderenenerstamdananerb·enererirglstoluninymerinurdenenstenineninolderinerenergldstczsterbmat·amenonglenerdstamanenenenenonerererereraniminananinerinderstolanstenenerklenstenanerenczinerinimerknerh·erenergnpstemstinansteninininireriningleneturdiriramaninerdardenymklamgldddinirinardinerarbloler·erinemenanarerinerdirstererinemeramenererbleneraremerumolerindumarerunirklominderinsterinymerinirsterd·in·stdenininstinaneninarinansteninarclolanczerbl·eronenerglsnininglenemindinerenklerererereringl·imolirimerinemimolerkrirbmamireraramimerineretumolczdinanirerdimerurirararererczwmklglczanimen·animamerinemereramanczinerinimanineriminiriniminglerunglinanelimklanglininininimder·im·unhamimpolenandimamitenamenananenemaminenilerinstiminaminstomglinemenerblimklinamholoninimanalomazwnamiminindal·enenergmimimerereninuniminerinenananimaninerkmananimeranymeninarolerinimklananenumenererengnuraninananimolerstimglanininemanemenererin·inimerenemanininunszuniremglinpstst·inimkldemumglenimemanimomerbmerumananinimerinininamerbmen·emenumarstemimemimimiminddinglinemderiminglomamineninineremumiminkler·inamininddolinhinineninglonimerklimderirinererdderilamanamdenirerbmirim·dimglinglerinaminsrinanananeninerinimimstererirerinamdemerumemolininunenerder·imemklininiliningtirerulomanamen·irinerdetananinireteneraninerenininerbmenstenameninineminerunininemeruminininunirdinananininenurinenym·inererameraninanerinimonerimerbminarerinenoningtorunsterinunerinininengtdunenunininin·inererenunumdininderananereminanimstanererinamineringnumorereralczamerenczanglaminerinden·stanerumarerimczinirumdumumimdanitirgtariniranimomeriminererimirinurenerdir·ererinerererdirinirstirgtanirumerandanemeramaminklgnstitererolerereranunanerinangnemirironirolererderan·imamderaninerimererinunineransrerinamamererimenurerergtumersterinamininerderaninanameriminimenerererstindananininherimemdamarerimenininunumslstblinurerinereraneniramster·glderimslerererereneraminumemerinemimerergl·amsterininanimdumirerenanamdglinemgtaninanamengninemereronerdczerereriranczen·englumereranamereremerinenderilanymanerememongtangrenerbmemaran·inemolireminumaniramemenereranymererbmerblgtblendslimanerklererunemdanenerem·ymanananenumirerererstglinsterinerenenerongtinen·anenumemunumamanineremenczemonuninenenerumaner·eminerineniminerenemererininymererereriminininerstenglanenem·slglinenanereraneraninenstunerinengteririnimererblgteriningt·enererererimolenstenoloninererenerinstklererdinglergterinenininenstem·stdenendenerinerinstclimkleninerdgtinererinerenolczdenerininerinanemenstanenererindinolinddindereniniren·irstenereremenenst·arolinerininiraniriminimomininarininininamirirdirun·ergldimglerimanirglererbmerblerinerererinymomuminaninenininendarananeanimeririrerinanimimonaneraninerineringlimolunim·ererer·enymerinamerererstdenererinirinereminetuminininininddeninstininerblderbmineremeninolimerirumininderenererer·inaneriminumonemonanemerimenanenaminymumenglamendim·ymslczumhanimemklimeranhominstengleramemd·imimgminerenanyminumininenereminamamamumerinunundinum·imenamemderinininenanaminarinanonererireremolenan·glirumumarerenstunanamunglenenczememamangleninknameninimananereriner·inangtinderenemonklamumineransrinenineniniminstemonareneraninamurinararim·inaneninststanerararenereruneronerirenymirenonirdczeremererumd·glimamerungtenklerstemuninhememenstanerenanglinanenemanimineneranamstczenam·eronsleramstemelemenenininumczhinanemeninemalen·demctininemdinstumaraminamanimdengloninderinar·ymanimiminerbmirininymaramirglgminiminininamczolerinemklererenimanaminereminum·aminhilimeraninslenerblanimiminerenereramenininemanenerderereminimdimiminerinenininininim·iniminanerineninimeraninunenananineronetomemimeranindileninendeminddun·klinerenelololinstundenirelindimstendenanin·erergtsrinklinsrinaminininimininirenirdinandererananiminininirerklandiranerininiminenererinuminanerinimiremumamomininimdeninanemanim·eranerererenanamenerinerininunenderanirblenameninglereneramineninerbmerirolinererderenunderinenenenonaninererenderinglerinymimameranenanereneraneninamerer·erenetememanereremanenolininemerdeninstanaranemanglstcleranerenczhoremdemanemerumklolerererblctinczamemirareneminamomenerininemglanir·enineremdetananineranirerinimstsnaninenenstererinerenanungtaneninunenglanderer·imstinaneninerererinamuninenenananinenanerenemanerstanamolenininaningl·erenerenumeremglerglolimomenglemungleninenslenanenempenemglerglererinemglunirglinemslingrdamulanirinpglglelon·ymerinerinenglerstaninininglinerererinenanereremglenklererarerananamerbmameranerbmineneranunerenerdenaminymklinenininindinemerhinerinerunaneninymam·ininerststerstenerstirstendanetenaniminstgnindinirinereninaneninind·indineruninkrimemilimerininemomderimgmaninumaneraremamininenerdenanininarenerinereninuniminarbmerimin·imoninininamineranerinananinaniminaninamindenemanimdinerimaninuninenerininiminymininuminanym·erenamanininemenduneringtstimglineringlarenenglerinunerinenstinerhinenininuninirininderbmananinerananarin·ymuminerireronsteringlereranerinirstoleronerszeremeroronineronulinaremimorszimerinymenymersteroromineminerenerbleninereringlerbmoniremenenerblirirorerininenerinerimhorerststerimorererinerorinorimiririnolimoramenymstomanerklergrinstereranonamderstonerererirererererirenym·ererererereranorinererglamemonimerindderorinenininererstenerererstolimeremirererbmczsterglonknsteringlenstimolersterinerererolerczenenstimolorinorerstirimererststenerbmaneranererglinenymenerstczerblinensterglererczinenergtoleroranererbmerstiroreriraneranclerenerczererorduninerererarerblczeninerererinolerbmczeninineririniminerininenerorinczczeroriminirererstgrinderamomererironklerorunerinerinereninczoranglanererenster·onerenymenczdenimerstolereninonenerereremerblerororerenerinerererin·inerereringrddirenenarerorererblenereranerereremerenersterenumerererenerinengretsterczwrereninerst·erererklinerenglolinerblindenerininymeranglomenymdemerenanglominen·stinanerczglgmkleniningtstenonergterblomoloninpstinanglinineramglanininglomhinenerkmsteroram·enenenininininklinstinerininininolerenststinstomeneneneninymeringlenonerimstener·enorerenstanstinerstenhorimananininymimsteninerdergmeraninanenerimineninenanenolerererinininsr·aneramimeninimininerenerblsteanglimerinsteninymerinenereninimenineneminymer·ineramirinenymsteninininerinszenerklstglomumczinererdcterstenerereremerenstaminulinymerstin·erinininineranorerenererenanininunenimerininczerctenerstblimdsterdulin·inanctgmenerglinimstolerstererczdeneremgtstszenendczindemerhininineneninonerdenerinsteneneningmerdstenineninensteneninerer·ongndstimineremenpststimarerinereronerenininpstglglinereramerknczenerinsterklenkmklonerelinerklereranklinerololim·deringtererinininglerumerstererenanglomineringringlorameranen·endinerinstererengmczczstenerererczdczwr·pstinstaneringrdireneramileremonerererstaninenerblinerimerereninirenemerdirsloneramerinenerererbmenerstenczenanererenunereranenereninoler·eninolirerenerenanperimereranstenglomenenererolenolinymenaminereranimininumerczwmerereninereninererenerininamererczenymimenanininenstenerinanominyminerinin·gldinimumererinaninymerinuninymeneninenenininenenelonininglglglenczenenaninemamglolerglonenamenenimerinimglunenerdenimonenenenenenstddun·ininerklerinerstoninenenstenenalinenineronglonaninerklerblstonergtstanenstendendstdenereninerd·inineneninanorininererdumomerddenerinenorglelonolindenymglimener·inglineninenglerdanenenerineninstimsterinklolerstgmingndergleninengl·glomanenamininemengldstemsninderinoleronerinsrerinstdinininamendenemenymonstdeninemomenineraninglstgleningl·inststdeneninerststilenczengleninininanengrerenanananeninenininenerananeninamenenundenimanglininanereninerinen·erinemdensteninglamomanonemomglonineninonenanstinimineneren·ananeneninorereninaninerstinanineninerenstolerinstdeninineneninininenstenanineren·imeninenerdsterenglimenenerenenenstinenenenerandenerklinenenonenymenp·stoloneranerererstenineninanoreremenergtiniminenstineninindemenenemolstam·endininunorstininstereneninineminenirimererbmanymomklomenglengmczenengninerblinenenerinelimominglinknerinininenenomininstglenenclererenanininamstinenin·stenorinenilsteninininenenineninaterkninerenerenerstenerdensteneranerolstenerinereranenun·ananeninineneroreninemeninemineninimeneninenymstinengtinenanponererstinaninstinczunininerstenaneminandenerinddenerininsteneranenstineneneninananindinininerenstenenanin·enenaniminstgnunsr·erenimindinererdemonerstominungtstenenininholerinstanenklinumstolenererenanereninenymonstanenerengtininininsterstendenineninsterenen·stemaneronensteramin·",
+   "·inststolorinininindananerininersteneror·",
+   "·erinklenin·enererdgtangmerinenoneririlinem·",
+   "·onaninininenan·enenerstenengldin·"
+  ],
+  "decoded_test": [
+   "erinerergminuninerininirdererbmirbmomananimangliririnininemst·ingnonsremanereminamemimamamderklaminsrgmor·klolerenerilundenklonerineninenensterczhinaneraninirerininereranananerineminanerstanenam·enararonerdinininerdaminerdanklstanamstdumaninerirunenimindinardczerinamimerergtirstinirenarslinarerglerimaninenererklererimarstererblerinslinhinerblenerwrerinanst·inaromereririnerinininenenerererererininirimerbmanemirhinaningloranareramonorerinireringlerarerinymereniromerbmineriniririmimerarerimimamarinerinin·ererinineruminymanerinerinemuneramgtinurenerinerimunimend·enanumananymamenerinenimimamerkldindddemaninaneninamdumomstomer·gtewmimemomeranererbmomenerblimimerblinenemenemomamerunim·",
+   "·eranindetenamaminerderineniminarbmimenan·amgtgmemimenirdenenstenerimolgtolklctiminumumimerindenimerdglereminirilgleranerkminamarststininduminamir·erimomamandirsteraninerereramstererinamemerer·glglinerinelereramgtarinemamememunimoleruminanumerarimumeraner·alinczwrdeneneninananerenenimeninenerholeramolumingmerbmoleranin·iremglglglanereranelireremolerangldirimerininininerbliminangtemeneninimaninenomimaneninanimoner·imdinininemireruninimergtenergtinerunymerin·erst·emitemstanerererinininineninininimamereriminendimd·hinineranininuminimiranderumeniterarinerstderaninirinerdimerininererd·ininenerereriminanimirbmeririrdslineririninininirimininareninstinangtdinerinineninderar·er·inimer·ininglareranerininenininaneminanenumireminamimumenindendenininumsterenglininanamelanerstumerendirgmstinenemimon·umanininaninorgteimenenerinininerininstinumen·uninininininoleninhinaminininerinenininiminonererenirerblimanineninindaninslaneramemeneterenglomomininimin·dstererereranenanglaneraneneranolemererinerindanerenenumerererdirerblomenerinereremananglerananerangrsrbmerumenanumerenunerenerinolenin·ananenunerarereranenanctinenamstbl·szensterereninczgleneranczwrdereminoreneremstczinkrsterinclstenerenimenenglerimerinerderczerererszinersterbmerer·czininirerorsteren·ereranenininstaninergnininglenunymolonemerbmdanglanereninerinstilenstiminerenymom·enineneranenerblanenenenerendenanenenerinstenemstglerenererininglenereninanerinstolendinym·erh·erererklereringlemerinenereramererinanererstererananeninenerinumomoninenarerdanoler·inglinglinstenenerstetaninininininenereneninklananongleninklonstststinsteneminin·eranslerenindemeninirstdinglinglinirenorinhinenanenenirstglstansramumerinereranenirininereninimkleraneneranenderanklilingtdeoloneranenenglenimdderonerinerinenglunaneninglomenersteraneraninerenererblinenderininininenanulininerbmominersrenerandininulerdindelimaninglolenymineninandanenanereren·steninaninerinenymdinenenoleminenenenenerenorenenamenststanemolinanenstananinen·erinerananananenenenstolininenenanamenymoninderszwnirdeneneninenerininineninglaninereninen·steninininenananoremeninerenolonenenstenanenerenenenczstglineren·oranininglaninininereninpanklenymininininininerinenolungtimininaminininymanerhininenereneninenanerbleninininin·enkneremenczerenin·",
+   "·enstendirenanglslinelsrinandereraninen·",
+   "·aminenanerendeninklenenstanerenoniningl·"
+  ]
+ }
+}

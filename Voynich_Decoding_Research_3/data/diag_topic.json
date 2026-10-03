@@ -1,0 +1,212 @@
+[
+ {
+  "comparison": "VMS same scribe 1 (A): herbal vs pharma",
+  "pages": [
+   95,
+   16
+  ],
+  "tokens": [
+   7865,
+   2282
+  ],
+  "observed_bits": 0.1155,
+  "permuted_mean_bits": 0.0319,
+  "excess_bits": 0.0837,
+  "z": 29.9
+ },
+ {
+  "comparison": "VMS same scribe 2 (B): herbal vs biological",
+  "pages": [
+   20,
+   19
+  ],
+  "tokens": [
+   2307,
+   6227
+  ],
+  "observed_bits": 0.1545,
+  "permuted_mean_bits": 0.0372,
+  "excess_bits": 0.1173,
+  "z": 18.5
+ },
+ {
+  "comparison": "VMS same scribe 3 (B): herbal vs stars",
+  "pages": [
+   6,
+   22
+  ],
+  "tokens": [
+   546,
+   10229
+  ],
+  "observed_bits": 0.0384,
+  "permuted_mean_bits": 0.0389,
+  "excess_bits": -0.0005,
+  "z": -0.1
+ },
+ {
+  "comparison": "VMS same subject herbal: scribe 1 (A) vs scribe 2 (B)",
+  "pages": [
+   95,
+   20
+  ],
+  "tokens": [
+   7865,
+   2307
+  ],
+  "observed_bits": 0.1806,
+  "permuted_mean_bits": 0.0328,
+  "excess_bits": 0.1479,
+  "z": 39.2
+ },
+ {
+  "comparison": "VMS same subject herbal B: scribe 2 vs scribe 3",
+  "pages": [
+   20,
+   6
+  ],
+  "tokens": [
+   2307,
+   546
+  ],
+  "observed_bits": 0.0453,
+  "permuted_mean_bits": 0.0364,
+  "excess_bits": 0.0089,
+  "z": 1.8
+ },
+ {
+  "comparison": "VMS same subject herbal B: scribe 2 vs scribe 5",
+  "pages": [
+   20,
+   6
+  ],
+  "tokens": [
+   2307,
+   579
+  ],
+  "observed_bits": 0.054,
+  "permuted_mean_bits": 0.0387,
+  "excess_bits": 0.0153,
+  "z": 2.7
+ },
+ {
+  "comparison": "VMS split-half control: scribe 2 bio odd vs even pages",
+  "pages": [
+   10,
+   9
+  ],
+  "tokens": [
+   3320,
+   2907
+  ],
+  "observed_bits": 0.0332,
+  "permuted_mean_bits": 0.0384,
+  "excess_bits": -0.0052,
+  "z": -0.8
+ },
+ {
+  "comparison": "VMS split-half control: scribe 1 herbal odd vs even pages",
+  "pages": [
+   48,
+   47
+  ],
+  "tokens": [
+   3849,
+   4016
+  ],
+  "observed_bits": 0.0305,
+  "permuted_mean_bits": 0.0303,
+  "excess_bits": 0.0002,
+  "z": 0.1
+ },
+ {
+  "comparison": "Latin words: Secreta vs Bruno De magia",
+  "pages": [
+   60,
+   60
+  ],
+  "tokens": [
+   9000,
+   9000
+  ],
+  "observed_bits": 0.1892,
+  "permuted_mean_bits": 0.0421,
+  "excess_bits": 0.1471,
+  "z": 40.6
+ },
+ {
+  "comparison": "Latin words: Secreta part 1 vs part 3 (same work)",
+  "pages": [
+   60,
+   60
+  ],
+  "tokens": [
+   9000,
+   9000
+  ],
+  "observed_bits": 0.1264,
+  "permuted_mean_bits": 0.0451,
+  "excess_bits": 0.0812,
+  "z": 18.7
+ },
+ {
+  "comparison": "Latin words: Albert of Aix vs Steganographia",
+  "pages": [
+   60,
+   60
+  ],
+  "tokens": [
+   9000,
+   9000
+  ],
+  "observed_bits": 0.1832,
+  "permuted_mean_bits": 0.0337,
+  "excess_bits": 0.1494,
+  "z": 51.5
+ },
+ {
+  "comparison": "Naibbe-like cipher of Latin: Secreta vs Bruno De magia",
+  "pages": [
+   60,
+   60
+  ],
+  "tokens": [
+   9000,
+   9000
+  ],
+  "observed_bits": 0.0377,
+  "permuted_mean_bits": 0.0348,
+  "excess_bits": 0.0029,
+  "z": 1.6
+ },
+ {
+  "comparison": "Naibbe-like cipher of Latin: Secreta part 1 vs part 3 (same work)",
+  "pages": [
+   60,
+   60
+  ],
+  "tokens": [
+   9000,
+   9000
+  ],
+  "observed_bits": 0.0405,
+  "permuted_mean_bits": 0.0362,
+  "excess_bits": 0.0043,
+  "z": 2.4
+ },
+ {
+  "comparison": "Naibbe-like cipher of Latin: Albert of Aix vs Steganographia",
+  "pages": [
+   60,
+   60
+  ],
+  "tokens": [
+   9000,
+   9000
+  ],
+  "observed_bits": 0.0377,
+  "permuted_mean_bits": 0.0349,
+  "excess_bits": 0.0028,
+  "z": 1.6
+ }
+]

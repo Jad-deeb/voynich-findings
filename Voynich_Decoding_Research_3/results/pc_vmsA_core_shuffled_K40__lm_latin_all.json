@@ -1,0 +1,283 @@
+{
+ "params": {
+  "data": "../data/pc_vmsA_core_shuffled_K40.json",
+  "lm": "../data/lm_latin_all.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 17085,
+ "seconds": 132.047,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -173394.04614931825,
+   "train_gain_bits_per_token": -0.581332643347316,
+   "heldout_gain_bits_per_token": -0.6829887540079251,
+   "heldout_tokens_scored": 4184,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -175560.92383890925,
+   "train_gain_bits_per_token": -0.7643085694219913,
+   "heldout_gain_bits_per_token": -0.7742160772178931,
+   "heldout_tokens_scored": 4184,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -175964.71026784327,
+   "train_gain_bits_per_token": -0.7984051850849292,
+   "heldout_gain_bits_per_token": -0.8635465158568277,
+   "heldout_tokens_scored": 4184,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -173176.8520079757,
+   "train_gain_bits_per_token": -0.5629922915401745,
+   "heldout_gain_bits_per_token": -0.6519522682675586,
+   "heldout_tokens_scored": 4184,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 3,
+  "J": -173176.8520079757,
+  "train_gain_bits_per_token": -0.5629922915401745,
+  "heldout_gain_bits_per_token": -0.6519522682675586,
+  "heldout_tokens_scored": 4184,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c12",
+    2676,
+    "i"
+   ],
+   [
+    "U:c5",
+    1448,
+    "e"
+   ],
+   [
+    "U:c8",
+    1308,
+    "e"
+   ],
+   [
+    "U:c22",
+    1217,
+    "a"
+   ],
+   [
+    "U:c19",
+    946,
+    "m"
+   ],
+   [
+    "U:c33",
+    929,
+    "r"
+   ],
+   [
+    "U:c2",
+    894,
+    "o"
+   ],
+   [
+    "U:c30",
+    731,
+    "t"
+   ],
+   [
+    "U:c13",
+    714,
+    "t"
+   ],
+   [
+    "U:c28",
+    691,
+    "n"
+   ],
+   [
+    "U:c35",
+    671,
+    "u"
+   ],
+   [
+    "U:c37",
+    620,
+    "s"
+   ],
+   [
+    "U:c31",
+    558,
+    "s"
+   ],
+   [
+    "U:c7",
+    445,
+    "n"
+   ],
+   [
+    "U:c32",
+    399,
+    "a"
+   ],
+   [
+    "U:c29",
+    391,
+    "t"
+   ],
+   [
+    "U:c23",
+    346,
+    "c"
+   ],
+   [
+    "U:c3",
+    325,
+    "d"
+   ],
+   [
+    "U:c6",
+    289,
+    "r"
+   ],
+   [
+    "U:c18",
+    223,
+    "l"
+   ],
+   [
+    "U:c17",
+    113,
+    "s"
+   ],
+   [
+    "U:c21",
+    111,
+    "r"
+   ],
+   [
+    "U:c20",
+    107,
+    "o"
+   ],
+   [
+    "U:c38",
+    93,
+    "s"
+   ],
+   [
+    "U:c9",
+    86,
+    "p"
+   ],
+   [
+    "U:c16",
+    83,
+    "t"
+   ],
+   [
+    "U:c27",
+    75,
+    "g"
+   ],
+   [
+    "U:c0",
+    70,
+    "c"
+   ],
+   [
+    "U:c10",
+    63,
+    "b"
+   ],
+   [
+    "U:c25",
+    54,
+    "x"
+   ],
+   [
+    "U:c11",
+    53,
+    "r"
+   ],
+   [
+    "U:c14",
+    51,
+    "a"
+   ],
+   [
+    "U:c34",
+    45,
+    "f"
+   ],
+   [
+    "U:c39",
+    44,
+    "e"
+   ],
+   [
+    "U:c4",
+    44,
+    "h"
+   ],
+   [
+    "U:c24",
+    40,
+    "l"
+   ],
+   [
+    "U:c26",
+    38,
+    "p"
+   ],
+   [
+    "U:c36",
+    34,
+    "c"
+   ],
+   [
+    "U:c1",
+    33,
+    "t"
+   ],
+   [
+    "U:c15",
+    27,
+    "i"
+   ]
+  ],
+  "decoded_train": [
+   "emicemetuinosarisenoseretatosaminipatererosicuomueroraxamisitemad·imaminesetosaterosilom·",
+   "·ecisosotinilitueramitiserisetisarotiteresamosamiben·",
+   "·emamilinosuinaminitosisosafatetamosinisinemerecisamisinitamuopamadisuotinamituiserelosinetinososiromecinosadosaneruenamitemopecinesinatemiseletisituocituironemotet·inilotosamitexhat·",
+   "·otiteruerelototin·atetiluaderitosinuabepicic·",
+   "·is·etetisosicanuh·olamadetam·ininasisetosetinerotetuericopepelinesitinisitatinaminarenos·oseleritinaminisinatothinisotitititerituatatinetilititosaruinitisanueretotisicososesemereratoshetuiteritatamonatat·etisuuosisoneroniteramimeresinareteritamuetinuinamosinitatemosinamitinabatueneriseranam·osinisicitanarisonosuafamesicositolesuametoseraxamilasotimateroshetuaritematamotetititamiminitinilatat·itisibinereliniseregereritininitisiticamesinosamininalicitet·itinicamerisiseraneritopinilamituuamamilisinameminamicitinan·egenilinitonitosotetuinanininaditamiteradiseritocisiserititamamonetisuerineteratit·etolinuuet·ameretererininopinirecosatefatolecitit·etinamereritisuituineruarecamosatadesolitu·iceretetinicerositicerisinicoteterateriterinines·inerinemenosuepageriserericinameshicicelameteperoterinadotisuilerinererolicitet·itisitisemeticinininetinisamisol·ueruicereragegicilisesisolisetop·uisueroterituisenosotopasisitamimericinixatipasuonononisuisosasisinabuinitinicuinor·amagamuabamuinosetineriseratiticis·oleterinetatosuicoticereronatenerinetenalicesoserelamototeninuicuosanisinaruiseniteratadotituolon·initinafamoserererininitameroteratinereraxasolasitininamoler·emiserinisitirisitameriposegerisisitadamisecotitimerineritetiter·uanicatericataminerateterabiteganiteratosanisiticeriserosiseser·efhuecominatesicaminisamilisoneratererinosiramotisositisitisemisherosadimerosinitisiserititisoteretiniteriperin·inamotithilelolicisetitotisatisitatinueraminerinamamisot·ininisefateremeruenitererimuinileraxatinerisaterisighisosinitiniserosamititinamilhuerosituitemeserisisisinerosuos·eruamatimamicototonitemuericamotatetuarcosetitafitoseriteterititinameroninamitinitesic·amosematanososenerinamueminisirerosososanimilisenadinuerosineruosetisitaduosetamataribicer·exetu·esamueronerorameresitotesopiteruerameraminetageramoseseminatagitetameter·eserineremesininitenetotisaminesesolinitamonesemitisemamosenesinatemilinenesisosaruonineranam·opinilesisinesuinameruososetesitinaduafaterexueramosininatiteruenitesabuenomosemonametimisicam·irenamameneriteraminiteticesetosamesametaminetos·eruosuipereroleradanimosotosatosesamesameraniserinisosueruu·etamaminerisamuamitamerosinineruamerinerimifamin·erituerininicuicesisotefamuesuerisosin·atiteraniteteserateronuamosicamitoserosadetereruab·ituerisarereruereresitereruamerererisesinitadimosereritineperapaduereradereramaterer·ameradererereronicuamosisueresositeretuelererosesamuetoserarisametuiseriserer·eruesosineraninalamipetuererereninecetagilatisueramamisesiserisem·uitisenisetueramerinatisitatetadositadueraticosametuamuerineterineruisicanisesad·ameresexuererosaxateseteriteruiserosinamonoseriseraterineresamesamininereramaterisaderinamatoserineramosuererelabosesuisaxamoshperes·adosolamepu·osererisematuosesisiticosotuatitaderereceremenemonuesamuonitadininuuinitanineneritatemerinamitetitinisuosadinamadineriter·inerisisiserepanisenaminisetesisinolaminadadinerab·agos·isuemepamemapueresuerinabameragisiterer·enesematerinerisitesitesuaninereriserineresetadueremosolosininisitiner·amonesonererininiseteruexuinitilameriseritamarinamisetemininisinuotamin·inorereracerenerererisotagerereriniliseroluericoc·uitamisopinanoneretonitadericalisor·itateliceteritamad·afatoleradadadotatueteritinononitecinitadisititamererosuetereteteremecaditaranuinisueteniluopiceraderuuamatetetitanicepetadetemitisetoniseritilitituotetituisoperinatiticineritateterotemosadinatibuuinotecetuuotenisecinocetueritineregiticosuicitititeranin·otatimaraticaderonuetaraminitaleratininonueratatisotosisererininadosadimicatatititereromideruamu·erit·uuuituiniseroradereretosabereteretesanererituamerisuotenamuuosatoperoleteretuamaterinereshigenanaxeteruiseteteserileregamoseteterer·ueritisuineranitamerereranuiterameriserecatamosotuotonamitamininesuinedanesosinamisaresoleruereridisueramosicilaminanerueritineseraxamerisoseres·etuerametasamitererelinerereterisenaminonuinesetetaneradamituereranatamin·iteretemisisisiteperonicamoluerefinimeriteriniserin·onerosicisisametitetamomilueritinigerinitoserililin·icinoseriseratametiseritinatadelitateritetisinuitaniginitipereper·itositesuisininisetisetilitosametereresisisisitinoseraperititinesuu·itolininemosinisamesetuoniteteretiteremecetprerec·isetetilaminiteneseresosituememetamitatenerisiseticitinisoserereriniticerecererin·aminotamosamamareriseritadesamerilelininaderosisiteruatiniterinisuefisueriniseruerininetiterisetininicamelin·erimuadoteramereruaminadonesicuuadonuameterinerisicones·ametososeserinamomamenosonerisetotameronuotosetpsonetesesocer·aminetinanerodetanosemeroseriniseramateramisaminuaditerinerueresetosonanemeseriner·etitemepesatamexadatuobuexarameraxatereradueruereritad·enememiribueterinafamaderuetesadaderetetaduadinametatisuuaduamiser·eranitadetemadadineratatatetadotadateramerisitoteriticisuamuiserereteradibenatereradanaminarisisadicatu·atetetatuuuuicicuolinicisitatinisibetericuinitosonitemisotinetptagoseluuuitititotuiseroricolar·erineserotoremitatuituaramecesarosatabamogetoperesiteradolituerotetotinabeconuadinuarosepetitotuamu·is·epinerisosuisonadiserineradagicotamereramadab·etafhprilacitisotetuithitametereradadeleterag·isitimosamisuosiselibimesesimamomerinaminematerolexuinoninerueriseritomomamamamisepotimerinen·erisoserisuotatereramitamitisososamisitititisisicameretinosicisitosilitisisinisuol·is·ericosisuerereruoserisiceretererinueriseribilitamisitosiseroselosesatinibinetisosiserolosiseroseroderosinisiseper·enetetelininamameniteriniseminetereriseriniladerotinamerexaticotobamososetototetisatatereterereronerotinicatininilotisisesonueterolin·erinameresonisiteraderitesatinuuol·itinitereseriseninesoniniremisereronericisemitisinosicisen·esetereradesinesinisisininisitolinuosamisinisisinishinonemeseriniticam·isirinitisuisitininineninerilinemotinuemimisatamuuamisoserinuetimaticimis·inisosisolamiseritaminononerenisadinisiselelatitamisosinosemeruerititeratemuem·isuadosisibisisetitaderereroses·isetetuiserosinimelinibonicatanisinisesicatoceretisetuicamosisinuamerinisisinituonicotilisagerisesos·isiliteripositosininisitininamerineregicaduosatamonuiciseriliniteranatisoserinerisis·isatilaterericinisuarerotamesisosisueramamicesitolisamerolamamosamosamenamotiserinamonuat·adericeromeminamisiseruererisuosidimetomitimotisinisisitileginititeretamuim·amaminemicamuiriticadimamotimosaminueresemosositetotadisaremuememamerererositeraxuitimaditadamemuamon·isereralerefaminapaminuinameramilisososerinineticaminitereruamineritinetuameriterosatisitisetamamamuisueronerituaminesuosomicinetisiniseruategiteretinicarotetitosuad·oluamishamamememonamosonerueserosinisemat·ericatiteronisuhimadenotosuhituatotinereretereruamemaneruamamopatimoteret·eneteremamoneramemesetisatuamisonererorueseloteripetemereserer·iteserisesinineriteresanamamoninetemocetefatatetuuininaraxamoteresisotenames·erononereterimamatamaxhisetamisamenenemotetitin·onereresererosotiseruenaxesererereninamerotem·uotaminanisinemetesamemerinosememamamisiticinatueneleresu·aberitiperelamonamotisetetererenenatamininicamametetamisiset·atamamamitineranatanetininamamenameretonamamuonicametamitesisisetetu·aduetenuenaminamotadamisitetecamuitinamamitamecobamuetamegisamisiresetuinesamaminuitaretuuitexametisites·icadesetamesanetad·eretinaliciserotitinitinosinisinitininitopirituicis·aribisosisiliseritamefamosereretitemamatiticosamitereneniniseterominoninosinamimitemonotiniserotemeritamotetitasiniserec·ilarib·enicapisinicamamuuetamitinitisamuosueruininisosuuiseruisicamelinerinitamesocisinisegiminisinuitecematem·iteratininereresereresatosetereterinoseretamoseserin·inuameruerinesasisaterereronueregerosuu·eriseliterereramiterininesamesitoserereramenereruiner·inenerinuerititisesotositomerotadomamimadesageter·eriminereremetuerosososobetetamuerosonegetinineratiterereromemiter·isotaminelameruotetosinitaretamiseronetitosituesheretemeritoserinoromin·iteretuuueramereretetamereraretimetinitetonithemaresatemeru·hiserateritetadexatuerituesuetueretetinotisereteserisinetamerosuaxoner·adetalecosadeshueniconereraminiseresenineseres·uuamiteruhinuerererinosososuatelepinuamerer·isericisinaterititinerininimamamicisicisinosameramisosibarametinererisamesinin·isiteribisiserotabetatolotisositamesamamosetitinueranerefaramuotisuinisinatoretitititisis·itisitonaminisitisamisoserocoteritamadaderuicolerinuisicuicuinisuuer·eritiniciceregisaderuetiserineriserinicatinit·efamamamisitisamosiniseritisisinetetimosicosuatamoterininisisinaretosuiceramineriniticefatileritinamerinimuinososinerisuinitosueris·operolamerenotosetamitemonitericuatotimamenoseniseteletemicicatoterineremolisamitisemetinuatitetanesefoneriletetuametilamerinisoselereteriseterotilecosamam·openueseseratatesonanatiseresicuhpcuonereresotetiparelereretemueruuerereseteregeramamarisaminemeresineranesinerinetetiniteseterit·osisetuuerericinoloticaticisadanoseritenitetominarenericamonogereretosocaxamad·isadinonetitamamemicosinitenenonotitetoteletesereluotoshanatiteritan·aladerenerateselamelogosoleteteserosetinolueseratestadesesesisarepereselerinilosesabiniluerererimitiniberecad·icamiseleronabopuerititinelinamilopisererilameseleticadadotamonotosilisericonaminoteratotericosamecetositisetitenitereruosesathitolitadinothicoser·iseratuuatuenadadicuanuosefaterisisuaninuititinatetototenitisu·inuinemeriterinuibisamilisueruarisilerirerisameroserisisetamisetotisinerenamisetetiterisiterinisinit·isinisisineritemonerinoseriserinineritosishiseserishininiseriserisetamerinisisinisiserineres·emisererisiteserueramitetuinelitameroseripatabamiteramitetadetarinitetititerinininisefamererotitamererotis·icisiciliradaruateticareroniserimuericadatadaruetexamicameribiteresiseradisinitetetericueriladinesiseteseterotitetadicoladereriresenenemeritinineriticeterelatineseteruuatinaretemitaminerilinititicadisadinenosuamotaricerilinuaderotecosuaruadicatadinetereramiretis·eramereritatoteriticamesosesaxinerisuaderelinecasitererueteretaruosineraditeterisexuerisetaduetitetetuinererueritaremeretememececuineraditaderuicosetemuadesamipotareremariciseteretaduedetamisetuetisemetemitateretagetaderetemosatuitadadinosemicerereserememicadueriseretemotereremenosadateminareperemeseteceriserinicemeritaneraritamematarinitetememadatituemosademareterereradereriterineretisemadoteceraditenuem·adamereretemuetisaduicereninadetatetemeseraxarererisenerematilerer·eremeretinesepuiricecereraretemadetolatisetereresericeruetininerolisegetitetilisueremereretinemad·aramericisaraneradinarericuinetititosamososisotenisesamiconamosinec·uitosetamososicetisetaduetolaratemososabadadeseruinosocuotamosecotoseretoprisegeliricatolos·enotecicitinicicituicaditisititadaricuuituadeticeteciceratiticanoperisuecam·efamicetueruisicadaxpinisototatitericadetitaruicolicosinisetarinegetitetericetatamaritininam·otarisinetitisetitametamaraderitibinatecuetecosamonetameticisetinetuitepad·icamopitonesepuecetinitarinadenarirueliserolitaraduamamamicamemebuametuiniseritisemadit·olitinitonamosolamesaramicerititereticamogitemiladetetinininuadatuosit·iteramilicarisoticatadicotaramamuecameshuadatetuamituosaminicecitetetisopamuetamatatetetetiselamuuinitetitetuetetinamad·eripuadisinaxuaneguadiniterisitemopatecitisetuesiliticamosetigameserinadamecetericegeritinaticatemericinetenosis·uemisetelametotinecininatadataminosaxpsinatinelotisoposamoset·atuotadetuicatetamexamuadamatamaxuelef·cuitetosadadepuicetemosibatuoparararadosisetetabicelinetameticisetadamamicuoparisaritetatametesanamuenametotadaretereratotetatecefaric·eticaricamesemetonerilinetamonuerosicatataramadositicagecosinetamonolititeramiliseradetisamonisetisetameticosatiladetaliceserinericadetaritonolitositamiter·eruererosiselitonotecoliserinosenetineteniseteceterisericamerelenameticeritesoseciratisepetosenicinilotineleretolaxatinetetetetesenuuuer·itapamaxemecamuocinicetuicolosineticamuetotositaderameruuametadonenuicuanuuueterocetamu·isetetegiterolititilamiserosamuuefameretameracashitueriserisicar·inotisetiteteratuerotetatitetitinisuilaticepotadilitepuoladetetitis·aderitetosineruiterisaduatituaminadilicamiterelituuicitininegueresetoritaduiceresisetitemiticocueserisec·ituuuetenitocaduisetadinisatososeteretepelilototocaninilitetetitososetiticotegisuaninonerititocametinileger·ilicuuetuocatocisiniconesoneretititiniliconuininitecamet·esonetetetatamositoteraradisotitetitametuecamituuetinetetetinitasetuetosicameg·ineteretispuemapaginegeteretetetaditanenetadosadatamadetesetetesetatu·adatisetosaderemadetisetinoteleruetametitinitetuetetitosuesadetuaduos·ethinetinicuicituametetitinuitetininamaxpsibotadininitilanilametetopinarininetetateficininitinitigamitinicecafhitinuolatetafametenerinicicuisicer·adenolinetisuetitinitetetoletisicatinitemegepetamadetemuenuetadoticetadefatigamateriter·isotenitisetaraditinueteresonecisinetanisetiradisatamitetoticadamamuinisicuisemiseritamadecinaditininatadisuuenamiticaditolotinuiseteticitosoticuicisitiletuetetosit·eteterisituaderam·amerisisuitamamotosetamuhpineratuetecititagegamexuiceticateruidetadeliteramicineteritueresisataminiticinuamuetiseritetisueranet·uaderatopetuadosit·",
+   "·isuadasocitinititpotosamineradosetadil·",
+   "·aditateter·itafarisatotileretatadolerisicu·",
+   "·operitegetetos·etetamadoseticuit·"
+  ],
+  "decoded_test": [
+   "eritamameliterinemitinimuiromerimicerosonisonetimiminitituu·isepolatuosamerereradisoserueminosinamerop·ibinametariseriserericamuhinenenetamaxamineramisitinamititamilononotemituineremetereter·icomomitatuinitiseruositosuerinuonosuuisonerolicotitininuinomesaxaticosisemeletituineroteruitotamotatinonitenamemibamemiseruetetinadisuininosadinecemelolinisem·inomuicamititinisinitetinaticemamatisitireramineresineriteritisanonotelerotamisinininisolatotamitecapatitueminisititimiminosatericiniserotisatinit·amaminisameritesonameremituicamosititisesamerilicerinetu·erereronererosanatiseniseseramaguinuuuuototeretiteruisosaterad·eterininesefameramerisedetamadisesaxamineresetesolerimeris·",
+   "·atosisuemeroseronicaxemonanininotosicanon·isetelesesetituotenadesemisetititicatisisererinaminuerinatuasamuiticisisameriniriseromuuisisuiniterim·emososeronueruerotitematamosatamaminosuadam·erinitemamebamererererinuoseseserisolamerisererameriseremeram·ibitexeliserenadererosisetilisolisotemerobatinerinitileretadadotit·imuisibisosamameruitatesefateribuiterininititefarerisisoteruetanitisereteshisonetiserisicam·isuinineruimameritisatitetamiticicerininit·iner·esisuerotamamamitinerinetinericiseramemisitanuisu·amititamererisisinisirotesameroticafomisaduuamosuitosamuisititinamemis·eritatafateresitotisimerapitininuitamimisitititinisinitomatitaditerotueramisitetitisamer·at·itinam·inegerotateramisitadititeruiteretinicositosisosisinuesuetisiseruatetelitisererueretadinametuiseladitetadorad·inonisisitisamitininanogamisegeraminuititeris·ericiterisicosenitiniterinegerelisecisinicisadetamaninolitososiceniticuerinueraliniseticametalinininopesin·uuopereramotigeragerereritemonoceseraticadonuotolaneteraraminuicolecepesetisotetesososeretotererositamerotisecoseropeterosetefitadetin·eroseteramorilerotetonamitotosuet·adiladitetetadexatetameremarueteseropeteruuametabaderecolueteresinesesematoseriseruetereramemaditadadamicarit·exinisiricopuetet·areperitosicamoseratiperiniseterososeresolisuotoceramesitaditadosicuhicameladoc·etotitetonetarerositetetametuecotetatemisuecesuibetetamatititisenaticitosatinuetatuitin·amu·amaraticilititatesobiticarareraramitotararuatatotosetitatatisosininiteterotueratam·egeritetetuetetoluadotaxprinicasatereteteticososanotetiniceruataditopotuicet·adotaberageruericosinuuinilinerininetolisuinatotenatinueruotatoserititilaronetitininareninicinamererilosituilotisisitosuueronilitenetosaticuuamacecitarinataderinerinecinaneluamotalonisapenipamositetuatitinitisaterinisinitineritosamiciperuiniseriluotuinineriserabetinisenogerererenosilelic·uetinotitamerocicuitetetetuinetetinecameradetetosetuaderesadaneretilototinet·icegadotoconotegetotuadotexaneteroseticopetaxamadenomuaneteseretelititeregineteritatetinat·ueterisicetitoteluaticecetadasesecuatotenametetetamaticitatet·amocititerotinititamotetamotitotosititiseritafacocetebicatinitinisinosinososexpititetetinetitetinamocabepitepic·etagamuiceriletit·",
+   "·ecadethichotetabisicamerinueradototet·",
+   "·ositocinatatuitagetenetuotamacopititer·"
+  ]
+ }
+}

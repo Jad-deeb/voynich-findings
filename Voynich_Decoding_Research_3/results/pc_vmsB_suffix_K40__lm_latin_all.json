@@ -1,0 +1,269 @@
+{
+ "params": {
+  "data": "../data/pc_vmsB_suffix_K40.json",
+  "lm": "../data/lm_latin_all.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 35573,
+ "seconds": 132.786,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -387489.8817784023,
+   "train_gain_bits_per_token": -0.5965059806224352,
+   "heldout_gain_bits_per_token": -0.6762602041488075,
+   "heldout_tokens_scored": 9622,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -387916.6361257008,
+   "train_gain_bits_per_token": -0.6138133873782723,
+   "heldout_gain_bits_per_token": -0.6357053955533482,
+   "heldout_tokens_scored": 9622,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -389445.2579747704,
+   "train_gain_bits_per_token": -0.675808022664786,
+   "heldout_gain_bits_per_token": -0.6857985313612719,
+   "heldout_tokens_scored": 9622,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -388573.10568352276,
+   "train_gain_bits_per_token": -0.6404371013063712,
+   "heldout_gain_bits_per_token": -0.6412489983777044,
+   "heldout_tokens_scored": 9622,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 0,
+  "J": -387489.8817784023,
+  "train_gain_bits_per_token": -0.5965059806224352,
+  "heldout_gain_bits_per_token": -0.6762602041488075,
+  "heldout_tokens_scored": 9622,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c7",
+    4951,
+    "e"
+   ],
+   [
+    "U:c1",
+    3219,
+    "a"
+   ],
+   [
+    "U:c9",
+    2617,
+    "s"
+   ],
+   [
+    "U:c20",
+    2513,
+    "t"
+   ],
+   [
+    "U:c14",
+    2278,
+    "r"
+   ],
+   [
+    "U:c10",
+    1904,
+    "e"
+   ],
+   [
+    "U:c5",
+    1623,
+    "i"
+   ],
+   [
+    "U:c22",
+    1535,
+    "o"
+   ],
+   [
+    "U:c26",
+    1310,
+    "r"
+   ],
+   [
+    "U:c19",
+    1040,
+    "l"
+   ],
+   [
+    "U:c18",
+    1036,
+    "i"
+   ],
+   [
+    "U:c13",
+    873,
+    "t"
+   ],
+   [
+    "U:c2",
+    841,
+    "a"
+   ],
+   [
+    "U:c32",
+    839,
+    "i"
+   ],
+   [
+    "U:c12",
+    704,
+    "i"
+   ],
+   [
+    "U:c4",
+    653,
+    "u"
+   ],
+   [
+    "U:c27",
+    626,
+    "i"
+   ],
+   [
+    "U:c16",
+    626,
+    "u"
+   ],
+   [
+    "U:c8",
+    586,
+    "m"
+   ],
+   [
+    "U:c3",
+    584,
+    "d"
+   ],
+   [
+    "U:c15",
+    556,
+    "d"
+   ],
+   [
+    "U:c25",
+    542,
+    "n"
+   ],
+   [
+    "U:c33",
+    536,
+    "c"
+   ],
+   [
+    "U:c23",
+    411,
+    "n"
+   ],
+   [
+    "U:c35",
+    381,
+    "m"
+   ],
+   [
+    "U:c6",
+    363,
+    "i"
+   ],
+   [
+    "U:c0",
+    336,
+    "m"
+   ],
+   [
+    "U:c30",
+    331,
+    "g"
+   ],
+   [
+    "U:c29",
+    319,
+    "n"
+   ],
+   [
+    "U:c17",
+    286,
+    "p"
+   ],
+   [
+    "U:c38",
+    169,
+    "s"
+   ],
+   [
+    "U:c37",
+    165,
+    "b"
+   ],
+   [
+    "U:c24",
+    165,
+    "u"
+   ],
+   [
+    "U:c28",
+    119,
+    "s"
+   ],
+   [
+    "U:c11",
+    103,
+    "n"
+   ],
+   [
+    "U:c34",
+    100,
+    "n"
+   ],
+   [
+    "U:c31",
+    98,
+    "u"
+   ],
+   [
+    "U:c21",
+    87,
+    "c"
+   ],
+   [
+    "U:c39",
+    86,
+    "b"
+   ],
+   [
+    "U:c36",
+    62,
+    "n"
+   ]
+  ],
+  "decoded_train": [],
+  "decoded_test": []
+ }
+}

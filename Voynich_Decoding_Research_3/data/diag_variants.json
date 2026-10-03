@@ -1,0 +1,116 @@
+[
+ {
+  "pair": "k/t",
+  "word_pairs": 85,
+  "context_divergence_pairs": 0.1323,
+  "context_divergence_same_word_halves": 0.1744,
+  "share_first_variant_by_section": {
+   "A-H": 0.47,
+   "A-P": 0.77,
+   "A-S": 0.65,
+   "B-B": 0.69,
+   "B-C": 0.39,
+   "B-H": 0.67,
+   "B-S": 0.61,
+   "B-T": 0.57
+  }
+ },
+ {
+  "pair": "p/f",
+  "word_pairs": 1,
+  "context_divergence_pairs": 0.2849,
+  "context_divergence_same_word_halves": 0.1498,
+  "share_first_variant_by_section": {}
+ },
+ {
+  "pair": "ch/sh",
+  "word_pairs": 47,
+  "context_divergence_pairs": 0.1548,
+  "context_divergence_same_word_halves": 0.1512,
+  "share_first_variant_by_section": {
+   "A-H": 0.64,
+   "A-P": 0.68,
+   "A-S": 0.7,
+   "B-B": 0.51,
+   "B-C": 0.56,
+   "B-H": 0.68,
+   "B-S": 0.65,
+   "B-T": 0.52
+  }
+ },
+ {
+  "pair": "ee/e",
+  "word_pairs": 47,
+  "context_divergence_pairs": 0.1365,
+  "context_divergence_same_word_halves": 0.1564,
+  "share_first_variant_by_section": {
+   "A-H": 0.31,
+   "A-P": 0.33,
+   "A-S": 0.27,
+   "B-B": 0.33,
+   "B-C": 0.5,
+   "B-H": 0.25,
+   "B-S": 0.46,
+   "B-T": 0.28
+  }
+ },
+ {
+  "pair": "ckh/cth",
+  "word_pairs": 9,
+  "context_divergence_pairs": 0.104,
+  "context_divergence_same_word_halves": 0.1544,
+  "share_first_variant_by_section": {
+   "A-H": 0.28,
+   "A-P": 0.6,
+   "B-B": 0.6,
+   "B-H": 0.73,
+   "B-S": 0.65
+  }
+ },
+ {
+  "pair": "aiin/ain",
+  "word_pairs": 24,
+  "context_divergence_pairs": 0.119,
+  "context_divergence_same_word_halves": 0.1463,
+  "share_first_variant_by_section": {
+   "A-H": 0.86,
+   "A-P": 0.86,
+   "A-S": 0.85,
+   "B-B": 0.48,
+   "B-C": 0.8,
+   "B-H": 0.79,
+   "B-S": 0.63,
+   "B-T": 0.69
+  }
+ },
+ {
+  "pair": "ol/or",
+  "word_pairs": 37,
+  "context_divergence_pairs": 0.1552,
+  "context_divergence_same_word_halves": 0.1565,
+  "share_first_variant_by_section": {
+   "A-H": 0.56,
+   "A-P": 0.66,
+   "A-S": 0.6,
+   "B-B": 0.77,
+   "B-H": 0.47,
+   "B-S": 0.64,
+   "B-T": 0.6
+  }
+ },
+ {
+  "pair": "al/ar",
+  "word_pairs": 23,
+  "context_divergence_pairs": 0.1631,
+  "context_divergence_same_word_halves": 0.1806,
+  "share_first_variant_by_section": {
+   "A-H": 0.39,
+   "A-P": 0.52,
+   "A-S": 0.57,
+   "B-B": 0.56,
+   "B-H": 0.32,
+   "B-S": 0.45,
+   "B-T": 0.39
+  }
+ }
+]

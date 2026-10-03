@@ -1,0 +1,283 @@
+{
+ "params": {
+  "data": "../data/pc_vmsA_suffix_K40.json",
+  "lm": "../data/lm_latin_all.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 17384,
+ "seconds": 129.099,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -176136.92865609156,
+   "train_gain_bits_per_token": -0.5320996467527046,
+   "heldout_gain_bits_per_token": -0.608206195112218,
+   "heldout_tokens_scored": 4245,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -177810.18357364886,
+   "train_gain_bits_per_token": -0.6709627721382854,
+   "heldout_gain_bits_per_token": -0.6981948197637157,
+   "heldout_tokens_scored": 4245,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -176819.26020195626,
+   "train_gain_bits_per_token": -0.5887262193171949,
+   "heldout_gain_bits_per_token": -0.594605907154843,
+   "heldout_tokens_scored": 4245,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -177157.4126873687,
+   "train_gain_bits_per_token": -0.6167894334088188,
+   "heldout_gain_bits_per_token": -0.6579267414297609,
+   "heldout_tokens_scored": 4245,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 0,
+  "J": -176136.92865609156,
+  "train_gain_bits_per_token": -0.5320996467527046,
+  "heldout_gain_bits_per_token": -0.608206195112218,
+  "heldout_tokens_scored": 4245,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c5",
+    2205,
+    "e"
+   ],
+   [
+    "U:c20",
+    2135,
+    "a"
+   ],
+   [
+    "U:c26",
+    1444,
+    "i"
+   ],
+   [
+    "U:c19",
+    1151,
+    "e"
+   ],
+   [
+    "U:c38",
+    1150,
+    "m"
+   ],
+   [
+    "U:c2",
+    1031,
+    "r"
+   ],
+   [
+    "U:c17",
+    961,
+    "t"
+   ],
+   [
+    "U:c18",
+    686,
+    "s"
+   ],
+   [
+    "U:c29",
+    680,
+    "o"
+   ],
+   [
+    "U:c1",
+    656,
+    "d"
+   ],
+   [
+    "U:c10",
+    495,
+    "r"
+   ],
+   [
+    "U:c22",
+    463,
+    "u"
+   ],
+   [
+    "U:c12",
+    405,
+    "i"
+   ],
+   [
+    "U:c14",
+    388,
+    "t"
+   ],
+   [
+    "U:c24",
+    325,
+    "n"
+   ],
+   [
+    "U:c30",
+    296,
+    "t"
+   ],
+   [
+    "U:c3",
+    265,
+    "t"
+   ],
+   [
+    "U:c15",
+    258,
+    "l"
+   ],
+   [
+    "U:c7",
+    252,
+    "s"
+   ],
+   [
+    "U:c0",
+    245,
+    "c"
+   ],
+   [
+    "U:c39",
+    221,
+    "t"
+   ],
+   [
+    "U:c28",
+    176,
+    "m"
+   ],
+   [
+    "U:c8",
+    169,
+    "c"
+   ],
+   [
+    "U:c23",
+    162,
+    "p"
+   ],
+   [
+    "U:c32",
+    152,
+    "n"
+   ],
+   [
+    "U:c16",
+    122,
+    "s"
+   ],
+   [
+    "U:c27",
+    102,
+    "n"
+   ],
+   [
+    "U:c6",
+    98,
+    "b"
+   ],
+   [
+    "U:c37",
+    97,
+    "x"
+   ],
+   [
+    "U:c36",
+    95,
+    "n"
+   ],
+   [
+    "U:c25",
+    75,
+    "n"
+   ],
+   [
+    "U:c13",
+    68,
+    "g"
+   ],
+   [
+    "U:c34",
+    66,
+    "l"
+   ],
+   [
+    "U:c21",
+    57,
+    "s"
+   ],
+   [
+    "U:c11",
+    49,
+    "m"
+   ],
+   [
+    "U:c9",
+    43,
+    "f"
+   ],
+   [
+    "U:c33",
+    42,
+    "p"
+   ],
+   [
+    "U:c31",
+    36,
+    "n"
+   ],
+   [
+    "U:c35",
+    32,
+    "n"
+   ],
+   [
+    "U:c4",
+    31,
+    "h"
+   ]
+  ],
+  "decoded_train": [
+   "comatubadedecostepoteratushosadanraratacolitumacocanonastumecosi·tamatumacosmaramarali·",
+   "·tassdepigassbatadedeciselinitarecotacoredetatome·",
+   "·tabatusmemalicosinicumemataletacirecamicorestastaturetataromataricotarereredeterereteradiretaninitetadinedinetaminecorinimidestemabatanosalacorenineconsreretaremeta·midalerexidenerini·",
+   "·retaratamatatadera·tacametanaretabadenimitasega·",
+   "·ta·deterisetetetase·ressisesa·xigatuferaratufiratusisitenaretiririridinerinetatedicotalete·xidecopataremecalitireredemaretineririditusreteremetepimetinemedetexiretirerereretademeretetitadesesitadepeletarememeta·ximetasamalinetasderismaresrerinoraconotiminotassetutaretasatatanosetecosesiriderisireta·badanisdetasdecomitedememetiremitalemipadelitaretetatadatarinedatataderemerirerenetoratalilitadimeretali·tumitemastareconininididesinomiretasirelireretalitadipireta·neditalisdeteretatererereterisitaserataledeconorumasrererepe·cosarerecuderetasarasederetarimererarararimepesraretarerematasetaredemidereremimidi·basetucorere·tedepodedegasetarimesdemesererepomeme·fedeturexiresetameresrexidemetanterememitata·fetaresememineseturenecometarerideretarestupetu·camecinretaspicodesemeretetameredeporegastaporenematismaponasareparituretetare·necinitatatirenitisememadinirere·menamaritacoririsisitimaderasreli·castabanadexismarasiporelitacotanereracorirexinirimeposrihicoscositememecostatamemine·neleleshodetaretederesemepitareres·manoneramaretihodimarigarisrepotumererexelistoritatusirararishoranatisiremoresecoritesetametaderera·basedidecodenisetedeposenesirepotadesesicosirinetadecotacoma·fecocosenalireresetadedelisessisidetesitalicuremerisicomaretali·nenotatarenononoreretasitetetetupinimesemesetadiminositetetiteta·neresalimeredigadexishodintisitatutadinitaliretimereredesepositasetismetitimitigarimannecodilimetesicanetasita·sditetemededetadetaregatinimitecodetatatisessicubalesetu·riredepodirenenepaserererenorigatexiridelimenimabaritaresimarutumariraramamararutaresgacomametadetadetatatufedemarameco·tarinetamabaratanesamitalinigademetadeterareniraturenoniremaralireniremamameseterinatamata·mireremesditataderineremasenicutituranumicomarimereconadisinodedamatemexitaretericudeposesti·cotata·retetidetaminederetasenatarereremetimimatimerematarimamicotamenitarememino·temememinestusitatenineretasicomiderelitamatenucutasinotatarimelitacominererinideximitatarire·derireraretirimadisisesamitastacotuseremereperetataredereritatitabameriremanufidemimerismabatasime·matamitemitarepotatatarilenustaritadimenexireti·neparigamidenenitetesnitasininetamireritexisitaratanoserinitita·nededesinitarititutatutosmerasecoreristasiseriti·feninomidematasdetililitatasitasisetinini·somiretitisetulisimirinemacomesetitoredisdenitereco·midininexiriseretinetetasesisetulissimiretinisposecafisilinissetapoderecumesanoninite·balidetimidepocistamarisesigitacusitastamesinosmacomaremasrimadiristurineneta·nalecutatasmetussismetarinetapetateditamesetannidetomenelisitali·sinederemasteresesicutisitisenosiretetitisitinimetidetamimeticoremerenitistarininime·tubalitimetatetasesinimiririsimiretadititaligarisititininidineminecositasetisitaremimitirisicolicoshisiconosisidinosetasetatecotalinfi·texinubameti·tutisturitataretamememacutidemicoserereserissesitasistutinudisrisrimeposeretutumidetarerereretaterecurimatureretaritarerere·meregamiteditatireteninitedetomenicotemasinicutico·cono·retamineximalimexiririninilinidinosetutide·basereressisestisinedesitinimirinisseleposetasilireresitatetamitarecu·xitisilititarestalisarepidimamarereremiresihosilimarerigalitatamimerenaba·tenalenonossitenicosisitaretesexitoreturitamerese·misininishosigamasicilistatatamade·steseramaretadese·nerenitanodetenametamatutamatalepenenemereredererenetariretumatumastetecoretostumenatutitatidedenetatusememametamicoreretinicaleturemerereretedepisretamenederilimimemeseremerexenatasterarememetureterutupotarenarererememerereditatadepetufimetantaretemereritemerare·nederareperedinecomelitatatadedaripoponaserepenotarelasacotadesetutanasinereshoretasiritudararamata·fina·nodadigasasinnotutadisisisisstudimimililimasinisisitutashosidenisenotumeresihoristumadetenometametatinespinetomemasesisimexitisdicomete·telinitinisimitacodiresnireripotatisninedigaretemitatalidinesinimitassdeditasitasitiraterataturexitaremudisetiteshigatarereseposimeponoseretaserese·ninedisesotedemiremaremiretaretamessametasetaremanfitatumanonosemimemasema·feliresecesenutereseposirelimeritadidireganasetumete·xicalinometashosemeretarinutacotaseretedematamisre·codeseseliconaretenaletisininodesinesapecuresesinimetatasarererene·cotucidinemisiponomicomarerenufimeretamisidinedelimirimedisiditutudeta·texinemeremaratalimimasecoderitamediturerisereteti·ximeretaconamimadinatalererissiteritimasemiremaderedenelisidemedesrededereretata·xisineretaderenisiresisisinetamepolinisiremetataditasiretatasisediterisdiritasmidinineretatasinetasismarisba·medinedeximimetamistitutudestesetamaretanemetasitarecitada·neretacuseremetimetacufesiminomitetufitabarisinisetatasetariga·tedinemadereseresirimetatasederetematasitastumanamitinitarisacosesinidetadirilisite·fericomisedinassitacotamituretabasinetatasessamemataris·rexicomemetulisassericoseteserasudimamepotaretatusecopetasetatemadeteta·nedeximetasetametudidemetatetasmatamemastarepetasitatatatutumisnosterinereremeposmatucotutunoposemipe·teremasretatumaratabamisraramemaritulararenostarisrerinecolemaremirasasreretedestutatametaraliteta·rarestusatitacomuremasisimenoripotusrestaderenoraracocotutasdaratatataremadaremisreretaresnemeredeni·xi·reretudenotapenilidetaderetupecononitetaretena·nitasidinbarerereteditinanonadiditisecosesosetu·cositaridetacocotimerexiliconodirinitasinicopasrataranufiliseresrarasamasaratataramamasaconosi·nerenetimenicorasirinetinetaretasecodineremirinusemossrinetiretanonosetatatererema·fe·reriditedesemetesitasididisidinimistisineninidisoliteposiricorurecossicumimitarelinedicumexinodidisidosossomosi·nacolimetaseminoseseresiretisaconisadereredelitasisemeliremetimisimericetadirecisetalitarimemadimelilinodetetatutasetetadedimasetemena·tureressimededetamimeretatacuseneta·tastusmirisiminissisimirexitirimitisiminamareserelicono·nerenodemeticosisilidedetamasirelimalisitaderedilidimitetarisderetenode·tudelinolissdiriditamamererirecosetareretedetasimassmetidisimarifinosdima·coradasisidisereradacotarodesinetamatidoririlimedicopetasrireteditereritarisota·cumarisholataseritasmetesess·xiretenedenimussdedereteniteredestetitarerecutaparemulimiracurasatininetetaretedirerininateretiderali·metufemineraminesedaremalerelisasetasilinesererererecutetetasereretanataretataremadite·nineremetetuconatataretaseritacolestasesistutatarissdetarosimenotuserenitexicudiditeseta·cisrerisiratimatasitasaresemaresinireretanusedinemetanemararatatanetisititata·mamatumaderanosturarisrussitabarerananatacoposperirarimanepolacurasaligamemareretusisetademasesrutama·mareligatusisenemisesilitasisisirinililedenegalarededinitetatanerilisessarinisnusetadegatasatatatasturatotumamadimatameresistametatatataretahomissemeretatadisiritacurere·bababacumedaricotademamacosiretimesinitababa·cominenenirisinetatadereresssriticumaremastatotameremetisineposereranotataci·xinecanelimamatamaretamamemaseliretenimesmaremasassemimititare·nenutabataretatacomitesetoridadisitepomimacorenitacomilicomenimiromisremicusa·redamememiretacotuturemasimemadimalimaretiremiti·xitaretaretanomisisetemededesinesetateretemeta·cupemademadedetasesimarimetisinetamineseritadetenosetaritatu·nerinonateterereniretacodinotatidetedetasemepotalesetamiseta·tamacotutitatametasalecuposetatatotatumatalemetasmititacomenulemireta·sresememesrestusnudetiditusrenoramemetetametetacotasmetamesememitusmitaredetenoreditetemetatatatataderita·tutanonosturaseta·dinalisetatetaralisaliligasaratadelacotaramalisesta·tirinasaradadenorededeliraseserinalesitemiremereredetameriretareretaricoseredetalinitatasedesdedetatasmadinesigatatata·resega·nisidedimaporeretadenesnerimitatametadisesemireretulicisilitatitusimetoderelasbimelababatitaratassetessitata·xinicosedigannomimisetesiticosetemetasmadesesireta·nidimerelidemetadesedissisisitashodenisire·nimerimenidetosisetufimisisimissesimimetitiretadirise·niniresemedemenenoseresatasetademetumeselimetariri·codadeneridisicotitaderimasesimiseramecomatesnasesematiminaretirepe·neratadedesistudeconeporilinilisinimaratamereretimarimademeralirirenedecu·neritaritaregatanteturatalemasetetimadamimihononeretasmasinata·tatiteretedesicomanomeretariserepetisessisturememeritirismanosiritanucodi·menusatamisitemigatotumemenosotitigminedimituse·setadititemecoderiremetissedesiminesesturesicupo·sreminitatadedimisecoreciderameteselitamedetedinimirideporetodititareretacore·nacolitaratatanlireretalinesninitireretameriroritelisitariririniririlisitaditaliraseporele·nitanigarederememapeponiretameresimesrerissessterenecudisnudededilese·redenetalilisisretasinereretenetasimfitamisi·sireresrileseledidiresrestutitastaritareracosidamiresenetaricutarinotutaratilititalisrininetelissereretaretacoreremosinigamisreta·tetabamalecoderemetarimetarinerilenosesetamamatamatateditastamemeterimematasmerelimemaseretametaserisnosessimemataletataredanememimecolidemerenitaletareta·ximinodabamisecomimidecomigacotasmatufemisenemamicossimisimitamitacomiresasademeconatabatatitacosetilirenotunetemenutumetedetesreseta·telemasemeteleserepoditereritateresanosemedemanereremereletemereretetisgaremine·teturetucarimestutareretutalemerepotutadetaretarareserimemamecutatere·calemitetasmicatatonamisecoromeritemecosismitaresteracosonotataconinimenocosesisetamisenisinonomerepototenomi·nedeniminetarimetaredederisatitamerexiretamimetaresetatasdereletarenosidereseretatatassicotadenenedexiconsedetaredetalitatasitumanonadenimitetabano·batareremelitaseseritaletanoremexetustussetameleliteresretetasgate·salimineridimireririserereterilesiditareseretemeteniseretetarimaroseritatasitisetetasdinesetitamenitine·xinederesesisresmadinetareretesrinenisiminamesesirererisirererenantesemetatidisicabaseteta·linederemessesisinetessinitamituninidimesenoleterenenaseretenemametupedidetaremineretisesereretasalerereta·nasigababatacomemigatufimatumamaratutuponanaristosanonenaretapetameretubaramalimetupenerocorerexiposemaneretareretamabamacomitatutanosiconoreremamatinodeteneremacosetedemetarepatubarasalimilinigareximepocotamacomanomemanotumabaretamapederimanenalegatenacomatabasetatatale·melitatamababatabacotumapostetamepotupexitamadirememetatatutututunoscamamamamamamacosemademabamamamanotupidetaretamannemamistamemanenenometulimarenonopamatumamamatanamalenemacomepacodeteretemamamanotinemeresmatecotaposelemamematicomegarigabamarepemalimalitadatonorepadimaretamatutacumabastonacomarimatamanomamaralepabatutapatacomatedarenomamaramaritatulemenabanotacomemaretateninaturamemarematuligatupanetacomamacosima·talimelimamemamatutaneretamamemadematufnemimametimamamaterecoreture·minadetalemalimatamamalimecopamitaconemelimamasemecomematuticometelinaremamitemememelicodemamamamupo·xitanbadeponolitaseliteredenimetataderemeremicucorenoretaretacoreme·tetatadesetexetamerenissishimerinenoseciremidemitaricumecodecocoresnoreconceredinetaderereme·ximemetesepotatasetetarerenimeredemesritaremetupomeredemelitumedesdemareretuba·cosimerepospomerememereretututamarerererestumatufiteremereremeneretarerereremelinatamaretereme·tamirexinitutabadedemedinetemetadenanirererilinetetanetesturetedegatarelena·nadarecositademenotaderilitaremetatatameretarerelitaretadenutametaremaligasretirematarexita·nepodeletaletatutudemestatarenirenotutigaretemedetametatanotutarepotuta·resmetamededetutaseremitarineretutamememereneturelidetareretetareterenoturetaresnulimememetenimemetamelimimiritaritalisletari·badestucubabasicutinenonaturetatacomemanfisturemamatameturetamomenetarerenodepetarererenarecotureredemiminemitata·nadexecinonatarememedetatecoremadinotenotutetademinematarimapi·tataspodetetacoreletamassirireconenicota·gababimexitasetaretedemerereritamemaremetarerenedetereretiletetinihotitamamamiremelatotutufecutamedereremetalatasmamabatatutamatulatatamata·mineleconomemeretatimemetasimerecatarotanositaretanomemetexisimaserismatatamantademetatuderinicomeximeremetaretanetapotatantaresimemiremexiteresecotamapo·remecoreredemedesemigcomistamexicomeretareselicodemerineditufesmetesicomesetacomirenomexitenorisirimememimecotedetamimemetamostigatineme·cosemiretemetamitaresresrererosecodiretumatanistutustumininecotubahoderetematetuminitatamecuta·xinetenarenostanoseconoremesrocestutatamedecotumeridinemecometare·nemenarenoconadetatadedememeresretaresdestudedemeximetanicodesideta·tetahosideremederetenepotadetituturerexicudecoriretuspotemetufecodelereretisreremiseteteremiretireshomineneta·memenosememetamededememederenamanoretetemiturelesestuliretataremedememenererepereretenoturetenitulimerededereta·tamireninitesitelelitelimeretecostuteseretatutisrodemidico·remereteremereretedetedexederorereretametaleletepodeterestupometerereremetutoret·meretametabadepotutacumeretamemeremetimamerecomeminemetexereredememegapo·xitemitidexenomepeteremememarepapareticututuparemedidetututetaturetererecu·xinimeneturemetamiterecoturexereremeporererecopimemomemetiletememereseminimitemimeponosnometatacolileneteletalinimetetaretulatametunininimanatetetalire·teretuderedemeleteretapisdenelenisireletamuteteteremaretemestutuperesememetedemetutureta·remesdememitedemeshonedetutudepomedeminetutatufitumetamemeremiretadinereselesmenumemecutareremetuturerimisememetereristumetarenodemetameredidedidemenosemexitaletemetare·patametamamatabame·secunederelesesretipameremesetetasreremitatustutatatutimetantamematamesemetatufimetetuporemedetacutimetataserelitexituroditexeretufe·nanetematututupometa·",
+   "·recorederetadinotatitatupetamesmetarita·",
+   "·metetatate·smecoremeretitabademedereterere·",
+   "·meretiretanere·tacomereretarerene·"
+  ],
+  "decoded_test": [
+   "xicodetudemecureniserederexirasparesereriramatadaserimitamari·nidenacodimitatadirereteteneriniticeteminide·reresenopotatutasetiremataresossimetatasenodinetimepometudetaresimarereresetataresamerex·tasdepemeresnesatalireretarireponanetitonomematatarisdelisacorimacupomaratatututarameratatatarisremasderetamiratametamarenecoridestodacotutatuderereriretaridimashu·contedemeretatatalataremadeximasidematiremaderadapadedetemaramatarareretasalaretatarasiretatatudinetaderasanisesrerereratademusirereralinenetineta·recutaselemetadimetasimeretalicurelimicumepamelirelitatala·remidetiridemexisuseretesitadisimetasssssedacomeredisinitalisise·nereronlimimitidaticonotubatalitimitacamisitamidemetatama·",
+   "·demedepantemicufiriredemepocoredenidisex·neremedecosisilitinulitaliconoraralidiritanimescadapadituritasssiteririredomisssaliretarirelicuremeres·nededexgematusimasemitaremisalinusetatariremi·remaminimotedinotamasinicodedimicusirinisemasasimitatamateseta·tantecolidegalecoredirisamenonosesireponomastasmematacotetanati·redeminadicoratitadetatacoseretorediteredideritaretamererarisitenoretenoridimatacorinorereradico·netudetufimitidesemiritisereniseresrererinu·tata·tetorenitadimirigicotumarararetasritaretemarusreta·nimesmaretaristasetataritamasisdasirirelitarataditereretamerestutudiri·nadedalidesedelitasitadenimadimoretufitasdixisistoderesimedirereradereredenucotananora·ra·sedepo·tediralecodiminimeseridepemalicosditumenemamesdetaslereturamalimasdiremedenitatetameriniricorematututerememete·tetidedexinemeximedililireditetadisesetatemina·baminitalicoresnetanodinidedemetasereretatadiresesepererenisetederetorimenimisretesetasiturilirotubirelide·xisitametarereresseremigamitanomererimenetareremabatasitaconalinisimadetareremepometanubatadetasetedemenedematamemetabacoretenamerenatare·setacositabatastutamererastupoma·xinetegamabanatamatamarateponometamamedemeremarepomamamatutuconacotulanopamastutusseratamanopatumirimemamanomede·paminenarenaracona·menilirerenetumetalegamidinononimetatanenaromamafututalitecopotusdinosetutututatu·xireretederetalotametemalemetatanamitatatutumarememetatuturemeretanorexetumegalemenenomedita·nemi·fesdenostatanumenitoretatarecumatalitasisosatunotufisderemidemecoretatameretatata·nadexisepomexetareminetusrereradetufiretamestubuturenodenomepotecotufemedereta·teponaletegastadasresenamistassineditanenitaretatufisotesetadepomestureretemetatamemesrisrepodedetotasnemetatataserirederetererememetamitutamedesexetasinesdenonorosetatetalimelomisrinrecotadenedessinirepotedetalineritatatamedecolisecotasadegacotememinoredeteritastaniricutasireturerecotetapo·temetamenetarepanalideredetedenedeterereserotufimeretarederemeremerereretaretari·meterememesmiretaristutaretetemetacotuponamimemenimitalitutudaleretitamemenisdepotututotu·tecolericosshometacusisemeponometadimelimetaminestatamelimeta·feretaremepodeminicuremededererereditenigarederetederedesrenadereretarerelirelimenalerepenoremerecoturererilete·teretutotunnecuse·",
+   "·teretupetimatabatututustubarestumememe·",
+   "·nerecopisnisretarimetaderitatalecotane·"
+  ]
+ }
+}

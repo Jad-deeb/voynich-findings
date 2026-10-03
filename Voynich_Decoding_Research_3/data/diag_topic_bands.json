@@ -1,0 +1,37 @@
+[
+ {
+  "comparison": "VMS scribe 1 (A): herbal vs pharma",
+  "excess_top50_bits": 0.0361,
+  "excess_rest_bits": 0.1027,
+  "share_from_top50": 0.26,
+  "top50_token_share": 0.36
+ },
+ {
+  "comparison": "VMS scribe 2 (B): herbal vs biological",
+  "excess_top50_bits": 0.0603,
+  "excess_rest_bits": 0.0696,
+  "share_from_top50": 0.46,
+  "top50_token_share": 0.44
+ },
+ {
+  "comparison": "Latin: Secreta vs Bruno De magia",
+  "excess_top50_bits": 0.0514,
+  "excess_rest_bits": 0.1524,
+  "share_from_top50": 0.25,
+  "top50_token_share": 0.32
+ },
+ {
+  "comparison": "Latin: Secreta part 1 vs part 3",
+  "excess_top50_bits": 0.0185,
+  "excess_rest_bits": 0.1011,
+  "share_from_top50": 0.15,
+  "top50_token_share": 0.34
+ },
+ {
+  "comparison": "Latin: Albert of Aix vs Steganographia",
+  "excess_top50_bits": 0.0236,
+  "excess_rest_bits": 0.2071,
+  "share_from_top50": 0.1,
+  "top50_token_share": 0.24
+ }
+]

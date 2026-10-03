@@ -1,0 +1,283 @@
+{
+ "params": {
+  "data": "../data/pc_vmsA_suffix_shuffled_K40.json",
+  "lm": "../data/lm_italian.txt",
+  "ORDER": 5,
+  "SWEEPS": 80,
+  "RESTARTS": 4,
+  "TG0": 300,
+  "TG1": 1,
+  "seed": 9
+ },
+ "symbols": 40,
+ "roles": [
+  "U"
+ ],
+ "train_tokens_scored": 17376,
+ "seconds": 106.112,
+ "restarts": [
+  {
+   "restart": 0,
+   "J": -180099.39166330712,
+   "train_gain_bits_per_token": -0.8684892192267318,
+   "heldout_gain_bits_per_token": -0.8755435828888016,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 1,
+   "J": -186108.91662546224,
+   "train_gain_bits_per_token": -1.3674482351682413,
+   "heldout_gain_bits_per_token": -1.4056465962880342,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 2,
+   "J": -176673.61250329437,
+   "train_gain_bits_per_token": -0.584053526010162,
+   "heldout_gain_bits_per_token": -0.6332676355824981,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  },
+  {
+   "restart": 3,
+   "J": -180700.8108988623,
+   "train_gain_bits_per_token": -0.9184238732685568,
+   "heldout_gain_bits_per_token": -0.8900823583922479,
+   "heldout_tokens_scored": 4253,
+   "accuracy_train": null,
+   "accuracy_test": null
+  }
+ ],
+ "best": {
+  "restart": 2,
+  "J": -176673.61250329437,
+  "train_gain_bits_per_token": -0.584053526010162,
+  "heldout_gain_bits_per_token": -0.6332676355824981,
+  "heldout_tokens_scored": 4253,
+  "accuracy_train": null,
+  "accuracy_test": null,
+  "key": [
+   [
+    "U:c5",
+    3263,
+    "i"
+   ],
+   [
+    "U:c20",
+    2152,
+    "o"
+   ],
+   [
+    "U:c0",
+    1635,
+    "d"
+   ],
+   [
+    "U:c16",
+    1438,
+    "a"
+   ],
+   [
+    "U:c17",
+    1052,
+    "n"
+   ],
+   [
+    "U:c38",
+    976,
+    "s"
+   ],
+   [
+    "U:c10",
+    763,
+    "l"
+   ],
+   [
+    "U:c14",
+    578,
+    "e"
+   ],
+   [
+    "U:c24",
+    485,
+    "n"
+   ],
+   [
+    "U:c29",
+    476,
+    "e"
+   ],
+   [
+    "U:c31",
+    454,
+    "e"
+   ],
+   [
+    "U:c13",
+    422,
+    "r"
+   ],
+   [
+    "U:c4",
+    309,
+    "u"
+   ],
+   [
+    "U:c9",
+    296,
+    "e"
+   ],
+   [
+    "U:c22",
+    287,
+    "d"
+   ],
+   [
+    "U:c3",
+    280,
+    "c"
+   ],
+   [
+    "U:c19",
+    258,
+    "s"
+   ],
+   [
+    "U:c30",
+    248,
+    "m"
+   ],
+   [
+    "U:c36",
+    242,
+    "r"
+   ],
+   [
+    "U:c39",
+    208,
+    "u"
+   ],
+   [
+    "U:c35",
+    175,
+    "f"
+   ],
+   [
+    "U:c15",
+    161,
+    "t"
+   ],
+   [
+    "U:c28",
+    127,
+    "r"
+   ],
+   [
+    "U:c27",
+    126,
+    "l"
+   ],
+   [
+    "U:c25",
+    126,
+    "m"
+   ],
+   [
+    "U:c33",
+    114,
+    "a"
+   ],
+   [
+    "U:c21",
+    111,
+    "m"
+   ],
+   [
+    "U:c7",
+    103,
+    "c"
+   ],
+   [
+    "U:c34",
+    102,
+    "m"
+   ],
+   [
+    "U:c37",
+    97,
+    "m"
+   ],
+   [
+    "U:c11",
+    70,
+    "n"
+   ],
+   [
+    "U:c18",
+    46,
+    "p"
+   ],
+   [
+    "U:c8",
+    38,
+    "e"
+   ],
+   [
+    "U:c2",
+    35,
+    "n"
+   ],
+   [
+    "U:c32",
+    25,
+    "t"
+   ],
+   [
+    "U:c1",
+    24,
+    "g"
+   ],
+   [
+    "U:c26",
+    24,
+    "g"
+   ],
+   [
+    "U:c6",
+    20,
+    "g"
+   ],
+   [
+    "U:c12",
+    17,
+    "t"
+   ],
+   [
+    "U:c23",
+    13,
+    "t"
+   ]
+  ],
+  "decoded_train": [
+   "relanodoremanonorepirelininolanodironolicaladoeloreuelodonodadosoco·donognisilenouenramo·",
+   "·uidisesodicoseelinodidecaesidinolidifesanosanodesi·",
+   "·sonocomireetimadidiromaleetesinouatapetesosonicanodeedinoremonocoderelodimadiredidarelamemadilecodouoremoderelenileesicodinosenodiredinomaeconidediresedisicomesolosi·corelodonodimaeno·",
+   "·lodiraelauemiuoma·renicoecouidicamoenomedido·",
+   "·de·sisomasimoniee·sanonosono·didifecisilasidililisirelecosorofidisadimifedinidimadinosila·licomadimamaededinimonididalidididimadodininotesicododilenoredididasirelasisiualauilasamisouinolanisiredicadinonouinino·sidaeeladalilofidifinodomasemanosilodinonsimaedinomadidirecoladiuidonoresenasiuodignila·leuademalerisidaliuarenonosamoladosasaninosilecomenosofilidonouisareuienodisononouiredidinododidireconono·didiremalaremanlidililidouatedidadidemasadiuanodidisididisi·dodirenouidedilanididireraconodieenonocodadinonodinodidisini·disicodidilidosalisirediresidimedifidomocodefididididelididinonlisidireledisidinodo·simauiereni·mauosidolididicodidonononofidinodididi·sidirelicadodeediedilirenodinolanoresasidie·diminimicosiuiladidilicadidilisinodilidiuecodisa·dicononsilareromelicosolomedirenaedomodoresorolomouadicolidiecouidililonodididi·dodidicanonodicadidisitadenodidi·nalanadiuidifimedicouesederadiniso·redaelilimodoetasilasosonedadisidouedelamanocognaliliuiuaecolareletameetedidicaredilo·nomimaemenoediuanodiladalecodomeua·sosoledisinilaedolidoralisimeniredisisicodinalapironololisidietirelaniredinonatasiuimenocolodiemali·macodirenouemapeleredidigualilasemanolimadirepedicatanomali·nodeualeuadimetadinomerosereuededireconomasiuididomedilidisidiui·renicanicaleninomilinirelamomedinicoliniuinitadididadifilelasali·noninaresodidosauanodidenonodesilononomimauadonouidiladicadidisodaueselaredoreleuediggeedodidesidesomecodiriledi·dinodidinicononomalasodosidenidedinimaredimagedinomadali·napidalenilisosoresidicauidoedisomarenodomodinoladadinidiuamidomiredeconodididinocoenaeuedinadisoualedauitadiuecosali·lirenonidonodolodididimonanomonolisinirenonlesidofidiuedodosilododidinolelidinodididicado·nononononilalasifidinoresodiuicouilecauanidocomenicodinalesanocoelasiderenonalirenosonodemali·maree·sanorediliuitanonosadiminesosifinalanofinononicilimelasanomanomepirenoreui·cauadilasonadidididifisidanodinanareladinouinasoditasonomesignoresoradisisedalanonalididinino·riloconadadirenauanotanaualanosadidireedonouiuinauamaueditanodiniresidinarensilolasolinonimatadino·doninonosicarelinomareredisasidinosanomenomesila·lanalanamoladaniuicenidolauiladelasanouanomapicalicodesanauinee·ninonodilidamaenodinosimaladiuaenolimaladocenodi·uedinalamelarenamasauasofinonasaeladauama·nomedinidisisalenoualinanouadiredileliliesouiuinane·dinauomasepilaeuauisedilalienolilalidasapidisedouesaladimalauarorenalauisesalinonimala·nouasesesolirelireenomadielenaledilanoemaualicasanonasiualanodanosiediladalaso·uanasataeladimanonorirenalidilisidisisimerenouaguanonomisadanodaso·erelasidesinalanoladinodedinisiratadisinauiredimansinanonalidisiuimauaedegnicosano·nomasalanauicoladetenasididicanadalanmanolidauidalanolanauananosanouiualalamaniliualeuimanometasapiuanomeeuarenonolasanatadinoualeuasa·nilatanodina·laliladisonoelasadadidilarererererelilisilisosisolienanorelidiredidieemadinidisifidiresonodinodisodimadaetaredinosediuerere·diladidadelapinicaninodirenimaladisalemarenimauano·mela·denamatononoronalasanelemarenolaniuadodire·nisanonouadiliuadisadisaenisiliuataladicosalanonauosodaselanonatatedila·nolinaliuatauadiuecouaetiedidiranolauiedirenouanouicosonomidadinauinoma·direuisidouisilidicauadicesilaladicanolinoeuaedi·redomadanodinifietesidimauanralala·dinomedosiredinoso·renosoficonenosifirasidadidilimididididisididisinoninolaresouiesilisosicodironireniderediniraresodedirelenarenonidisidinidironicosinodinosilitilodicodilirelisidiedesosomanodididilidinofisoliralasiuenomeerenilisisirenaliniesidisidirelidotalidididilaedicodidilofini·linodononotasiuitieninomauapiroliseuodilielosonoualolataliuodidirelanomatenonodidiuilolosisoenona·lise·nareedieuadalauoneguareuaneuasouasignilauidoredimadaredisinonaredanomeuasaniuasoemanouidiuasaeteninimamauaedasisosalarenomeromarisimaui·redidiuaedilanisenouauilaniediuinouidalauanonomamenalolinodilididisaedicofimaladinodanosadicaenolanodanalinotemiranodeniuieuadodesaladenotadadalisa·sieuanodomanodilirerauanolasiuomesinodilididisaninonigginodieuigninonota·dilesinosadanorerifilirenomeeuanomauotareuecerenodi·uifeleromadenodidisinouonoreledimiseuimidimauisicodi·dimaualadilanonosimiledidinimaradidoteuisiditaediniredirenolaleue·disadimaedalamadasiderecodilanonisifisadarediditalalaroladididisaere·disomenosoladidinosasinalidifiuesidouisomanimodire·namorerinodidinisalasaladienononinodimelalededasididiuadaueliuiuedididiuisicadimi·nodilinolanononolidilidicosanosiconotitalaualididouignimidicomadietedieuadidiuaetemamasidiladesimanouanomati·ladonareuidinouiuirenomofiuisadireecilietosilidilidecalisa·nosilagnauatanomonosireuiualasirenolauielisisimamimesanalisa·nodididiniualanonilanofilauidimiginonolinodanomaecodilatalaresosasiladinicosalamaua·redisomenanonomasanirelenalenoremagnodisicoremaeliuicom·sisosodorereleuedicanofiuoenisiregidisifiseetodinodinoreeremarenomale·lanisiresisonremalininininisidoconosonolidadililididodienoreleueresisicomeniregiliconimadinodidanominoe·nosidorigrenarediuirenididifedonodidiresideuoemodolalidisoeloesicamelareeeedidodiloedenolomeseno·nodisadililosodinoedorenonomisanolaniconomesidolosadoualenodieualosouimomeladiecodirenoficanodimorenoe·de·reetiditiredilicidilodiliredidiuomeleuimanome·nosinicorerididireninadiedinosimecoconocosofire·daledotanodinataledomodomauadonouolatanodisodeuasemaedilimosoetanouodololononomatameremaletani·ledauanodenasonolalemadinodidaletenodadidodidaderenouerediuededameliredidededidaeto·da·uieuadagsesiliedaladedilasilileninaladididenodiredadimadirelaredisaninometamediuaetesididauiuelauatiuatadifiele·nisisoratatanononidiuitadinodinililidalidicomalilimanouecanifiuosenoditamelilisiuaninoconiriuolidililitaledoremarelididisalinaninonomi·dimanosisalididiuirauidosaredigrere·dimamensauaresimasauitalasomadoualilididasodididiladomasi·sasiualoresatasamatadadieediredinagnodadirelauadenididisonauamadimeno·dimamidientediedidisimiresimasomemansododinonoeenodelalimaenidonomadoda·edarederenodiladirodiliuilenidenofidadaredonodonodilansasouanaledidiuinisoeso·danamedididedidiremocouelalilane·tofidoedeliledidodenicouidinonidedicomadiredilasididinadinouededinanouadidedeuedoedimeuifedediuodesica·dicosomadouedilecomidapenomanomadilododinesifiresouiredofiuicodididinireeueniuididede·denoconiuiuanmideenomilinonadilidarelinonodimadicoderiuasononolemalanosimauireladinodieni·relidouauosomamadimouaeuauadaelededorelodidolidalanomadicodomadodiuoninoedo·nonodisodonoedodimoredorelidouanouielisasolaladimeriredenososenosonoliuelicodilerinadodosidosenosoenoli·tauagnolifinotanonodiuidinolirocodiualadonotasiuononoreuanorenodiladidisoenouidiliuanodadidasinononoredieleuididienotanaelauodomasidifiuiuareremediuosofenonouisidomareno·reenodarenonosososicoladiuananofisamanonore·uarenodidilidaeuadonosiliuaeredinarelidililasirifinanososicoemanononodolimasi·sireuanonolilanososasodinienodelicaliconanapireuirosinomanaloli·dinalemosadiualedolasaninonolicanonomanomeremenieremauinomenosouisaelininosa·caliliuiniuadonononorerederenodenosisisosiredidi·uisiuanauiualauidinonasimasapiuifinininoualiso·naminodinidadinosisanosofidicasosononodadididinoresirelisina·reredidilinonolinomifesireuisomisirenomotemanonomerenodemire·ninononodomalenirenisepidinonosinodiremenonoedirenorenodinididesirena·reesisiesinomenodiremedamesidinoeredinonodinosisemaeninodidenodimisasiremisenonodiedisedieedignosididose·moresedonosanisire·losedicodididouidomadimaladidimodimididimadodoemoui·noregtaredodaledorenonomanomesodicononodicalauadilimisididisielomiliglimanododosodilimatasilinouidinodisodiremaleuita·conodo·sicanodimanonocoreesinodofedodenonadeneuadimemidetieedifiredetinomeetomadinosadidisedadodouadediedosisonoso·dilenomadiuapenapilisanotanimisiuadicauasireuanenma·caremauaeuitasamedanoueetadiregiresomanae·tadaradicoselicadiuadidisinosadimalalauanofiueuiediua·masilanaenofididisililadilotilisisonodocosalesili·redouaualosonireuililauiresisimanasalauiresidimilaniditaliuisonodiso·deliredignosinasimelauadinomirodesidiniditadirenasilosinolidilauodiloloma·diuisidirerelicououosisonouisosinodosicadosisidogmanosanosouae·redalanouiresimecorenauidienanasirelisosimiredilisisalidadisinouilaremasila·cosirecolaresanenasinididiuamaedeuinanidisalese·enamedifinaedireuauouadimalidaenirepidienofilo·calimadadinomadodificauoladoreradimadididiuamasenodisamenononimaleladinosatiua·madiededacolidiresinomeuidadadinosenonolasididinaueninonnononadidaemadadinotenididididida·didadiuinodisididanolediuidiuilidinosinelanatanolidiededididietatieeui·medicodideleledireuiesimocedigtaredignimidi·nonorerodimedirofimadifeditadididonidonmiuienonouilimadididemonomeleemolinodifitadidiconotiuadiuinodimadonaualaladifitaetidiuinalida·nolinonosonililasinodisodidiuidietolidomesimasidirenosinomatenifinomanomosedenoconnosiueenodisinisesilificonosienofirenoficadamanolisimicosisouicidilanono·nosinesasalinononauinisedetesanoenifiremiuouinauireremecolicosimaetonaetauinanouamelenononomemedimauasamouonisadimalasisodidinarelido·niminonaetelimifinolimonodidareriledidisiredosodinonileuirelididiuisirelignoco·daredilinidinonosofilauidisisililidinilicosinalicorelilasenifidilidire·nocicosiuanosarenorelemasanirenauirenitinirenelinisagninarecorenocofisareuimoretinaremiroelaueledodigreredepi·canominofesirenoreuidididiredinoconodesilicononaresimeconouonomililacomalanolinomadisinoliuidosinonsiuadicamedisidifidiedesanoedicodicouelinidicala·fifinorerenoresicoremorenieliceniletadireridiedidodinosimilisididee·diedisouidimomanadedanomedenalaenodaralimiualenolosauaditesinonsilidedilosinodisosidiuidadilomacomadi·dapidedimiladisolicomiueledelimamilidiladiggenaledaeminodalifiuidisinofimitadicatifiuadilica·sodilalidedisadieuinodireremaredinodirelodinirenodiuinodiniredinoedisididiuedimofidignomalilidinolililodi·cauadidodonosirenodirenonomicofidorelenosinoranonanososifinosiuedilosadasoradanodicasicanorenososadisadesonecomesidiconofirenomapidonasinisomedomosonodidisisotenotaetosorerenomasononodinosofisomadododisedasomasicarelauinomecorodiredonouisimaenoresicononomonosononodosica·sonososodonolisodiconorelasapetanodiensosotesifedisosoresisososorelemasonadononomamaresorepimiresodiresiremasesoresodinosocosesomasiniremasesofesonoremotasosoreresenomauinolinonorededicasicoremasomedesiresorenosomadisisorelesosolenosomanoredosocomolesomemesosecomasodosoeuidisososolosomemasitenonosomesenomamasedifisomofimatenofidininosodimamanosotadidosonorerodiesomasasonodosimenosouesodisomesosifemasolirelicodosireso·sinonicasimaesitanoresenosimisisinosososasomenososonosisofinoconofi·desosonodiroeedodisilososononomesicosolesosososasodisoresodiuanodonodisodiniroderenomatososidisore·nononomediconiresedinomemiedicodidicanolereladicansanodilireladisi·redilecomareramesidedirerenisinoresomelasepifegredileredifinolarelififirelaededicomarenosola·sisinididididimediredicodidedidisenodireredirelasidisisimicanodirenisicodaredino·nisododirelirededoregietodalilifidicataresidinoedoranolefiuedinomadisidisilidisenononodimidiro·minomamanididadidinoninomeregliretanodirenidicanodininosiditasididinadicano·dinomadodisecarenidididinodirasinomererelauamadinocoemenoregenosoconanosiremadeuedicasoredi·nodidididicomesonosenonodilididiuisimanofidimacomesisoremetaerenoeuedi·dilimeradinoredimaresecorenonomaedinosarereranisiemadietanoedididisisidesinoesinofiresisisideranoeregidisidisiresididinono·perieredadidonanigreremauonodeconosinosididegrereredinonomasomimasisomirecomesimamepisodedinomenocouimedisoseleda·esoderenonodididirecouanorenonodilereladinodiromiresolanolesi·niedicodiredonosiramamarecinononomaemato·gredirelecofiroemosisoladenonasinononorelemesinomedicomasonositemosinanonmoresinouanodisinononomaninoresimasiliconosiuinonolininosifisedo·sidisemononesosiligcomasonoliresirelanininonosesesedicasimadisonolimadidiuanomatasocosidenosifesonosinomidimanocomasicamaseuidididiresinodilisadicadinodifi·reedimauanonodilificanofiuidicasisidisinidifesisidepifidirereresimasinilidisauarelenorepinilasidimacoditareuisinognimapisisisisisireeeui·difinomesodinoresididiciredidiledisiminosirepimedinomenomeresinorerelisiredieniereedisodidinoe·dedisididilisodidiconoeualanoeetinofenisoredepesediedicaredadino·diredenidinirenoelisisinodisidiredarecodimelecoreradirienoresididire·relalinimadidinadireerenaridienomisecosinodirododireediditimadiesisasicapireedifenaladidisolimirereredidere·direreesisididoreredesimanerenidifidilisironocilililinimecididisicolelenidimasidiuienitaliredidiuinositicodidi·codinaeniresidiremalalisinalarepididitisidilireditadisinosi·uelisisidisonosedilidinoredelidisidinonirelenodireesidifisisididifesiresilefinodi·tasifesiconresodiremadisicosisisiredinisisicomensinomedisesisinecasig·relepinolecodosoredidesidilisosonasinoreditadisiredididiteesadininaserela·siemidiuesoremifirenonisididinadisitotanocomauicalameladireniramasisiritenomedisisinofidemaladiredimicodifidisinesadimirerenisimenososilifitemarededifi·resisominideresidididisisifinifiuenomidinodicosinoresinoesiredicolidoseredinofinonouidiui·lelisidifeninosoditenasidisatisidemasinididicaredidiredisimigsinonoremilediredemauifedinoresimenadiligninodieesinodidiredinomineredesisididilelidiedididicosirenisiuedi·sisiledadireriuiro·nodidadeedinonoetasinoreladiuereresisididietenoferemesimediuaresesinononiuinoditisicapireuesenoniredidifimirenoreniggididiteresonidi·renalenosisirecoladi·",
+   "·dererelesodidididinlilenodidinoredicoso·",
+   "·dodimesidi·dicononremiranodinisinododedina·",
+   "·silididifisile·disinoregisireedi·"
+  ],
+  "decoded_test": [
+   "codinonoradiuidisodididoedosomadomalaleuidaliredododididinare·dirisironalenosadilanadalauaesomeladiroraso·mesenoninomeuiggimepinodinifisinirenomaedilinouidimonodidinocoliliuinodinadilesoreliniua·dilolosinoedididinoeladicoelimerelilareeualidinomouidimadiedilogmanodiladanocoredoredidosiloredilonorenotalidisinosomenonodaloresosomecodirediedinomesisotonodilire·dilosadonododidodididinicenodosononodedidodanomauisamoedilidiresouilocolapisododimonoderenolonodicaconidosanomadidodidodotatanolodomatalalodinodidi·nonodidinouadicalinofisodinauinolarediuonenodicomauemasie·diueuauilicauaninodesidatauanomeedieeenauimiuisidilaeualarelano·regtatasalanolinosomalasinomedamanomedidisasisasaladouida·",
+   "·nolemietegilauadiconsodinimadilomatanili·mareranamasidoesiniresesodateresememedadiuauatanodietetanoerenonadimoderenolidomadilaloreredidieuadiuado·nomalauauiedorenolidinononomarenonodilanacono·reredisofinenonolarelodinalanasauidasenouadiliuanouodauanolino·uedimatoggininidiuiuecosididanidisisoetenomaleuadiranomalenouidi·donarererelenonolenedononasenolereedodanomididifinomedadeuirenasinididalifisesadalisidilidapino·daedidifinadonouididanoresinoredidouecanodi·nore·sadenarelinononodidididiniditedidalanosodadiniemae·edidinolifideuadidadouignouasidecolodicoreenolididomenoedadodidinosoe·didinicononomadilidadomadodomonredinododidididimodadidilonidiredilireedenodidinidignolo·no·ditano·didirelonolenotedicididilinadilesiuamosadiladauasimieseesidimiuarenoniredidililaneuedoreuanoniemoraredisinatasi·uauidedeuidisoregtanidinodifidinodidirediuani·uidididededisesidiediladidifecotisididitadisisononimonomemauedisidifielidirelicomanasicenonirelaladifimadi·erenosoconolidilereuenolidisouisenanonodicodielinonisiuanononoemonomelasesodecocosalelerecolilicomeroromanouasileuanosiuicosicodisesidi·lemesiuinolononolisilimedisilareme·raciredososifimaresinolimatoedosadisosidonaremadimoresofimeresinosemaseserecomanodisoesomasonosoradicorenomanodo·madidedonosoresosi·nonolidifefireledicoriditirediuicasepisanomaeuirelinosedicodiremediredadinonicala·sididinouisinomeuedisisinosiedilisisisoderesisareresosinonodidiresinodidimenodireseniedica·noe·nononomecocodirenanodidinonomanonodilinonorenonolimesidininodeualapedisilonoeliseco·dirediredirenininoreneuifefifedifeniconinidimelelesireditemepirererediresinadidi·nolirecocifietadidimoreedirediredimosisodiedinilisinimorererelirolauanodiconolisidofidinoniditamenouidicolidiecolimededireettesicouisinirenitaeenosicodinodinireuimididirelanicorenolinolidenosiconomedisienodifidideniliuedemecomaladicorodicouiedimiuecoemietemauidirelenicadisifilielisilicocodi·residilidinofedicaedisisisenadisisinisinosisosisilasirereuisasedilisirelilitesi·codinoliuililididisiresedifenisiuilasicasifignoratedoenisisefisicodididididireledinosidini·resifidemisililisonanimicodisepesesirenimisinosininimareredinosi·souididirelifididicosidigmimesicadididifidificodisiseuiremadidimadifimicalecoedidisiconisididilinomecifidifidi·siminonadimacosidi·",
+   "·sirediemonilirerediderofeliedonolidisi·",
+   "·madidilinodiedifimesinirelinodisididire·"
+  ]
+ }
+}

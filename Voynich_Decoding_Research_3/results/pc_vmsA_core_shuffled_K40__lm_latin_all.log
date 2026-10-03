@@ -1,0 +1,5 @@
+{"restart":0,"J":-173394.04614931825,"train_gain_bits_per_token":-0.581332643347316,"heldout_gain_bits_per_token":-0.6829887540079251,"heldout_tokens_scored":4184,"accuracy_train":null,"accuracy_test":null}
+{"restart":1,"J":-175560.92383890925,"train_gain_bits_per_token":-0.7643085694219913,"heldout_gain_bits_per_token":-0.7742160772178931,"heldout_tokens_scored":4184,"accuracy_train":null,"accuracy_test":null}
+{"restart":2,"J":-175964.71026784327,"train_gain_bits_per_token":-0.7984051850849292,"heldout_gain_bits_per_token":-0.8635465158568277,"heldout_tokens_scored":4184,"accuracy_train":null,"accuracy_test":null}
+{"restart":3,"J":-173176.8520079757,"train_gain_bits_per_token":-0.5629922915401745,"heldout_gain_bits_per_token":-0.6519522682675586,"heldout_tokens_scored":4184,"accuracy_train":null,"accuracy_test":null}
+{"data":"../data/pc_vmsA_core_shuffled_K40.json","lm":"../data/lm_latin_all.txt","symbols":40,"best_J":-173176.8520079757,"second_J":-173394.04614931825,"train_gain":-0.5629922915401745,"heldout_gain":-0.6519522682675586,"heldout_gain_all_restarts":[-0.683,-0.774,-0.864,-0.652],"acc_train":null,"acc_test":null,"seconds":132.047}

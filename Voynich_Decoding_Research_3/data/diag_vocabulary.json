@@ -1,0 +1,51 @@
+[
+ {
+  "text": "VMS IT",
+  "tokens": 34000,
+  "types": 7025,
+  "hapax_share_of_types": 0.68,
+  "hapax_share_of_tokens": 0.14
+ },
+ {
+  "text": "VMS ZL",
+  "tokens": 34000,
+  "types": 6715,
+  "hapax_share_of_types": 0.67,
+  "hapax_share_of_tokens": 0.133
+ },
+ {
+  "text": "Latin Secreta",
+  "tokens": 34000,
+  "types": 8334,
+  "hapax_share_of_types": 0.6,
+  "hapax_share_of_tokens": 0.147
+ },
+ {
+  "text": "Latin Albert of Aix",
+  "tokens": 34000,
+  "types": 9276,
+  "hapax_share_of_types": 0.61,
+  "hapax_share_of_tokens": 0.165
+ },
+ {
+  "text": "Italian Rettorica",
+  "tokens": 32230,
+  "types": 6744,
+  "hapax_share_of_types": 0.72,
+  "hapax_share_of_tokens": 0.151
+ },
+ {
+  "text": "Middle English Cirurgie",
+  "tokens": 34000,
+  "types": 3635,
+  "hapax_share_of_types": 0.52,
+  "hapax_share_of_tokens": 0.056
+ },
+ {
+  "text": "Middle English Alphabet of Tales",
+  "tokens": 34000,
+  "types": 4514,
+  "hapax_share_of_types": 0.58,
+  "hapax_share_of_tokens": 0.076
+ }
+]

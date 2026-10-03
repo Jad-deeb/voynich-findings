@@ -1,0 +1,62 @@
+[
+ {
+  "comparison": "ZL same scribe 1 (A): herbal vs pharma",
+  "pages": [
+   95,
+   16
+  ],
+  "tokens": [
+   7841,
+   2267
+  ],
+  "observed_bits": 0.1094,
+  "permuted_mean_bits": 0.0305,
+  "excess_bits": 0.0789,
+  "z": 27.9
+ },
+ {
+  "comparison": "ZL same scribe 2 (B): herbal vs biological",
+  "pages": [
+   20,
+   19
+  ],
+  "tokens": [
+   2316,
+   6200
+  ],
+  "observed_bits": 0.151,
+  "permuted_mean_bits": 0.0361,
+  "excess_bits": 0.115,
+  "z": 18.9
+ },
+ {
+  "comparison": "ZL split-half: scribe 2 bio odd vs even",
+  "pages": [
+   10,
+   9
+  ],
+  "tokens": [
+   3293,
+   2907
+  ],
+  "observed_bits": 0.0374,
+  "permuted_mean_bits": 0.0366,
+  "excess_bits": 0.0008,
+  "z": 0.1
+ },
+ {
+  "comparison": "ZL split-half: scribe 1 herbal odd vs even",
+  "pages": [
+   48,
+   47
+  ],
+  "tokens": [
+   3851,
+   3990
+  ],
+  "observed_bits": 0.0302,
+  "permuted_mean_bits": 0.0302,
+  "excess_bits": -0.0,
+  "z": -0.0
+ }
+]
